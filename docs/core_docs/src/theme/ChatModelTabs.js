@@ -99,9 +99,9 @@ export default function ChatModelTabs(props) {
       value: "fireworks",
       label: "FireworksAI",
       default: false,
-      text: `import { ChatFireworks } from "@langchain/community/chat_models/fireworks";\n\nconst ${llmVarName} = new ChatFireworks(${fireworksParams});`,
+      text: `import { ChatFireworks } from "@instrukt/langchain-community/chat_models/fireworks";\n\nconst ${llmVarName} = new ChatFireworks(${fireworksParams});`,
       envs: `FIREWORKS_API_KEY=your-api-key`,
-      dependencies: "@langchain/community",
+      dependencies: "@instrukt/langchain-community",
     },
     mistral: {
       value: "mistral",

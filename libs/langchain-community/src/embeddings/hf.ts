@@ -1,6 +1,9 @@
 import { HfInference, HfInferenceEndpoint } from "@huggingface/inference";
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import {
+  Embeddings,
+  type EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Interface that extends EmbeddingsParams and defines additional

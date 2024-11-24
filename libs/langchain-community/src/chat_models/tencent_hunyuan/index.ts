@@ -1,4 +1,4 @@
-import { type BaseChatModelParams } from "@langchain/core/language_models/chat_models";
+import { type BaseChatModelParams } from "@instrukt/langchain-core/language_models/chat_models";
 import { sign } from "../../utils/tencent_hunyuan/index.js";
 import {
   ChatTencentHunyuan as BaseChatTencentHunyuan,

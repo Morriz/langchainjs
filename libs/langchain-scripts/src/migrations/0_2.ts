@@ -229,7 +229,7 @@ export async function updateEntrypointsFrom0_x_xTo0_2_x(
         if (!importPathTextWithoutQuotes.startsWith("langchain/")) {
           if (
             importPathTextWithoutQuotes !==
-            "@langchain/community/retrievers/self_query/qdrant"
+            "@instrukt/langchain-community/retrievers/self_query/qdrant"
           ) {
             return;
           }

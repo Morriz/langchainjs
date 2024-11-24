@@ -3,8 +3,8 @@ import { Redis } from "ioredis";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CacheBackedEmbeddings } from "langchain/embeddings/cache_backed";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
-import { RedisByteStore } from "@langchain/community/storage/ioredis";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
+import { RedisByteStore } from "@instrukt/langchain-community/storage/ioredis";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 
 const underlyingEmbeddings = new OpenAIEmbeddings();

@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import { BaseChain, ChainInputs } from "../base.js";
 import { SerializedAPIChain } from "../serde.js";
 import { LLMChain } from "../llm_chain.js";

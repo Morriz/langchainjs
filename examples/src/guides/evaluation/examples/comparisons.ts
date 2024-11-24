@@ -1,8 +1,8 @@
 import { loadEvaluator } from "langchain/evaluation";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { ChatOpenAI } from "@langchain/openai";
-import { ChainValues } from "@langchain/core/utils/types";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 //  Step 1. Create the Evaluator
 // In this example, you will use gpt-4 to select which output is preferred.

@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { QAEvalChain } from "../eval_chain.js";
 
 test("Test QAEvalChain", async () => {

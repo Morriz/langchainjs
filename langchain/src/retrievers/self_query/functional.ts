@@ -1,4 +1,4 @@
 export {
   type FunctionFilter,
   FunctionalTranslator,
-} from "@langchain/core/structured_query";
+} from "@instrukt/langchain-core/structured_query";

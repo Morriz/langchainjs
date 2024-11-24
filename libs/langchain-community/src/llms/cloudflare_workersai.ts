@@ -1,7 +1,10 @@
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
+import {
+  LLM,
+  type BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
 
 import { convertEventStreamToIterableReadableDataStream } from "../utils/event_source_parse.js";
 

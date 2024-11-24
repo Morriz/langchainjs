@@ -6,8 +6,8 @@ import { describe, expect, test } from "@jest/globals";
 import { faker } from "@faker-js/faker";
 import { Pinecone } from "@pinecone-database/pinecone";
 import * as uuid from "uuid";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
 import { PineconeStoreParams, PineconeStore } from "../vectorstores.js";
 
 const PINECONE_SLEEP_LENGTH = 40000;

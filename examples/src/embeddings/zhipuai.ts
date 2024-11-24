@@ -1,4 +1,4 @@
-import { ZhipuAIEmbeddings } from "@langchain/community/embeddings/zhipuai";
+import { ZhipuAIEmbeddings } from "@instrukt/langchain-community/embeddings/zhipuai";
 
 const model = new ZhipuAIEmbeddings({});
 const res = await model.embedQuery(

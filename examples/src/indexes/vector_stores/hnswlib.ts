@@ -1,4 +1,4 @@
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 const vectorStore = await HNSWLib.fromTexts(

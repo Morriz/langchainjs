@@ -12,11 +12,11 @@ import type { KeyCredential, TokenCredential } from "@azure/core-auth";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Azure AI Search query type.

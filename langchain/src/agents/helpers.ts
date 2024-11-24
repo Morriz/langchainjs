@@ -1,5 +1,5 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { ToolInterface } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { ToolInterface } from "@instrukt/langchain-core/tools";
 import type { SerializedAgentT, AgentInput } from "./types.js";
 import { LLMChain } from "../chains/llm_chain.js";
 

@@ -5,7 +5,7 @@ import {
   SendTaskSuccessCommand as TaskSuccessSender,
 } from "@aws-sdk/client-sfn";
 
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@instrukt/langchain-core/tools";
 
 /**
  * Interface for AWS Step Functions configuration.

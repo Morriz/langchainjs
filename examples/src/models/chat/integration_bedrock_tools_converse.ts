@@ -1,5 +1,5 @@
 import { ChatBedrockConverse } from "@langchain/aws";
-import { tool } from "@langchain/core/tools";
+import { tool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
 
 const model = new ChatBedrockConverse({

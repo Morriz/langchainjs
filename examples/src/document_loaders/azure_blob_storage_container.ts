@@ -1,4 +1,4 @@
-import { AzureBlobStorageContainerLoader } from "@langchain/community/document_loaders/web/azure_blob_storage_container";
+import { AzureBlobStorageContainerLoader } from "@instrukt/langchain-community/document_loaders/web/azure_blob_storage_container";
 
 const loader = new AzureBlobStorageContainerLoader({
   azureConfig: {

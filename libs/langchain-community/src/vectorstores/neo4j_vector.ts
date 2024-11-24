@@ -1,8 +1,8 @@
 import neo4j from "neo4j-driver";
 import * as uuid from "uuid";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
+import { Document } from "@instrukt/langchain-core/documents";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Any = any;

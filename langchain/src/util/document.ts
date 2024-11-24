@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * Given a list of documents, this util formats their contents

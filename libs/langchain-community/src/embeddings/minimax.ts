@@ -1,6 +1,9 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import {
+  Embeddings,
+  EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
 import { ConfigurationParameters } from "../chat_models/minimax.js";
 
 /**

@@ -1,36 +1,42 @@
 import { Anthropic, type ClientOptions } from "@anthropic-ai/sdk";
 import type { Stream } from "@anthropic-ai/sdk/streaming";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessageChunk, type BaseMessage } from "@langchain/core/messages";
-import { ChatGenerationChunk, type ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  AIMessageChunk,
+  type BaseMessage,
+} from "@instrukt/langchain-core/messages";
+import {
+  ChatGenerationChunk,
+  type ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   type StructuredOutputMethodOptions,
   type BaseLanguageModelInput,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { isZodSchema } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/runnables";
+import { isZodSchema } from "@instrukt/langchain-core/utils/types";
 import { z } from "zod";
 import type {
   MessageCreateParams,
   Tool as AnthropicTool,
 } from "@anthropic-ai/sdk/resources/index.mjs";
 
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
 import { AnthropicToolsOutputParser } from "./output_parsers.js";
 import { handleToolChoice } from "./utils/tools.js";
 import { _convertMessagesToAnthropicPayload } from "./utils/message_inputs.js";
@@ -344,8 +350,8 @@ function extractToken(chunk: AIMessageChunk): string | undefined {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -471,7 +477,7 @@ function extractToken(chunk: AIMessageChunk): string | undefined {
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@instrukt/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

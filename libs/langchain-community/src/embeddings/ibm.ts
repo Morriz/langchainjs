@@ -1,10 +1,10 @@
-import { Embeddings } from "@langchain/core/embeddings";
+import { Embeddings } from "@instrukt/langchain-core/embeddings";
 import {
   EmbeddingParameters,
   TextEmbeddingsParams,
 } from "@ibm-cloud/watsonx-ai/dist/watsonx-ai-ml/vml_v1.js";
 import { WatsonXAI } from "@ibm-cloud/watsonx-ai";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 import { WatsonxAuth, WatsonxParams } from "../types/ibm.js";
 import { authenticateAndSetInstance } from "../utils/ibm.js";
 

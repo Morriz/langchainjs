@@ -1,12 +1,16 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { ChatGeneration, Generation, RUN_KEY } from "@langchain/core/outputs";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import {
+  ChatGeneration,
+  Generation,
+  RUN_KEY,
+} from "@instrukt/langchain-core/outputs";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   Callbacks,
   BaseCallbackConfig,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import {
   eqSet,
   EvalOutputType,

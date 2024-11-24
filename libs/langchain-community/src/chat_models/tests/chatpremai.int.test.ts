@@ -1,5 +1,5 @@
 import { describe, test, expect } from "@jest/globals";
-import { ChatMessage, HumanMessage } from "@langchain/core/messages";
+import { ChatMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { ChatPrem } from "../premai.js";
 
 describe.skip("ChatPrem", () => {

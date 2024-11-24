@@ -1,4 +1,4 @@
-import { ZepCloudRetriever } from "@langchain/community/retrievers/zep_cloud";
+import { ZepCloudRetriever } from "@instrukt/langchain-community/retrievers/zep_cloud";
 import { randomUUID } from "crypto";
 import { ZepClient } from "@getzep/zep-cloud";
 import { Message } from "@getzep/zep-cloud/api";

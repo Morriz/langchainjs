@@ -1,10 +1,10 @@
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
-import { Document } from "@langchain/core/documents";
-import type { DocumentLoader } from "@langchain/core/document_loaders/base";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import type { DocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * Represents the parameters for configuring WebBaseLoaders. It extends the
@@ -28,7 +28,7 @@ export interface WebBaseLoaderParams extends AsyncCallerParams {
   /**
    * The selector to use to extract the text from the document.
    * Defaults to "body".
-   * @deprecated Use CheerioWebBaseLoaderParams from @langchain/community/document_loaders/web/cheerio
+   * @deprecated Use CheerioWebBaseLoaderParams from @instrukt/langchain-community/document_loaders/web/cheerio
    * instead.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

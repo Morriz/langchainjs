@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
 import * as url from "node:url";
 import * as path from "node:path";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { ObsidianLoader } from "../fs/obsidian.js";
 
 const STANDARD_METADATA_FIELDS = [

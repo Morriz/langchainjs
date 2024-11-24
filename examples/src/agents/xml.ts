@@ -1,7 +1,7 @@
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
 import { AgentExecutor, createXmlAgent } from "langchain/agents";
 import { pull } from "langchain/hub";
-import type { PromptTemplate } from "@langchain/core/prompts";
+import type { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { ChatAnthropic } from "@langchain/anthropic";
 

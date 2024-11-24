@@ -4,7 +4,7 @@ import * as path from "node:path";
 import * as os from "node:os";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 import { HNSWLib } from "../hnswlib.js";
 

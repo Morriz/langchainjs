@@ -3,8 +3,11 @@
 import { test } from "@jest/globals";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { BaseMessageChunk, HumanMessage } from "@langchain/core/messages";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import {
+  BaseMessageChunk,
+  HumanMessage,
+} from "@instrukt/langchain-core/messages";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatAnthropicTools } from "../tool_calling.js";
 
 test.skip("Test ChatAnthropicTools", async () => {

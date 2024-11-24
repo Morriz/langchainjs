@@ -1,5 +1,5 @@
 import { LLMOptions } from "portkey-ai";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   AIMessage,
   AIMessageChunk,
@@ -11,13 +11,13 @@ import {
   HumanMessageChunk,
   SystemMessage,
   SystemMessageChunk,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatResult,
   ChatGeneration,
   ChatGenerationChunk,
-} from "@langchain/core/outputs";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/outputs";
+import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
 
 import { PortkeySession, getPortkeySession } from "../llms/portkey.js";
 

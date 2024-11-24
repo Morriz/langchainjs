@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { ChainValues } from "@langchain/core/utils/types";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { VectorStoreInterface } from "@instrukt/langchain-core/vectorstores";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import { BaseChain, ChainInputs } from "./base.js";
 import { SerializedVectorDBQAChain } from "./serde.js";
 import { loadQAStuffChain } from "./question_answering/load.js";

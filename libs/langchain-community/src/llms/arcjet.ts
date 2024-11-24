@@ -2,7 +2,7 @@ import {
   LLM,
   BaseLLM,
   type BaseLLMCallOptions,
-} from "@langchain/core/language_models/llms";
+} from "@instrukt/langchain-core/language_models/llms";
 import type { ArcjetSensitiveInfoType, RedactOptions } from "@arcjet/redact";
 
 type DetectSensitiveInfoEntities<T> = (

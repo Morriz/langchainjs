@@ -1,6 +1,6 @@
 // import { test, expect } from "@jest/globals";
-// import { ChatPromptTemplate } from "@langchain/core/prompts";
-// import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+// import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+// import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
 // import { AgentExecutor, createToolCallingAgent } from "langchain/agents";
 // import { ChatAnthropic } from "../index.js";
 

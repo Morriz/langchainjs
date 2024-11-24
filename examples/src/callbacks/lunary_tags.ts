@@ -1,4 +1,4 @@
-import { LunaryHandler } from "@langchain/community/callbacks/handlers/lunary";
+import { LunaryHandler } from "@instrukt/langchain-community/callbacks/handlers/lunary";
 import { ChatOpenAI } from "@langchain/openai";
 
 const chat = new ChatOpenAI({

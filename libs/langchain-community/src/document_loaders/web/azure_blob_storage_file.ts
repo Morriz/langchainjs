@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as os from "node:os";
 import { BlobServiceClient } from "@azure/storage-blob";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 import {
   UnstructuredLoader,
   UnstructuredLoaderOptions,

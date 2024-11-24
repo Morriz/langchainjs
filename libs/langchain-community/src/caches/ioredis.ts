@@ -4,8 +4,8 @@ import {
   getCacheKey,
   serializeGeneration,
   deserializeStoredGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/caches";
+import { Generation } from "@instrukt/langchain-core/outputs";
 
 /**
  * Cache LLM results using Redis.

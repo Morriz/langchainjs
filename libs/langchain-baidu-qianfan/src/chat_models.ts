@@ -1,20 +1,20 @@
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   AIMessageChunk,
   BaseMessage,
   ChatMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/outputs";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import { ChatCompletion } from "@baiducloud/qianfan";
 
 /**

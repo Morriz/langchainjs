@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BaseStore } from "@langchain/core/stores";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseStore } from "@instrukt/langchain-core/stores";
 
 /**
  * Class that provides a layer of abstraction over the base storage,

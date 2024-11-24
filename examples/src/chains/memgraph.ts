@@ -1,4 +1,4 @@
-import { MemgraphGraph } from "@langchain/community/graphs/memgraph_graph";
+import { MemgraphGraph } from "@instrukt/langchain-community/graphs/memgraph_graph";
 import { OpenAI } from "@langchain/openai";
 import { GraphCypherQAChain } from "langchain/chains/graph_qa/cypher";
 

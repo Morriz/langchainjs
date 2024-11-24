@@ -1,7 +1,10 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { type DocumentInterface, Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import {
+  type DocumentInterface,
+  Document,
+} from "@instrukt/langchain-core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { BaseDocumentCompressor } from "./index.js";
 import { PROMPT_TEMPLATE } from "./chain_extract_prompt.js";

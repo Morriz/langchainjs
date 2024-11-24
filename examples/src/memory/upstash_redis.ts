@@ -1,5 +1,5 @@
 import { BufferMemory } from "langchain/memory";
-import { UpstashRedisChatMessageHistory } from "@langchain/community/stores/message/upstash_redis";
+import { UpstashRedisChatMessageHistory } from "@instrukt/langchain-community/stores/message/upstash_redis";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
 

@@ -1,5 +1,5 @@
-import { Callbacks } from "@langchain/core/callbacks/manager";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import { Callbacks } from "@instrukt/langchain-core/callbacks/manager";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 /**
  * Type for the combined output of the CombiningOutputParser class.

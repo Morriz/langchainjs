@@ -1,8 +1,8 @@
 /* eslint-disable no-process-env */
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenAI } from "@langchain/openai";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { AttributeInfo } from "langchain/chains/query_constructor";
 import { SelfQueryRetriever } from "langchain/retrievers/self_query";
 import { VectaraStore } from "../../vectorstores/vectara.js";

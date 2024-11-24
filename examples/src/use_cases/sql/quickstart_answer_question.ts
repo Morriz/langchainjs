@@ -3,12 +3,12 @@ import { createSqlQueryChain } from "langchain/chains/sql_db";
 import { SqlDatabase } from "langchain/sql_db";
 import { DataSource } from "typeorm";
 import { QuerySqlTool } from "langchain/tools/sql";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 
 const datasource = new DataSource({
   type: "sqlite",

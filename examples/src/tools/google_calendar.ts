@@ -1,10 +1,10 @@
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { OpenAI } from "@langchain/openai";
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 import {
   GoogleCalendarCreateTool,
   GoogleCalendarViewTool,
-} from "@langchain/community/tools/google_calendar";
+} from "@instrukt/langchain-community/tools/google_calendar";
 
 export async function run() {
   const model = new OpenAI({

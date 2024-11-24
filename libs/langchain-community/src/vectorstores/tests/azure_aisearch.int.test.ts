@@ -4,8 +4,8 @@ import { jest, test, expect } from "@jest/globals";
 import { setTimeout } from "timers/promises";
 import { SearchIndexClient, AzureKeyCredential } from "@azure/search-documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import {
   AzureAISearchVectorStore,
   AzureAISearchQueryType,

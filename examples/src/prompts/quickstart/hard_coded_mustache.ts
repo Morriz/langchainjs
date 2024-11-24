@@ -1,4 +1,4 @@
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 // An example prompt with no input variables
 const noInputPrompt = new PromptTemplate({

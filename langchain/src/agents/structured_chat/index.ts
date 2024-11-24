@@ -1,22 +1,22 @@
 import { zodToJsonSchema, JsonSchema7ObjectType } from "zod-to-json-schema";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
 import {
   isOpenAITool,
   type BaseLanguageModel,
   type BaseLanguageModelInterface,
   type ToolDefinition,
-} from "@langchain/core/language_models/base";
-import { RunnablePassthrough } from "@langchain/core/runnables";
-import type { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/language_models/base";
+import { RunnablePassthrough } from "@instrukt/langchain-core/runnables";
+import type { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   BaseMessagePromptTemplate,
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
   PromptTemplate,
-} from "@langchain/core/prompts";
-import { AgentStep } from "@langchain/core/agents";
-import { isStructuredTool } from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/prompts";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { isStructuredTool } from "@instrukt/langchain-core/utils/function_calling";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { Optional } from "../../types/type-utils.js";
 import {
@@ -266,8 +266,8 @@ export type CreateStructuredChatAgentParams = {
  * ```typescript
  * import { AgentExecutor, createStructuredChatAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { ChatPromptTemplate } from "@langchain/core/prompts";
- * import { AIMessage, HumanMessage } from "@langchain/core/messages";
+ * import type { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+ * import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
  *
  * import { ChatOpenAI } from "@langchain/openai";
  *

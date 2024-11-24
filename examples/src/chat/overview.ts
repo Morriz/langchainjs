@@ -7,9 +7,9 @@ import {
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+} from "@instrukt/langchain-core/prompts";
+import { HumanMessage, SystemMessage } from "@instrukt/langchain-core/messages";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ temperature: 0 });

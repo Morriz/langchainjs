@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@instrukt/langchain-core/retrievers";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "./base.js";
 import { SerializedVectorDBQAChain } from "./serde.js";
 import {
@@ -30,7 +30,7 @@ export interface RetrievalQAChainInput extends Omit<ChainInputs, "memory"> {
  * @example
  * ```typescript
  * import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
- * import { ChatPromptTemplate } from "@langchain/core/prompts";
+ * import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
  * import { createRetrievalChain } from "langchain/chains/retrieval";
  * import { MemoryVectorStore } from "langchain/vectorstores/memory";
  *

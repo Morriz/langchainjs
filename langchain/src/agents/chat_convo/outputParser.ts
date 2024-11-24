@@ -1,10 +1,10 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { AgentAction, AgentFinish } from "@langchain/core/agents";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { AgentAction, AgentFinish } from "@instrukt/langchain-core/agents";
 import {
   FormatInstructionsOptions,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { renderTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/output_parsers";
+import { renderTemplate } from "@instrukt/langchain-core/prompts";
 import { AgentActionOutputParser } from "../types.js";
 import { FORMAT_INSTRUCTIONS } from "./prompt.js";
 import { OutputFixingParser } from "../../output_parsers/fix.js";

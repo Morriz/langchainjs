@@ -1,9 +1,9 @@
 import { ChatAnthropic } from "@langchain/anthropic";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { cosineSimilarity } from "@langchain/core/utils/math";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { cosineSimilarity } from "@instrukt/langchain-core/utils/math";
 
 const physicsTemplate = `You are a very smart physics professor.
 You are great at answering questions about physics in a concise and easy to understand manner.

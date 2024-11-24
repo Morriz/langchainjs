@@ -1,5 +1,5 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { NeonPostgres } from "@langchain/community/vectorstores/neon";
+import { NeonPostgres } from "@instrukt/langchain-community/vectorstores/neon";
 
 // Initialize an embeddings instance
 const embeddings = new OpenAIEmbeddings({

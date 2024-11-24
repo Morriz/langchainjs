@@ -1,4 +1,4 @@
-import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
+import { DuckDuckGoSearch } from "@instrukt/langchain-community/tools/duckduckgo_search";
 
 // Instantiate the DuckDuckGoSearch tool.
 const tool = new DuckDuckGoSearch({ maxResults: 1 });

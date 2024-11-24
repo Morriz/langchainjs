@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { OpenAI, ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StructuredOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StructuredOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const prompt = PromptTemplate.fromTemplate(
   `Return a JSON object containing the following value wrapped in an "input" key. Do not return anything else:\n{input}`

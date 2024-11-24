@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 import * as fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";

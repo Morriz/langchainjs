@@ -1,5 +1,5 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Tool } from "@langchain/core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * Defines the parameters that can be passed to the Serper class during

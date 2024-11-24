@@ -1,7 +1,7 @@
 import { google } from "googleapis";
-import { Tool } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { BaseLLM } from "@langchain/core/language_models/llms";
+import { Tool } from "@instrukt/langchain-core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
 
 export interface GoogleCalendarAgentParams {
   credentials?: {

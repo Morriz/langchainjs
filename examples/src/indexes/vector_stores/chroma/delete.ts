@@ -1,4 +1,4 @@
-import { Chroma } from "@langchain/community/vectorstores/chroma";
+import { Chroma } from "@instrukt/langchain-community/vectorstores/chroma";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 const embeddings = new OpenAIEmbeddings();

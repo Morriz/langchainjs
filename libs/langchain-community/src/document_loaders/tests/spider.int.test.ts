@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { SpiderLoader } from "../web/spider.js";
 
 test("Test SpiderLoader load method with scrape mode", async () => {

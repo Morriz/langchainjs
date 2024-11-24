@@ -1,8 +1,11 @@
 import { EnsembleRetriever } from "langchain/retrievers/ensemble";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import {
+  BaseRetriever,
+  BaseRetrieverInput,
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 class SimpleCustomRetriever extends BaseRetriever {
   lc_namespace = [];

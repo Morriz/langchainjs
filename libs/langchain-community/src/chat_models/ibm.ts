@@ -12,26 +12,26 @@ import {
   ToolMessageChunk,
   UsageMetadata,
   type BaseMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   FunctionDefinition,
   StructuredOutputMethodOptions,
   type BaseLanguageModelCallOptions,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/outputs";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 import {
   TextChatMessagesTextChatMessageAssistant,
   TextChatParameterTools,
@@ -49,22 +49,22 @@ import {
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/output_parsers/openai_tools";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import { z } from "zod";
 import {
   BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
-import { isZodSchema } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/output_parsers";
+import { isZodSchema } from "@instrukt/langchain-core/utils/types";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import { WatsonxAuth, WatsonxParams } from "../types/ibm.js";
 import {
   _convertToolCallIdToMistralCompatible,

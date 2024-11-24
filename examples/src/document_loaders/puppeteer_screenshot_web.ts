@@ -1,4 +1,4 @@
-import { PuppeteerWebBaseLoader } from "@langchain/community/document_loaders/web/puppeteer";
+import { PuppeteerWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/puppeteer";
 
 const loaderWithOptions = new PuppeteerWebBaseLoader("https://langchain.com", {
   launchOptions: {

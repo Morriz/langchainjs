@@ -1,9 +1,9 @@
 import { test, expect } from "@jest/globals";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { faker } from "@faker-js/faker";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { v4 as uuidV4 } from "uuid";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { MatryoshkaRetriever } from "../matryoshka_retriever.js";
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 

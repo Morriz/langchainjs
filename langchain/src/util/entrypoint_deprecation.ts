@@ -3,7 +3,7 @@ import { getEnvironmentVariable } from "./env.js";
 export function logVersion010MigrationWarning({
   oldEntrypointName,
   newEntrypointName,
-  newPackageName = "@langchain/community",
+  newPackageName = "@instrukt/langchain-community",
 }: {
   oldEntrypointName: string;
   newEntrypointName?: string;
@@ -26,7 +26,7 @@ export function logVersion010MigrationWarning({
     ``,
     `This will be mandatory after the next "langchain" minor version bump to 0.2.`,
   ].join("\n");
-  if (newPackageName === "@langchain/core") {
+  if (newPackageName === "@instrukt/langchain-core") {
     warningText = [
       `[WARNING]: Importing from "langchain/${oldEntrypointName}" is deprecated.`,
       ``,
@@ -45,7 +45,7 @@ export function logVersion010MigrationWarning({
 export function logVersion020MigrationWarning({
   oldEntrypointName,
   newEntrypointName,
-  newPackageName = "@langchain/community",
+  newPackageName = "@instrukt/langchain-community",
 }: {
   oldEntrypointName: string;
   newEntrypointName?: string;
@@ -68,7 +68,7 @@ export function logVersion020MigrationWarning({
     ``,
     `This will be mandatory after the next "langchain" minor version bump to 0.3.`,
   ].join("\n");
-  if (newPackageName === "@langchain/core") {
+  if (newPackageName === "@instrukt/langchain-core") {
     warningText = [
       `[WARNING]: Importing from "langchain/${oldEntrypointName}" is deprecated.`,
       ``,

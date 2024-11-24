@@ -1,5 +1,5 @@
 import { test, expect, jest } from "@jest/globals";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import { MotorheadMemory } from "../motorhead_memory.js";
 
 test.skip("Test motörhead memory", async () => {

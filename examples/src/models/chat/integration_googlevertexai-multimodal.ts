@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatVertexAI } from "@langchain/google-vertexai";
 import fs from "node:fs";
 

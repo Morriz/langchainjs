@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
 import { OpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { loadSummarizationChain } from "../load.js";
 
 test("Test loadSummzationChain stuff", async () => {

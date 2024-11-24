@@ -1,5 +1,5 @@
 import { Client } from "langsmith";
-import { Runnable } from "@langchain/core/runnables";
+import { Runnable } from "@instrukt/langchain-core/runnables";
 import { load } from "./load/index.js";
 
 /**

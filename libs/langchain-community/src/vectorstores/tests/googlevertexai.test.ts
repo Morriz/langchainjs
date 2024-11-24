@@ -1,8 +1,8 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { beforeEach, expect, test } from "@jest/globals";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { InMemoryDocstore } from "../../stores/doc/in_memory.js";
 import { MatchingEngineArgs, MatchingEngine } from "../googlevertexai.js";
 

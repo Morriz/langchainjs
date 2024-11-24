@@ -1,14 +1,14 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
-import { GoogleCloudStorageDocstore } from "@langchain/community/stores/doc/gcs";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
+import { GoogleCloudStorageDocstore } from "@instrukt/langchain-community/stores/doc/gcs";
 import {
   MatchingEngineArgs,
   MatchingEngine,
   IdDocument,
   Restriction,
-} from "@langchain/community/vectorstores/googlevertexai";
-import { Document } from "@langchain/core/documents";
+} from "@instrukt/langchain-community/vectorstores/googlevertexai";
+import { Document } from "@instrukt/langchain-core/documents";
 
 export const run = async () => {
   if (

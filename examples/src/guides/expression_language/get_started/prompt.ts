@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   ["human", "Tell me a short joke about {topic}"],

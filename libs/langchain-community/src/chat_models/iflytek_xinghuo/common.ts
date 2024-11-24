@@ -1,12 +1,16 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessage, BaseMessage, ChatMessage } from "@langchain/core/messages";
-import { ChatGeneration, ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { IterableReadableStream } from "@langchain/core/utils/stream";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  AIMessage,
+  BaseMessage,
+  ChatMessage,
+} from "@instrukt/langchain-core/messages";
+import { ChatGeneration, ChatResult } from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { IterableReadableStream } from "@instrukt/langchain-core/utils/stream";
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   BaseWebSocketStream,
   WebSocketStreamOptions,

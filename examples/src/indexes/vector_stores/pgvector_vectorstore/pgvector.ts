@@ -2,7 +2,7 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import {
   DistanceStrategy,
   PGVectorStore,
-} from "@langchain/community/vectorstores/pgvector";
+} from "@instrukt/langchain-community/vectorstores/pgvector";
 import { PoolConfig } from "pg";
 
 // First, follow set-up instructions at

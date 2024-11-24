@@ -1,4 +1,4 @@
-import { JinaEmbeddings } from "@langchain/community/embeddings/jina";
+import { JinaEmbeddings } from "@instrukt/langchain-community/embeddings/jina";
 
 const model = new JinaEmbeddings({
   apiKey: process.env.JINA_API_TOKEN,

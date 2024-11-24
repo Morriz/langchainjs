@@ -1,7 +1,10 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseLLMParams, LLM } from "@langchain/core/language_models/llms";
-import { type BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { GenerationChunk, LLMResult } from "@langchain/core/outputs";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  BaseLLMParams,
+  LLM,
+} from "@instrukt/langchain-core/language_models/llms";
+import { type BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
+import { GenerationChunk, LLMResult } from "@instrukt/langchain-core/outputs";
 import { FIMCompletionRequest as MistralAIFIMCompletionRequest } from "@mistralai/mistralai/models/components/fimcompletionrequest.js";
 import { FIMCompletionStreamRequest as MistralAIFIMCompletionStreamRequest } from "@mistralai/mistralai/models/components/fimcompletionstreamrequest.js";
 import { FIMCompletionResponse as MistralAIFIMCompletionResponse } from "@mistralai/mistralai/models/components/fimcompletionresponse.js";
@@ -14,9 +17,9 @@ import {
   ResponseHook,
   HTTPClient as MistralAIHTTPClient,
 } from "@mistralai/mistralai/lib/http.js";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 
 export interface MistralAICallOptions extends BaseLanguageModelCallOptions {
   /**

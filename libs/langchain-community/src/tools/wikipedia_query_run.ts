@@ -1,4 +1,4 @@
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * Interface for the parameters that can be passed to the
@@ -56,10 +56,10 @@ interface PageResult {
  * Wikipedia query tool integration.
  *
  * Setup:
- * Install `@langchain/community`. You'll also need an API key.
+ * Install `@instrukt/langchain-community`. You'll also need an API key.
  *
  * ```bash
- * npm install @langchain/community
+ * npm install @instrukt/langchain-community
  * ```
  *
  * ## [Constructor args](https://api.js.langchain.com/classes/_langchain_community.tools_wikipedia_query_run.WikipediaQueryRun.html#constructor)
@@ -68,7 +68,7 @@ interface PageResult {
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run";
+ * import { WikipediaQueryRun } from "@instrukt/langchain-community/tools/wikipedia_query_run";
  *
  * const tool = new WikipediaQueryRun({
  *   topKResults: 3,

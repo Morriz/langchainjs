@@ -1,11 +1,11 @@
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
-import { AstraDBChatMessageHistory } from "@langchain/community/stores/message/astradb";
+import { AstraDBChatMessageHistory } from "@instrukt/langchain-community/stores/message/astradb";
 
 const model = new ChatOpenAI({
   model: "gpt-3.5-turbo",

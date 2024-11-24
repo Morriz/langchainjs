@@ -7,13 +7,13 @@ import {
   InvalidArgumentError,
   CollectionTtl,
 } from "@gomomento/sdk-core";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import {
   BaseMessage,
   StoredMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { ensureCacheExists } from "../../utils/momento.js";
 
 /**

@@ -115,7 +115,7 @@ async function promptExtraFields(fields: {
   );
 
   const importPath = await getUserInput(
-    "What is the full import path of the integration? (e.g @langchain/community/chat_models/togetherai) ",
+    "What is the full import path of the integration? (e.g @instrukt/langchain-community/chat_models/togetherai) ",
     undefined,
     true
   );
@@ -134,7 +134,7 @@ async function promptExtraFields(fields: {
   );
   if (verifyPackageName.toLowerCase() === "n") {
     packageName = await getUserInput(
-      "Please enter the full package name (e.g @langchain/community) ",
+      "Please enter the full package name (e.g @instrukt/langchain-community) ",
       undefined,
       true
     );

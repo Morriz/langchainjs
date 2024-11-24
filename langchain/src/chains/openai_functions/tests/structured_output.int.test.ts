@@ -6,7 +6,7 @@ import {
   ChatPromptTemplate,
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { createStructuredOutputChainFromZod } from "../structured_output.js";
 
 test("structured output chain", async () => {

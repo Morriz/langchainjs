@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
 import { JsonMarkdownStructuredOutputParser } from "./structured.js";
 
 /**

@@ -1,4 +1,4 @@
-import { AnalyticDBVectorStore } from "@langchain/community/vectorstores/analyticdb";
+import { AnalyticDBVectorStore } from "@instrukt/langchain-community/vectorstores/analyticdb";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 const connectionOptions = {

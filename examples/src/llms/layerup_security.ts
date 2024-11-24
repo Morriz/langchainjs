@@ -1,7 +1,7 @@
 import {
   LayerupSecurity,
   LayerupSecurityOptions,
-} from "@langchain/community/llms/layerup_security";
+} from "@instrukt/langchain-community/llms/layerup_security";
 import { GuardrailResponse } from "@layerup/layerup-security";
 import { OpenAI } from "@langchain/openai";
 

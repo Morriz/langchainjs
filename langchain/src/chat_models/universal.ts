@@ -2,33 +2,36 @@
 import {
   BaseLanguageModelInput,
   ToolDefinition,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import {
   BaseChatModel,
   BaseChatModelParams,
   BindToolsInput,
   type BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { BaseMessage, type AIMessageChunk } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import {
+  BaseMessage,
+  type AIMessageChunk,
+} from "@instrukt/langchain-core/messages";
 import {
   type RunnableBatchOptions,
   RunnableBinding,
   type RunnableConfig,
   type RunnableToolLike,
   ensureConfig,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import {
   AsyncGeneratorWithSetup,
   IterableReadableStream,
-} from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/utils/stream";
 import {
   type LogStreamCallbackHandlerInput,
   type RunLogPatch,
   type StreamEvent,
-} from "@langchain/core/tracers/log_stream";
-import { type StructuredToolInterface } from "@langchain/core/tools";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { ChatResult } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/tracers/log_stream";
+import { type StructuredToolInterface } from "@instrukt/langchain-core/tools";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { ChatResult } from "@instrukt/langchain-core/outputs";
 
 // TODO: remove once `EventStreamCallbackHandlerInput` is exposed in core
 interface EventStreamCallbackHandlerInput
@@ -121,23 +124,23 @@ async function _initChatModelHelper(
       }
       case "fireworks": {
         const { ChatFireworks } = await import(
-          // We can not 'expect-error' because if you explicitly build `@langchain/community`
+          // We can not 'expect-error' because if you explicitly build `@instrukt/langchain-community`
           // this import will be able to be resolved, thus there will be no error. However
           // this will never be the case in CI.
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore - Can not install as a proper dependency due to circular dependency
-          "@langchain/community/chat_models/fireworks"
+          "@instrukt/langchain-community/chat_models/fireworks"
         );
         return new ChatFireworks({ model, ...passedParams });
       }
       case "together": {
         const { ChatTogetherAI } = await import(
-          // We can not 'expect-error' because if you explicitly build `@langchain/community`
+          // We can not 'expect-error' because if you explicitly build `@instrukt/langchain-community`
           // this import will be able to be resolved, thus there will be no error. However
           // this will never be the case in CI.
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore - Can not install as a proper dependency due to circular dependency
-          "@langchain/community/chat_models/togetherai"
+          "@instrukt/langchain-community/chat_models/togetherai"
         );
         return new ChatTogetherAI({ model, ...passedParams });
       }
@@ -589,8 +592,8 @@ export async function initChatModel<
  *   - google-genai (@langchain/google-genai)
  *   - bedrock (@langchain/aws)
  *   - cohere (@langchain/cohere)
- *   - fireworks (@langchain/community/chat_models/fireworks)
- *   - together (@langchain/community/chat_models/togetherai)
+ *   - fireworks (@instrukt/langchain-community/chat_models/fireworks)
+ *   - together (@instrukt/langchain-community/chat_models/togetherai)
  *   - mistralai (@langchain/mistralai)
  *   - groq (@langchain/groq)
  *   - ollama (@langchain/ollama)
@@ -686,7 +689,7 @@ export async function initChatModel<
  * ```typescript
  * import { initChatModel } from "langchain/chat_models/universal";
  * import { z } from "zod";
- * import { tool } from "@langchain/core/tools";
+ * import { tool } from "@instrukt/langchain-core/tools";
  *
  * const getWeatherTool = tool(
  *   (input) => {

@@ -1,9 +1,9 @@
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
+import type { VectorStoreInterface } from "@instrukt/langchain-core/vectorstores";
 import {
   BasicTranslator,
   Comparators,
   Operators,
-} from "@langchain/core/structured_query";
+} from "@instrukt/langchain-core/structured_query";
 
 /**
  * Specialized translator class that extends the BasicTranslator. It is

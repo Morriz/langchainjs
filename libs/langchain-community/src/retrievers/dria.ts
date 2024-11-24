@@ -1,9 +1,9 @@
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import type { DriaParams, SearchOptions as DriaSearchOptions } from "dria";
 import { Dria } from "dria";
 

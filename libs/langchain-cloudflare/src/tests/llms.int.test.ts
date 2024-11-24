@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 
 import { test } from "@jest/globals";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import { CloudflareWorkersAI } from "../llms.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

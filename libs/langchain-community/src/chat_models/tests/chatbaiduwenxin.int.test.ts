@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { SystemMessage, HumanMessage } from "@langchain/core/messages";
+import { SystemMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { ChatBaiduWenxin } from "../baiduwenxin.js";
 
 interface TestConfig {

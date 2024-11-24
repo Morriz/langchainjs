@@ -16,8 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "@langchain/anthropic": "workspace:*",
-    "@langchain/community": "workspace:*",
-    "@langchain/core": "workspace:*",
+    "@instrukt/langchain-community": "workspace:*",
+    "@instrukt/langchain-core": "workspace:*",
     "@langchain/openai": "workspace:*",
     "langchain": "workspace:*",
     "typescript": "5.5.4"

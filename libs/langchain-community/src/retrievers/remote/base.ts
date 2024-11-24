@@ -1,12 +1,12 @@
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
+} from "@instrukt/langchain-core/retrievers";
 import {
   AsyncCaller,
   type AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import type { DocumentInterface } from "@langchain/core/documents";
+} from "@instrukt/langchain-core/utils/async_caller";
+import type { DocumentInterface } from "@instrukt/langchain-core/documents";
 
 /**
  * Type for the authentication method used by the RemoteRetriever. It can

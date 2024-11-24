@@ -5,8 +5,8 @@ import {
   RegexMaskingTransformer,
 } from "langchain/experimental/masking";
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BytesOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { BytesOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 export const runtime = "edge";
 

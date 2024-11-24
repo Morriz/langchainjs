@@ -1,13 +1,17 @@
 import { AgentExecutor } from "langchain/agents";
 import { formatLogToString } from "langchain/agents/format_scratchpad/log";
 import { OpenAI } from "@langchain/openai";
-import { Calculator } from "@langchain/community/tools/calculator";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
-import { InputValues } from "@langchain/core/memory";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import {
+  AgentAction,
+  AgentFinish,
+  AgentStep,
+} from "@instrukt/langchain-core/agents";
+import { BaseMessage, HumanMessage } from "@instrukt/langchain-core/messages";
+import { InputValues } from "@instrukt/langchain-core/memory";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 /**
  * Instantiate the LLM and bind the stop token

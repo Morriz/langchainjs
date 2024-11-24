@@ -1,1 +1,1 @@
-export * from "@langchain/core/callbacks/promises";
+export * from "@instrukt/langchain-core/callbacks/promises";

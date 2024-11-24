@@ -1,9 +1,12 @@
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document, DocumentInterface } from "@langchain/core/documents";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import {
+  Document,
+  DocumentInterface,
+} from "@instrukt/langchain-core/documents";
 import { cosine } from "../util/ml-distance/similarities.js";
 import { maximalMarginalRelevance } from "../util/math.js";
 
@@ -63,7 +66,7 @@ export interface MemoryVectorStoreArgs {
  * <summary><strong>Add documents</strong></summary>
  *
  * ```typescript
- * import type { Document } from '@langchain/core/documents';
+ * import type { Document } from '@instrukt/langchain-core/documents';
  *
  * const document1 = { pageContent: "foo", metadata: { baz: "bar" } };
  * const document2 = { pageContent: "thud", metadata: { bar: "baz" } };

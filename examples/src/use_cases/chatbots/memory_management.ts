@@ -8,11 +8,11 @@ const chat = new ChatOpenAI({
   model: "gpt-3.5-turbo-1106",
 });
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   [
@@ -36,7 +36,7 @@ console.log(
   })
 );
 
-import { ChatMessageHistory } from "@langchain/community/stores/message/in_memory";
+import { ChatMessageHistory } from "@instrukt/langchain-community/stores/message/in_memory";
 
 const demoEphemeralChatMessageHistory = new ChatMessageHistory();
 
@@ -80,7 +80,7 @@ const runnableWithMessageHistoryPrompt = ChatPromptTemplate.fromMessages([
 
 const chain2 = runnableWithMessageHistoryPrompt.pipe(chat);
 
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
 
 const demoEphemeralChatMessageHistoryForChain = new ChatMessageHistory();
 
@@ -145,7 +145,7 @@ console.log(
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 
 const trimMessages = async (_chainInput: Record<string, any>) => {
   const storedMessages = await demoEphemeralChatMessageHistory.getMessages();

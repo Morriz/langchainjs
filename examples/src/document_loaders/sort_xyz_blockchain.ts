@@ -1,4 +1,4 @@
-import { SortXYZBlockchainLoader } from "@langchain/community/document_loaders/web/sort_xyz_blockchain";
+import { SortXYZBlockchainLoader } from "@instrukt/langchain-community/document_loaders/web/sort_xyz_blockchain";
 import { OpenAI } from "@langchain/openai";
 
 /**

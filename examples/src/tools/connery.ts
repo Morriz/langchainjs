@@ -1,4 +1,4 @@
-import { ConneryService } from "@langchain/community/tools/connery";
+import { ConneryService } from "@instrukt/langchain-community/tools/connery";
 import { ChatOpenAI } from "@langchain/openai";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 

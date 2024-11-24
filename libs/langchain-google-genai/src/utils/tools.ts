@@ -6,13 +6,13 @@ import {
   FunctionDeclarationsTool,
   FunctionDeclarationSchema,
 } from "@google/generative-ai";
-import { ToolChoice } from "@langchain/core/language_models/chat_models";
-import { StructuredToolInterface } from "@langchain/core/tools";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+import { ToolChoice } from "@instrukt/langchain-core/language_models/chat_models";
+import { StructuredToolInterface } from "@instrukt/langchain-core/tools";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
 import {
   isOpenAITool,
   ToolDefinition,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import { convertToGenerativeAITools } from "./common.js";
 import { GoogleGenerativeAIToolType } from "../types.js";
 import { removeAdditionalProperties } from "./zod_to_genai_parameters.js";

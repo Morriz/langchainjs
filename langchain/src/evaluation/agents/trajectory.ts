@@ -1,15 +1,19 @@
-import type { StructuredToolInterface } from "@langchain/core/tools";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
 
-import { AgentStep } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { ChatGeneration, Generation, RUN_KEY } from "@langchain/core/outputs";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import {
+  ChatGeneration,
+  Generation,
+  RUN_KEY,
+} from "@instrukt/langchain-core/outputs";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   Callbacks,
   BaseCallbackConfig,
-} from "@langchain/core/callbacks/manager";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/callbacks/manager";
+import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
 import {
   AgentTrajectoryEvaluator,
   EvalOutputType,

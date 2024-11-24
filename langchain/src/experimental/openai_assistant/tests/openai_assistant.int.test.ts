@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
 import { z } from "zod";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import { AgentExecutor } from "../../../agents/executor.js";
 import { OpenAIAssistantRunnable } from "../index.js";
 

@@ -1,4 +1,4 @@
-import { ZepVectorStore } from "@langchain/community/vectorstores/zep";
+import { ZepVectorStore } from "@instrukt/langchain-community/vectorstores/zep";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { randomUUID } from "crypto";

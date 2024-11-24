@@ -14,15 +14,15 @@ import {
   ToolMessage,
   UsageMetadata,
   isAIMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
-import { StructuredToolParams } from "@langchain/core/tools";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/outputs";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
+import { StructuredToolParams } from "@instrukt/langchain-core/tools";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
 import type {
   GoogleLLMResponse,
   GoogleAIModelParams,

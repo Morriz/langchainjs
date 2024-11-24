@@ -1,8 +1,8 @@
-import { LunaryHandler } from "@langchain/community/callbacks/handlers/lunary";
+import { LunaryHandler } from "@instrukt/langchain-community/callbacks/handlers/lunary";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { ChatOpenAI } from "@langchain/openai";
 
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 
 const tools = [new Calculator()];
 const chat = new ChatOpenAI({

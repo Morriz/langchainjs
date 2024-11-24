@@ -1,4 +1,4 @@
-import { GithubRepoLoader } from "@langchain/community/document_loaders/web/github";
+import { GithubRepoLoader } from "@instrukt/langchain-community/document_loaders/web/github";
 
 export const run = async () => {
   const loader = new GithubRepoLoader(

@@ -1,10 +1,10 @@
 import { AgentExecutor, createReactAgent } from "langchain/agents";
 import { pull } from "langchain/hub";
-import type { PromptTemplate } from "@langchain/core/prompts";
+import type { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { OpenAI } from "@langchain/openai";
 
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 export const run = async () => {
   // Define the tools the agent will have access to.

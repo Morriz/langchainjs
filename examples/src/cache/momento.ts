@@ -4,7 +4,7 @@ import {
   Configurations,
   CredentialProvider,
 } from "@gomomento/sdk";
-import { MomentoCache } from "@langchain/community/caches/momento";
+import { MomentoCache } from "@instrukt/langchain-community/caches/momento";
 
 // See https://github.com/momentohq/client-sdk-javascript for connection options
 const client = new CacheClient({

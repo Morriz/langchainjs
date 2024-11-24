@@ -1,13 +1,13 @@
 import { Parser } from "expr-eval";
 
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * The Calculator class is a tool used to evaluate mathematical
  * expressions. It extends the base Tool class.
  * @example
  * ```typescript
- * import { Calculator } from "@langchain/community/tools/calculator";
+ * import { Calculator } from "@instrukt/langchain-community/tools/calculator";
  *
  * const calculator = new Calculator();
  * const sum = await calculator.invoke("99 + 99");

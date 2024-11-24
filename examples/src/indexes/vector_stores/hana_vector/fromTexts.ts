@@ -3,7 +3,7 @@ import hanaClient from "hdb";
 import {
   HanaDB,
   HanaDBArgs,
-} from "@langchain/community/vectorstores/hanavector";
+} from "@instrukt/langchain-community/vectorstores/hanavector";
 
 const connectionParams = {
   host: process.env.HANA_HOST,

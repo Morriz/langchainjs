@@ -1,8 +1,11 @@
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
-import type { StringWithAutocomplete } from "@langchain/core/utils/types";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
+import type { StringWithAutocomplete } from "@instrukt/langchain-core/utils/types";
+import {
+  LLM,
+  type BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
 import { Ollama as OllamaClient } from "ollama/browser";
 import { OllamaCamelCaseOptions } from "./types.js";
 

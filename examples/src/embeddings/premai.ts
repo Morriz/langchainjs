@@ -1,4 +1,4 @@
-import { PremEmbeddings } from "@langchain/community/embeddings/premai";
+import { PremEmbeddings } from "@instrukt/langchain-community/embeddings/premai";
 
 const embeddings = new PremEmbeddings({
   // In Node.js defaults to process.env.PREM_API_KEY

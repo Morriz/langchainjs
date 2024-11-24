@@ -18,7 +18,7 @@ export const config = {
     /@langchain\/community/,
     "axios", // axios is a dependency of openai
     "mysql2/promise",
-    "notion-to-md/build/utils/notion.js"
+    "notion-to-md/build/utils/notion.js",
   ],
   entrypoints: {
     load: "load/index",
@@ -67,7 +67,7 @@ export const config = {
     // text_splitter
     text_splitter: "text_splitter",
     // memory
-    "memory": "memory/index",
+    memory: "memory/index",
     "memory/chat_memory": "memory/chat_memory",
     // document
     document: "document",
@@ -146,11 +146,7 @@ export const config = {
     "schema/query_constructor": "schema/query_constructor",
     "schema/prompt_template": "schema/prompt_template",
   },
-  deprecatedOmitFromImportMap: [
-    "document",
-    "load/serializable",
-    "runnables",
-  ],
+  deprecatedOmitFromImportMap: ["document", "load/serializable", "runnables"],
   requiresOptionalDependency: [
     "agents/load",
     "agents/toolkits/sql",
@@ -238,7 +234,7 @@ export const config = {
     {
       modules: ["PromptTemplate"],
       alias: ["prompts", "prompt"],
-      path: "@langchain/core/prompts",
+      path: "@instrukt/langchain-core/prompts",
     },
     {
       modules: [
@@ -258,7 +254,7 @@ export const config = {
         "ToolMessageChunk",
       ],
       alias: ["schema", "messages"],
-      path: "@langchain/core/messages",
+      path: "@instrukt/langchain-core/messages",
     },
     {
       modules: [
@@ -278,7 +274,7 @@ export const config = {
         "ToolMessageChunk",
       ],
       alias: ["schema"],
-      path: "@langchain/core/messages",
+      path: "@instrukt/langchain-core/messages",
     },
     {
       modules: [
@@ -290,24 +286,22 @@ export const config = {
         "SystemMessagePromptTemplate",
       ],
       alias: ["prompts", "chat"],
-      path: "@langchain/core/prompts",
+      path: "@instrukt/langchain-core/prompts",
     },
     {
-      modules: [
-        "ImagePromptTemplate",
-      ],
+      modules: ["ImagePromptTemplate"],
       alias: ["prompts", "image"],
-      path: "@langchain/core/prompts",
+      path: "@instrukt/langchain-core/prompts",
     },
     {
       modules: ["PipelinePromptTemplate"],
       alias: ["prompts", "pipeline"],
-      path: "@langchain/core/prompts",
+      path: "@instrukt/langchain-core/prompts",
     },
     {
       modules: ["StringPromptValue"],
       alias: ["prompts", "base"],
-      path: "@langchain/core/prompt_values",
+      path: "@instrukt/langchain-core/prompt_values",
     },
     {
       modules: [
@@ -326,18 +320,18 @@ export const config = {
         "RunnableWithMessageHistory",
       ],
       alias: ["schema", "runnable"],
-      path: "@langchain/core/runnables",
+      path: "@instrukt/langchain-core/runnables",
     },
     {
       modules: ["StringOutputParser"],
       alias: ["schema", "output_parser"],
-      path: "@langchain/core/output_parsers",
+      path: "@instrukt/langchain-core/output_parsers",
     },
     {
       modules: ["ChatGenerationChunk", "GenerationChunk"],
       alias: ["schema", "output"],
-      path: "@langchain/core/outputs",
-    }
+      path: "@instrukt/langchain-core/outputs",
+    },
   ],
   shouldTestExports: true,
   tsConfigPath: resolve("./tsconfig.json"),

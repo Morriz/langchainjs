@@ -1,7 +1,10 @@
 import { test, expect } from "@jest/globals";
 
-import { Document, DocumentInterface } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import {
+  Document,
+  DocumentInterface,
+} from "@instrukt/langchain-core/documents";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { MemoryVectorStore } from "../memory.js";
 import { cosine } from "../../util/ml-distance/similarities.js";
 

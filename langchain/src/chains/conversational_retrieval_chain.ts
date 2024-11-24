@@ -1,9 +1,13 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { BaseMessage, HumanMessage, AIMessage } from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@instrukt/langchain-core/retrievers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import {
+  BaseMessage,
+  HumanMessage,
+  AIMessage,
+} from "@instrukt/langchain-core/messages";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { SerializedChatVectorDBQAChain } from "./serde.js";
 import { BaseChain, ChainInputs } from "./base.js";
 import { LLMChain } from "./llm_chain.js";
@@ -45,8 +49,8 @@ export interface ConversationalRetrievalQAChainInput extends ChainInputs {
  * import {
  *   ChatPromptTemplate,
  *   MessagesPlaceholder,
- * } from "@langchain/core/prompts";
- * import { BaseMessage } from "@langchain/core/messages";
+ * } from "@instrukt/langchain-core/prompts";
+ * import { BaseMessage } from "@instrukt/langchain-core/messages";
  * import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
  * import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
  * import { createRetrievalChain } from "langchain/chains/retrieval";

@@ -1,14 +1,14 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import * as ChatCompletionsAPI from "groq-sdk/resources/chat/completions";
 import * as CompletionsAPI from "groq-sdk/resources/completions";
 import {
@@ -24,18 +24,18 @@ import {
   isAIMessage,
   BaseMessageChunk,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   type OpenAICoreRequestOptions,
   type OpenAIClient,
 } from "@langchain/openai";
-import { isZodSchema } from "@langchain/core/utils/types";
+import { isZodSchema } from "@instrukt/langchain-core/utils/types";
 import Groq from "groq-sdk";
 import {
   ChatCompletion,
@@ -48,25 +48,25 @@ import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import {
   BaseLanguageModelInput,
   FunctionDefinition,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import {
   BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import {
   JsonOutputKeyToolsParser,
   parseToolCall,
   makeInvalidToolCall,
   convertLangChainToolCallToOpenAI,
-} from "@langchain/core/output_parsers/openai_tools";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/output_parsers/openai_tools";
+import { convertToOpenAITool } from "@instrukt/langchain-core/utils/function_calling";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
 
 type ChatGroqToolType = BindToolsInput | OpenAIClient.ChatCompletionTool;
 
@@ -517,8 +517,8 @@ function _convertDeltaToMessageChunk(
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

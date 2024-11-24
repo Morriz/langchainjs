@@ -1,6 +1,6 @@
 // If you want to import the browser version, use the following line instead:
-// import { CloseVectorWeb } from "@langchain/community/vectorstores/closevector/web";
-import { CloseVectorNode } from "@langchain/community/vectorstores/closevector/node";
+// import { CloseVectorWeb } from "@instrukt/langchain-community/vectorstores/closevector/web";
+import { CloseVectorNode } from "@instrukt/langchain-community/vectorstores/closevector/node";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 

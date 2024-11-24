@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
-import { ZepMemory } from "@langchain/community/memory/zep";
+import { ZepMemory } from "@instrukt/langchain-community/memory/zep";
 import { randomUUID } from "crypto";
 
 const sessionId = randomUUID(); // This should be unique for each user or each user's session.

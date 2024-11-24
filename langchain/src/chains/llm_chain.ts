@@ -2,23 +2,26 @@ import {
   BaseLanguageModel,
   BaseLanguageModelInterface,
   BaseLanguageModelInput,
-} from "@langchain/core/language_models/base";
-import type { ChainValues } from "@langchain/core/utils/types";
-import type { Generation } from "@langchain/core/outputs";
-import type { BaseMessage } from "@langchain/core/messages";
-import type { BasePromptValueInterface } from "@langchain/core/prompt_values";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/language_models/base";
+import type { ChainValues } from "@instrukt/langchain-core/utils/types";
+import type { Generation } from "@instrukt/langchain-core/outputs";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
+import type { BasePromptValueInterface } from "@instrukt/langchain-core/prompt_values";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   BaseLLMOutputParser,
   BaseOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import {
   CallbackManager,
   BaseCallbackConfig,
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { Runnable, type RunnableInterface } from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/callbacks/manager";
+import {
+  Runnable,
+  type RunnableInterface,
+} from "@instrukt/langchain-core/runnables";
 import { BaseChain, ChainInputs } from "./base.js";
 import { SerializedLLMChain } from "./serde.js";
 import { NoOpOutputParser } from "../output_parsers/noop.js";
@@ -79,7 +82,7 @@ function _getLanguageModel(llmLike: RunnableInterface): BaseLanguageModel {
  *
  * @example
  * ```ts
- * import { ChatPromptTemplate } from "@langchain/core/prompts";
+ * import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
  * import { ChatOpenAI } from "@langchain/openai";
  *
  * const prompt = ChatPromptTemplate.fromTemplate("Tell me a {adjective} joke");

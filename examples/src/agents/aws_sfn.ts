@@ -2,7 +2,7 @@ import { OpenAI } from "@langchain/openai";
 import {
   AWSSfnToolkit,
   createAWSSfnAgent,
-} from "@langchain/community/agents/toolkits/aws_sfn";
+} from "@instrukt/langchain-community/agents/toolkits/aws_sfn";
 
 const _EXAMPLE_STATE_MACHINE_ASL = `
 {

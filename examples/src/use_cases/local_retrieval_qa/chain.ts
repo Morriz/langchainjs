@@ -1,15 +1,15 @@
-import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
+import { CheerioWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/cheerio";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { Ollama } from "@langchain/community/llms/ollama";
-import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/hf_transformers";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
+import { Ollama } from "@instrukt/langchain-community/llms/ollama";
+import { HuggingFaceTransformersEmbeddings } from "@instrukt/langchain-community/embeddings/hf_transformers";
 import { formatDocumentsAsString } from "langchain/util/document";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   RunnableSequence,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const loader = new CheerioWebBaseLoader(
   "https://lilianweng.github.io/posts/2023-06-23-agent/"

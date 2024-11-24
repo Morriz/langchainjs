@@ -1,6 +1,6 @@
-import { BedrockChat } from "@langchain/community/chat_models/bedrock";
+import { BedrockChat } from "@instrukt/langchain-community/chat_models/bedrock";
 // Or, from web environments:
-// import { BedrockChat } from "@langchain/community/chat_models/bedrock/web";
+// import { BedrockChat } from "@instrukt/langchain-community/chat_models/bedrock/web";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 

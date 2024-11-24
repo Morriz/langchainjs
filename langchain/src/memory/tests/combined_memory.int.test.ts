@@ -3,7 +3,7 @@ import {
   AIMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { OpenAI } from "@langchain/openai";
 import { BufferMemory } from "../buffer_memory.js";
 import { CombinedMemory } from "../combined_memory.js";

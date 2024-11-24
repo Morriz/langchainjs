@@ -1,9 +1,9 @@
 import { zodToJsonSchema, JsonSchema7ObjectType } from "zod-to-json-schema";
-import { StructuredToolInterface } from "@langchain/core/tools";
+import { StructuredToolInterface } from "@instrukt/langchain-core/tools";
 import {
   ToolDefinition,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 
 /**
  * Render the tool name and description in plain text.

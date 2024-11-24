@@ -1,7 +1,7 @@
 import { Index } from "@upstash/vector";
-import { Document } from "@langchain/core/documents";
-import { UpstashVectorStore } from "@langchain/community/vectorstores/upstash";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { UpstashVectorStore } from "@instrukt/langchain-community/vectorstores/upstash";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 
 const index = new Index({
   url: process.env.UPSTASH_VECTOR_REST_URL as string,

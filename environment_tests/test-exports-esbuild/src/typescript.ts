@@ -1,10 +1,10 @@
 import assert from "assert";
 import { OpenAI } from "@langchain/openai";
 import { LLMChain } from "langchain/chains";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 async function test(useAzure: boolean = false) {
   // Test exports

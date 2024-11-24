@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
+import { AgentAction, AgentFinish } from "@instrukt/langchain-core/agents";
 import { ChatConversationalAgentOutputParser } from "../chat_convo/outputParser.js";
 
 test("Can parse JSON with text in front of it", async () => {

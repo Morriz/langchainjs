@@ -9,10 +9,10 @@ import {
   MessageContentComplex,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { InMemoryStore } from "@langchain/core/stores";
-import { CallbackHandlerMethods } from "@langchain/core/callbacks/base";
-import { Serialized } from "@langchain/core/load/serializable";
+} from "@instrukt/langchain-core/messages";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
+import { CallbackHandlerMethods } from "@instrukt/langchain-core/callbacks/base";
+import { Serialized } from "@instrukt/langchain-core/load/serializable";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { ChatGoogleBase, ChatGoogleBaseInput } from "../chat_models.js";

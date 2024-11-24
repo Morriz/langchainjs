@@ -1,12 +1,16 @@
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
+import {
+  AgentAction,
+  AgentFinish,
+  AgentStep,
+} from "@instrukt/langchain-core/agents";
 import {
   AIMessage,
   BaseMessage,
   isBaseMessage,
-} from "@langchain/core/messages";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/messages";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
+import { ChatGeneration } from "@instrukt/langchain-core/outputs";
+import { ToolCall } from "@instrukt/langchain-core/messages/tool";
 import { AgentMultiActionOutputParser } from "../types.js";
 
 /**

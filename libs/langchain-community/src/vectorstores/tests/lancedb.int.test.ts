@@ -5,7 +5,7 @@ import * as os from "node:os";
 import { connect, Table } from "@lancedb/lancedb";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 import { LanceDB } from "../lancedb.js";
 

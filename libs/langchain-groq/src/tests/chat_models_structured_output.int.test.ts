@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { AIMessage } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { AIMessage } from "@instrukt/langchain-core/messages";
 import { ChatGroq } from "../chat_models.js";
 
 test("withStructuredOutput zod schema function calling", async () => {

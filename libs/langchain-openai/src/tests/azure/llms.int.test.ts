@@ -1,15 +1,15 @@
 /* eslint-disable no-process-env */
 
 import { test, expect } from "@jest/globals";
-import { LLMResult } from "@langchain/core/outputs";
-import { StringPromptValue } from "@langchain/core/prompt_values";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
+import { StringPromptValue } from "@instrukt/langchain-core/prompt_values";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import {
   ClientSecretCredential,
   getBearerTokenProvider,
 } from "@azure/identity";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import { AzureOpenAI } from "../../azure/llms.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

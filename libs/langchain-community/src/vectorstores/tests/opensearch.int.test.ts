@@ -2,7 +2,7 @@
 import { test, expect } from "@jest/globals";
 import { Client } from "@opensearch-project/opensearch";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenSearchVectorStore } from "../opensearch.js";
 
 test.skip("OpenSearchVectorStore integration", async () => {

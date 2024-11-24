@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { createMetadataTaggerFromZod } from "langchain/document_transformers/openai_functions";
 import { ChatOpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 const zodSchema = z.object({
   movie_title: z.string(),

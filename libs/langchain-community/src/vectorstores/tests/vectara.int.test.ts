@@ -2,9 +2,9 @@
 /* eslint-disable no-process-env */
 import fs from "fs";
 import { expect, beforeAll } from "@jest/globals";
-import { insecureHash } from "@langchain/core/utils/hash";
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { insecureHash } from "@instrukt/langchain-core/utils/hash";
+import { Document } from "@instrukt/langchain-core/documents";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import {
   VectaraFile,
   VectaraLibArgs,

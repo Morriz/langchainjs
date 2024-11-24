@@ -1,12 +1,18 @@
 /* eslint-disable no-process-env */
-import { tool } from "@langchain/core/tools";
+import { tool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
 import { it } from "@jest/globals";
-import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { RunLogPatch, StreamEvent } from "@langchain/core/tracers/log_stream";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
-import { awaitAllCallbacks } from "@langchain/core/callbacks/promises";
+import {
+  ChatPromptTemplate,
+  PromptTemplate,
+} from "@instrukt/langchain-core/prompts";
+import {
+  RunLogPatch,
+  StreamEvent,
+} from "@instrukt/langchain-core/tracers/log_stream";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
+import { concat } from "@instrukt/langchain-core/utils/stream";
+import { awaitAllCallbacks } from "@instrukt/langchain-core/callbacks/promises";
 import { AgentExecutor, createReactAgent } from "../../agents/index.js";
 import { pull } from "../../hub.js";
 import { initChatModel } from "../universal.js";
@@ -400,7 +406,7 @@ describe("Works with all model providers", () => {
     expect(bedrockResult.content.length).toBeGreaterThan(0);
   });
 
-  // If these two fail with an import error you should explicitly build `@langchain/community`
+  // If these two fail with an import error you should explicitly build `@instrukt/langchain-community`
   it("Can invoke fireworks", async () => {
     const fireworks = await initChatModel(undefined, {
       modelProvider: "fireworks",

@@ -1,4 +1,4 @@
-import { SitemapLoader } from "@langchain/community/document_loaders/web/sitemap";
+import { SitemapLoader } from "@instrukt/langchain-community/document_loaders/web/sitemap";
 
 const loader = new SitemapLoader("https://www.langchain.com/");
 

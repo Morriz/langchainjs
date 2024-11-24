@@ -1,7 +1,7 @@
 import { expect, test } from "@jest/globals";
 import { Voy as VoyOriginClient } from "voy-search";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { VoyVectorStore } from "../voy.js";
 
 const client = new VoyOriginClient();

@@ -1,28 +1,34 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { UsageMetadata, type BaseMessage } from "@langchain/core/messages";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import {
+  UsageMetadata,
+  type BaseMessage,
+} from "@instrukt/langchain-core/messages";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 
 import {
   BaseChatModel,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { AIMessageChunk } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import {
+  ChatGenerationChunk,
+  ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import type { z } from "zod";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { JsonOutputKeyToolsParser } from "@langchain/core/output_parsers/openai_tools";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { concat } from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/runnables";
+import { JsonOutputKeyToolsParser } from "@instrukt/langchain-core/output_parsers/openai_tools";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import {
   GoogleAIBaseLLMInput,
   GoogleAIModelParams,

@@ -1,10 +1,10 @@
-import type { AgentStep } from "@langchain/core/agents";
+import type { AgentStep } from "@instrukt/langchain-core/agents";
 import {
   type BaseMessage,
   AIMessage,
   HumanMessage,
-} from "@langchain/core/messages";
-import { renderTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/messages";
+import { renderTemplate } from "@instrukt/langchain-core/prompts";
 
 export function formatLogToMessage(
   intermediateSteps: AgentStep[],

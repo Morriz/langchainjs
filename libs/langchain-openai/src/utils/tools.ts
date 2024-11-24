@@ -1,11 +1,11 @@
 import { OpenAI as OpenAIClient } from "openai";
 
-import { ToolDefinition } from "@langchain/core/language_models/base";
-import { BindToolsInput } from "@langchain/core/language_models/chat_models";
+import { ToolDefinition } from "@instrukt/langchain-core/language_models/base";
+import { BindToolsInput } from "@instrukt/langchain-core/language_models/chat_models";
 import {
   convertToOpenAIFunction,
   isLangChainTool,
-} from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/utils/function_calling";
 import { zodFunction } from "openai/helpers/zod";
 
 /**

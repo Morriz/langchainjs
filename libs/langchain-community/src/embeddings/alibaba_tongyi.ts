@@ -1,6 +1,9 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import {
+  Embeddings,
+  type EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
 
 export interface AlibabaTongyiEmbeddingsParams extends EmbeddingsParams {
   /** Model name to use */

@@ -9,7 +9,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { OpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { TextLoader } from "langchain/document_loaders/fs/text";

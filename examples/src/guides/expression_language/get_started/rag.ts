@@ -1,13 +1,13 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { Document } from "@langchain/core/documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
+import { Document } from "@instrukt/langchain-core/documents";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   RunnableLambda,
   RunnableMap,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const vectorStore = await HNSWLib.fromDocuments(
   [

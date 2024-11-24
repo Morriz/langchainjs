@@ -1,6 +1,6 @@
-import { VectaraStore } from "@langchain/community/vectorstores/vectara";
-import { VectaraSummaryRetriever } from "@langchain/community/retrievers/vectara_summary";
-import { Document } from "@langchain/core/documents";
+import { VectaraStore } from "@instrukt/langchain-community/vectorstores/vectara";
+import { VectaraSummaryRetriever } from "@instrukt/langchain-community/retrievers/vectara_summary";
+import { Document } from "@instrukt/langchain-core/documents";
 
 // Create the Vectara store.
 const store = new VectaraStore({

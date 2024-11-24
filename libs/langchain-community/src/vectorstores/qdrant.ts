@@ -1,10 +1,10 @@
 import { QdrantClient } from "@qdrant/js-client-rest";
 import type { Schemas as QdrantSchemas } from "@qdrant/js-client-rest";
 import { v4 as uuid } from "uuid";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
+import { Document } from "@instrukt/langchain-core/documents";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 const CONTENT_KEY = "content";
 const METADATA_KEY = "metadata";

@@ -410,11 +410,11 @@
   "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@instrukt/langchain-core": "workspace:*",
     "@jest/globals": "^29.5.0",
     "@langchain/anthropic": "*",
     "@langchain/aws": "*",
     "@langchain/cohere": "*",
-    "@langchain/core": "workspace:*",
     "@langchain/google-genai": "*",
     "@langchain/google-vertexai": "*",
     "@langchain/groq": "*",
@@ -458,10 +458,10 @@
     "wikipedia": "^2.1.2"
   },
   "peerDependencies": {
+    "@instrukt/langchain-core": ">=0.2.21 <0.4.0",
     "@langchain/anthropic": "*",
     "@langchain/aws": "*",
     "@langchain/cohere": "*",
-    "@langchain/core": ">=0.2.21 <0.4.0",
     "@langchain/google-genai": "*",
     "@langchain/google-vertexai": "*",
     "@langchain/groq": "*",

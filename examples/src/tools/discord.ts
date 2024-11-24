@@ -4,7 +4,7 @@ import {
   DiscordSendMessagesTool,
   DiscordGetGuildsTool,
   DiscordGetTextChannelsTool,
-} from "@langchain/community/tools/discord";
+} from "@instrukt/langchain-community/tools/discord";
 
 // Get messages from a channel given channel ID
 const getMessageTool = new DiscordGetMessagesTool();

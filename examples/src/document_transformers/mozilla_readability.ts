@@ -1,5 +1,5 @@
-import { HTMLWebBaseLoader } from "@langchain/community/document_loaders/web/html";
-import { MozillaReadabilityTransformer } from "@langchain/community/document_transformers/mozilla_readability";
+import { HTMLWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/html";
+import { MozillaReadabilityTransformer } from "@instrukt/langchain-community/document_transformers/mozilla_readability";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 
 const loader = new HTMLWebBaseLoader(

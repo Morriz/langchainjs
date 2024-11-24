@@ -1,5 +1,5 @@
 import pg from "pg";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import { PostgresChatMessageHistory } from "../message/postgres.js";
 
 describe.skip("Postgres Chat History", () => {

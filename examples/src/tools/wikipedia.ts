@@ -1,4 +1,4 @@
-import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run";
+import { WikipediaQueryRun } from "@instrukt/langchain-community/tools/wikipedia_query_run";
 
 const tool = new WikipediaQueryRun({
   topKResults: 3,

@@ -7,7 +7,7 @@ import {
   SystemMessage,
   ToolMessage,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import type {
   Message as OllamaMessage,
   ToolCall as OllamaToolCall,

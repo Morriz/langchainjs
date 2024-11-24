@@ -2,33 +2,36 @@ import type {
   BaseLanguageModelInterface,
   BaseLanguageModelInput,
   BaseFunctionCallOptions,
-} from "@langchain/core/language_models/base";
-import type { StructuredToolInterface } from "@langchain/core/tools";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { Runnable, RunnablePassthrough } from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/language_models/base";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
+import type { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
+import {
+  Runnable,
+  RunnablePassthrough,
+} from "@instrukt/langchain-core/runnables";
 import { ChatOpenAI, ChatOpenAICallOptions } from "@langchain/openai";
 import type {
   AgentAction,
   AgentFinish,
   AgentStep,
-} from "@langchain/core/agents";
-import { convertToOpenAIFunction } from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/agents";
+import { convertToOpenAIFunction } from "@instrukt/langchain-core/utils/function_calling";
 import {
   AIMessage,
   BaseMessage,
   FunctionMessage,
   SystemMessage,
   BaseMessageChunk,
-} from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/messages";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
   BasePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/prompts";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
 import { Agent, AgentArgs, AgentRunnableSequence } from "../agent.js";
 import { AgentInput } from "../types.js";
 import { PREFIX } from "./prompt.js";
@@ -286,8 +289,8 @@ export type CreateOpenAIFunctionsAgentParams = {
  * ```typescript
  * import { AgentExecutor, createOpenAIFunctionsAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { ChatPromptTemplate } from "@langchain/core/prompts";
- * import { AIMessage, HumanMessage } from "@langchain/core/messages";
+ * import type { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+ * import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
  *
  * import { ChatOpenAI } from "@langchain/openai";
  *

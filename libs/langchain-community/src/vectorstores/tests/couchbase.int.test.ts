@@ -3,7 +3,7 @@
 import { describe, test } from "@jest/globals";
 import { Cluster } from "couchbase";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   CouchbaseVectorStore,
   CouchbaseVectorStoreArgs,

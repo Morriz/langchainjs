@@ -1,14 +1,14 @@
-import { LanguageModelLike } from "@langchain/core/language_models/base";
+import { LanguageModelLike } from "@instrukt/langchain-core/language_models/base";
 import {
   BaseOutputParser,
   StringOutputParser,
-} from "@langchain/core/output_parsers";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/output_parsers";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   RunnablePassthrough,
   RunnablePick,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 
 import {
   DEFAULT_DOCUMENT_PROMPT,

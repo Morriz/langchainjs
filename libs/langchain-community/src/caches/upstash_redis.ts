@@ -1,13 +1,13 @@
 import { Redis, type RedisConfigNodejs } from "@upstash/redis";
 
-import { Generation } from "@langchain/core/outputs";
+import { Generation } from "@instrukt/langchain-core/outputs";
 import {
   BaseCache,
   deserializeStoredGeneration,
   getCacheKey,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { StoredGeneration } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/caches";
+import { StoredGeneration } from "@instrukt/langchain-core/messages";
 
 export type UpstashRedisCacheProps = {
   /**

@@ -54,7 +54,7 @@ import {
   CacheIncreaseTtl,
   CacheDecreaseTtl,
 } from "@gomomento/sdk-core";
-import { Generation } from "@langchain/core/outputs";
+import { Generation } from "@instrukt/langchain-core/outputs";
 
 import { MomentoCache } from "../momento.js";
 

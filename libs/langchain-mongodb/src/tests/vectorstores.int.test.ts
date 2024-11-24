@@ -5,7 +5,7 @@ import { test, expect } from "@jest/globals";
 import { MongoClient } from "mongodb";
 import { setTimeout } from "timers/promises";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 import { MongoDBAtlasVectorSearch } from "../vectorstores.js";
 

@@ -1,20 +1,20 @@
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { z } from "zod";
-import type { BaseMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
 import { ChatOpenAI } from "@langchain/openai";
-import { convertToOpenAIFunction } from "@langchain/core/utils/function_calling";
+import { convertToOpenAIFunction } from "@instrukt/langchain-core/utils/function_calling";
 import { AgentExecutor } from "langchain/agents";
 import type { FunctionsAgentAction } from "langchain/agents/openai/output_parser";
 
-import { TavilySearchAPIRetriever } from "@langchain/community/retrievers/tavily_search_api";
-import { AIMessage, FunctionMessage } from "@langchain/core/messages";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { TavilySearchAPIRetriever } from "@instrukt/langchain-community/retrievers/tavily_search_api";
+import { AIMessage, FunctionMessage } from "@instrukt/langchain-core/messages";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { DynamicTool } from "@langchain/core/tools";
-import { AgentFinish, AgentStep } from "@langchain/core/agents";
+} from "@instrukt/langchain-core/prompts";
+import { DynamicTool } from "@instrukt/langchain-core/tools";
+import { AgentFinish, AgentStep } from "@instrukt/langchain-core/agents";
 
 const llm = new ChatOpenAI({
   model: "gpt-4-1106-preview",

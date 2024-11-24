@@ -1,5 +1,8 @@
 import { AI, environment } from "@raycast/api";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
+import {
+  LLM,
+  type BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
 
 /**
  * The input parameters for the RaycastAI class, which extends the BaseLLMParams interface.

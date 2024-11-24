@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import type { BasePromptValue } from "@langchain/core/prompt_values";
+import type { BasePromptValue } from "@instrukt/langchain-core/prompt_values";
 import type { OpenAI } from "openai";
 
 import { _convertMessagesToOpenAIParams } from "../chat_models.js";

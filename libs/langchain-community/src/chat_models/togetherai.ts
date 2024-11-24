@@ -1,7 +1,7 @@
 import type {
   BaseChatModelParams,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   type OpenAIClient,
   type ChatOpenAICallOptions,
@@ -9,7 +9,7 @@ import {
   type OpenAICoreRequestOptions,
   ChatOpenAI,
 } from "@langchain/openai";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 type TogetherAIUnsupportedArgs =
   | "frequencyPenalty"
@@ -51,10 +51,10 @@ export interface ChatTogetherAIInput
  * @link {https://docs.together.ai/reference/chat-completions}
  *
  * Setup:
- * Install `@langchain/community` and set an environment variable named `TOGETHER_AI_API_KEY`.
+ * Install `@instrukt/langchain-community` and set an environment variable named `TOGETHER_AI_API_KEY`.
  *
  * ```bash
- * npm install @langchain/community
+ * npm install @instrukt/langchain-community
  * export TOGETHER_AI_API_KEY="your-api-key"
  * ```
  *
@@ -87,7 +87,7 @@ export interface ChatTogetherAIInput
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { ChatTogetherAI } from '@langchain/community/chat_models/togetherai';
+ * import { ChatTogetherAI } from '@instrukt/langchain-community/chat_models/togetherai';
  *
  * const llm = new ChatTogetherAI({
  *   model: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
@@ -272,8 +272,8 @@ export interface ChatTogetherAIInput
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

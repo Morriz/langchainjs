@@ -1,6 +1,6 @@
-import type { AIMessageChunk } from "@langchain/core/messages";
+import type { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import { ChatOpenAI } from "@langchain/openai";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 
 // Instantiate the model
 const model = new ChatOpenAI();

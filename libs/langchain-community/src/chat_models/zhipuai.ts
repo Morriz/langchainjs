@@ -1,16 +1,19 @@
 import {
   BaseChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   type BaseMessage,
   ChatMessage,
   AIMessageChunk,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk, type ChatResult } from "@langchain/core/outputs";
-import { type CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/messages";
+import {
+  ChatGenerationChunk,
+  type ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { type CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 import { encodeApiKey } from "../utils/zhipuai.js";
 import { convertEventStreamToIterableReadableDataStream } from "../utils/event_source_parse.js";

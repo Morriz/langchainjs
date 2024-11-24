@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 import { z } from "zod";
 

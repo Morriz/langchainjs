@@ -1,7 +1,11 @@
 import { jest, test } from "@jest/globals";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
+import {
+  AIMessage,
+  HumanMessage,
+  ToolMessage,
+} from "@instrukt/langchain-core/messages";
 import { z } from "zod";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
 import { ChatAnthropic } from "../chat_models.js";
 import { _convertMessagesToAnthropicPayload } from "../utils/message_inputs.js";
 

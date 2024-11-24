@@ -1,4 +1,4 @@
-import type { ChatPromptTemplate } from "@langchain/core/prompts";
+import type { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { pull } from "langchain/hub";
 import { AgentExecutor, createToolCallingAgent } from "langchain/agents";
 import { SessionsPythonREPLTool } from "@langchain/azure-dynamic-sessions";

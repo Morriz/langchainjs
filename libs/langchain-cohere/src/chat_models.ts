@@ -9,34 +9,34 @@ import {
   isAIMessage,
   MessageContent,
   MessageType,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   BaseLanguageModelInput,
   isOpenAITool,
-} from "@langchain/core/language_models/base";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/base";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   type BaseChatModelParams,
   BindToolsInput,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@instrukt/langchain-core/outputs";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import {
   ToolCall,
   ToolCallChunk,
   ToolMessage,
-} from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/messages/tool";
 import * as uuid from "uuid";
-import { Runnable } from "@langchain/core/runnables";
+import { Runnable } from "@instrukt/langchain-core/runnables";
 import { CohereClientOptions, getCohereClient } from "./client.js";
 
 type ChatCohereToolType = BindToolsInput | Cohere.Tool;
@@ -513,8 +513,8 @@ function _formatToolsToCohere(
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

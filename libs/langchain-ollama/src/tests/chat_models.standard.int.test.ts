@@ -1,8 +1,8 @@
 /* eslint-disable no-process-env */
 import { test, expect } from "@jest/globals";
 import { ChatModelIntegrationTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
-import { RunnableLambda } from "@langchain/core/runnables";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
+import { RunnableLambda } from "@instrukt/langchain-core/runnables";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { ChatOllama, ChatOllamaCallOptions } from "../chat_models.js";

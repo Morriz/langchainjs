@@ -2,11 +2,11 @@ import { test, expect } from "@jest/globals";
 import * as fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   BytesOutputParser,
   StringOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import { Ollama } from "../llms.js";
 
 test("test call", async () => {

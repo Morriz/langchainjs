@@ -1,16 +1,16 @@
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 
 import { pull } from "langchain/hub";
-import type { ChatPromptTemplate } from "@langchain/core/prompts";
+import type { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { createRetrieverTool } from "langchain/tools/retriever";
 import { AgentExecutor, createOpenAIFunctionsAgent } from "langchain/agents";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
+import { CheerioWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/cheerio";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { ChatMessageHistory } from "@langchain/community/stores/message/in_memory";
+import { ChatMessageHistory } from "@instrukt/langchain-community/stores/message/in_memory";
 
 const searchTool = new TavilySearchResults();
 

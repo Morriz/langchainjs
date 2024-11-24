@@ -1,4 +1,4 @@
-import { MyScaleStore } from "@langchain/community/vectorstores/myscale";
+import { MyScaleStore } from "@instrukt/langchain-community/vectorstores/myscale";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 const vectorStore = await MyScaleStore.fromExistingIndex(

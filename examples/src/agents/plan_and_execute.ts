@@ -1,7 +1,7 @@
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 import { ChatOpenAI } from "@langchain/openai";
 import { PlanAndExecuteAgentExecutor } from "langchain/experimental/plan_and_execute";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 const tools = [new Calculator(), new SerpAPI()];
 const model = new ChatOpenAI({

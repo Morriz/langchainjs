@@ -1,4 +1,4 @@
-import type { BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLLMParams } from "@instrukt/langchain-core/language_models/llms";
 
 export interface GoogleConnectionParams<AuthOptions> {
   authOptions?: AuthOptions;

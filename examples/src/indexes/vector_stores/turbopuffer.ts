@@ -1,5 +1,5 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { TurbopufferVectorStore } from "@langchain/community/vectorstores/turbopuffer";
+import { TurbopufferVectorStore } from "@instrukt/langchain-community/vectorstores/turbopuffer";
 
 const embeddings = new OpenAIEmbeddings();
 

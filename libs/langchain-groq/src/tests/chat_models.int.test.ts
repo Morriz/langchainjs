@@ -4,10 +4,10 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+} from "@instrukt/langchain-core/messages";
+import { tool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import { ChatGroq } from "../chat_models.js";
 
 test("invoke", async () => {

@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
 import { OpenAIChat } from "@langchain/openai";
 import { MultiPromptChain } from "../multi_prompt.js";
 

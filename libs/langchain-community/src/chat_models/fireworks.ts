@@ -1,7 +1,7 @@
 import type {
   BaseChatModelParams,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   type OpenAIClient,
   type ChatOpenAICallOptions,
@@ -10,7 +10,7 @@ import {
   ChatOpenAI,
 } from "@langchain/openai";
 
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 type FireworksUnsupportedArgs =
   | "frequencyPenalty"
@@ -33,10 +33,10 @@ export type ChatFireworksCallOptions = Partial<
  * To use, you should have the `FIREWORKS_API_KEY` environment variable set.
  *
  * Setup:
- * Install `@langchain/community` and set a environment variable called `FIREWORKS_API_KEY`.
+ * Install `@instrukt/langchain-community` and set a environment variable called `FIREWORKS_API_KEY`.
  *
  * ```bash
- * npm install @langchain/community
+ * npm install @instrukt/langchain-community
  * export FIREWORKS_API_KEY="your-api-key"
  * ```
  *
@@ -71,7 +71,7 @@ export type ChatFireworksCallOptions = Partial<
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { ChatFireworks } from '@langchain/community/chat_models/fireworks';
+ * import { ChatFireworks } from '@instrukt/langchain-community/chat_models/fireworks';
  *
  * const llm = new ChatFireworks({
  *   model: "command-r-plus",
@@ -283,8 +283,8 @@ export type ChatFireworksCallOptions = Partial<
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

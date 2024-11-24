@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+import { BaseLanguageModelInput } from "@instrukt/langchain-core/language_models/base";
+import { ChatPromptValue } from "@instrukt/langchain-core/prompt_values";
 import {
   AIMessage,
   AIMessageChunk,
@@ -12,7 +12,7 @@ import {
   MessageContentComplex,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   BackedBlobStore,
   MediaBlob,
@@ -21,7 +21,7 @@ import {
   SimpleWebBlobStore,
 } from "@langchain/google-common/experimental/utils/media_core";
 import { GoogleCloudStorageUri } from "@langchain/google-common/experimental/media";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
 import { GeminiTool } from "../types.js";
 import { ChatGoogle } from "../chat_models.js";
 import { BlobStoreGoogleCloudStorage } from "../media.js";

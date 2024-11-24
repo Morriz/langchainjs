@@ -1,10 +1,10 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseMessage, MessageType } from "@langchain/core/messages";
-import { ChatGeneration, ChatResult } from "@langchain/core/outputs";
+import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { BaseMessage, MessageType } from "@instrukt/langchain-core/messages";
+import { ChatGeneration, ChatResult } from "@instrukt/langchain-core/outputs";
 import { ArcjetRedact } from "../arcjet.js";
 
 class MockChatModel extends BaseChatModel {

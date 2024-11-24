@@ -12,9 +12,9 @@ import {
   LLM,
   type BaseLLMCallOptions,
   type BaseLLMParams,
-} from "@langchain/core/language_models/llms";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { GenerationChunk } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/language_models/llms";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
 
 import {
   LlamaBaseCppInputs,

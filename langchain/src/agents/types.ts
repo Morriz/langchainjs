@@ -1,8 +1,8 @@
-import type { Runnable } from "@langchain/core/runnables";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
-import type { AgentAction, AgentFinish } from "@langchain/core/agents";
-import type { BaseMessage } from "@langchain/core/messages";
-import type { ChainValues } from "@langchain/core/utils/types";
+import type { Runnable } from "@instrukt/langchain-core/runnables";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
+import type { AgentAction, AgentFinish } from "@instrukt/langchain-core/agents";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
+import type { ChainValues } from "@instrukt/langchain-core/utils/types";
 import { SerializedLLMChain } from "../chains/serde.js";
 import { LLMChain } from "../chains/llm_chain.js";
 

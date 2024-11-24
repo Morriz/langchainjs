@@ -1,4 +1,4 @@
-import { Chroma } from "@langchain/community/vectorstores/chroma";
+import { Chroma } from "@instrukt/langchain-community/vectorstores/chroma";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 // text sample from Godel, Escher, Bach

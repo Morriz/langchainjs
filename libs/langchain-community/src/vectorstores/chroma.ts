@@ -7,9 +7,9 @@ import type {
   Where,
 } from "chromadb";
 
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
+import { Document } from "@instrukt/langchain-core/documents";
 
 type SharedChromaLibArgs = {
   numDimensions?: number;
@@ -50,10 +50,10 @@ export interface ChromaDeleteParams<T> {
  * Chroma vector store integration.
  *
  * Setup:
- * Install `@langchain/community` and `chromadb`.
+ * Install `@instrukt/langchain-community` and `chromadb`.
  *
  * ```bash
- * npm install @langchain/community chromadb
+ * npm install @instrukt/langchain-community chromadb
  * ```
  *
  * ## [Constructor args](https://api.js.langchain.com/classes/langchain_community_vectorstores_chroma.Chroma.html#constructor)
@@ -62,7 +62,7 @@ export interface ChromaDeleteParams<T> {
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { Chroma } from '@langchain/community/vectorstores/chroma';
+ * import { Chroma } from '@instrukt/langchain-community/vectorstores/chroma';
  * // Or other embeddings
  * import { OpenAIEmbeddings } from '@langchain/openai';
  *
@@ -86,7 +86,7 @@ export interface ChromaDeleteParams<T> {
  * <summary><strong>Add documents</strong></summary>
  *
  * ```typescript
- * import type { Document } from '@langchain/core/documents';
+ * import type { Document } from '@instrukt/langchain-core/documents';
  *
  * const document1 = { pageContent: "foo", metadata: { baz: "bar" } };
  * const document2 = { pageContent: "thud", metadata: { bar: "baz" } };

@@ -4,8 +4,8 @@ import {
   BaseMessage,
   HumanMessageChunk,
   MessageContentComplex,
-} from "@langchain/core/messages";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@instrukt/langchain-core/messages";
+import { ChatPromptValue } from "@instrukt/langchain-core/prompt_values";
 import { VertexAI } from "../llms.js";
 
 const imgData = {

@@ -6,7 +6,7 @@ import {
 import { BufferMemory } from "langchain/memory";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
-import { MomentoChatMessageHistory } from "@langchain/community/stores/message/momento";
+import { MomentoChatMessageHistory } from "@instrukt/langchain-community/stores/message/momento";
 
 // See https://github.com/momentohq/client-sdk-javascript for connection options
 const client = new CacheClient({

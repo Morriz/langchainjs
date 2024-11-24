@@ -4,7 +4,7 @@
 
 import { test, expect, describe } from "@jest/globals";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import { UpstashRedisChatMessageHistory } from "../message/upstash_redis.js";
 
 const config = {

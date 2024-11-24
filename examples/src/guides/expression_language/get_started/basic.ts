@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const prompt = ChatPromptTemplate.fromMessages([
   ["human", "Tell me a short joke about {topic}"],

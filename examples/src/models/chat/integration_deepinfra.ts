@@ -1,5 +1,5 @@
-import { ChatDeepInfra } from "@langchain/community/chat_models/deepinfra";
-import { HumanMessage } from "@langchain/core/messages";
+import { ChatDeepInfra } from "@instrukt/langchain-community/chat_models/deepinfra";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const apiKey = process.env.DEEPINFRA_API_TOKEN;
 

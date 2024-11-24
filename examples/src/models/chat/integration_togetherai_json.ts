@@ -1,5 +1,5 @@
-import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatTogetherAI } from "@instrukt/langchain-community/chat_models/togetherai";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 // Define a JSON schema for the response
 const responseSchema = {

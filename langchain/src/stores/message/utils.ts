@@ -1,4 +1,4 @@
 export {
   mapStoredMessagesToChatMessages,
   mapChatMessagesToStoredMessages,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";

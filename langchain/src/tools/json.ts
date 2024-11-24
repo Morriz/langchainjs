@@ -1,6 +1,6 @@
 import jsonpointer from "jsonpointer";
-import { Serializable } from "@langchain/core/load/serializable";
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Serializable } from "@instrukt/langchain-core/load/serializable";
+import { Tool, ToolParams } from "@instrukt/langchain-core/tools";
 
 export type Json =
   | string

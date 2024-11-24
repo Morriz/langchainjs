@@ -1,6 +1,6 @@
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Chroma } from "@langchain/community/vectorstores/chroma";
+import { Chroma } from "@instrukt/langchain-community/vectorstores/chroma";
 import { getDocs } from "./docs.js";
 
 const docs = await getDocs();

@@ -1,6 +1,6 @@
 import { HandlebarsPromptTemplate } from "langchain/experimental/prompts/handlebars";
 import { ChatAnthropic } from "@langchain/anthropic";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const template = `Tell me a joke about {{topic}}`;
 

@@ -1,21 +1,28 @@
 import type {
   StructuredToolInterface,
   ToolInterface,
-} from "@langchain/core/tools";
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { CallbackManager, Callbacks } from "@langchain/core/callbacks/manager";
-import { BasePromptTemplate } from "@langchain/core/prompts";
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
-import { BaseMessage } from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
-import { Serializable } from "@langchain/core/load/serializable";
+} from "@instrukt/langchain-core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import {
+  CallbackManager,
+  Callbacks,
+} from "@instrukt/langchain-core/callbacks/manager";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
+import {
+  AgentAction,
+  AgentFinish,
+  AgentStep,
+} from "@instrukt/langchain-core/agents";
+import { BaseMessage } from "@instrukt/langchain-core/messages";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { Serializable } from "@instrukt/langchain-core/load/serializable";
 import {
   Runnable,
   patchConfig,
   type RunnableConfig,
   RunnableSequence,
   RunnableLike,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import { LLMChain } from "../chains/llm_chain.js";
 import type {
   AgentActionOutputParser,

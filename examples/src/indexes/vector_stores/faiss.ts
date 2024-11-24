@@ -1,4 +1,4 @@
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 export const run = async () => {

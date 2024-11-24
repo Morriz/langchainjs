@@ -1,5 +1,5 @@
 import { BufferMemory } from "langchain/memory";
-import { CassandraChatMessageHistory } from "@langchain/community/stores/message/cassandra";
+import { CassandraChatMessageHistory } from "@instrukt/langchain-community/stores/message/cassandra";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
 

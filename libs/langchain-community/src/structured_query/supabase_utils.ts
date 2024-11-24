@@ -4,7 +4,7 @@ import {
   Operation,
   Operators,
   StructuredQuery,
-} from "@langchain/core/structured_query";
+} from "@instrukt/langchain-core/structured_query";
 import type {
   SupabaseFilter,
   SupabaseFilterRPCCall,

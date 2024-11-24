@@ -1,5 +1,5 @@
-import { ChatAlibabaTongyi } from "@langchain/community/chat_models/alibaba_tongyi";
-import { HumanMessage } from "@langchain/core/messages";
+import { ChatAlibabaTongyi } from "@instrukt/langchain-community/chat_models/alibaba_tongyi";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 // Default model is qwen-turbo
 const qwenTurbo = new ChatAlibabaTongyi({

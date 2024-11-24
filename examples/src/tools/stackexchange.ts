@@ -1,4 +1,4 @@
-import { StackExchangeAPI } from "@langchain/community/tools/stackexchange";
+import { StackExchangeAPI } from "@instrukt/langchain-community/tools/stackexchange";
 
 // Get results from StackExchange API
 const stackExchangeTool = new StackExchangeAPI();

@@ -1,20 +1,20 @@
 import { AgentExecutor } from "langchain/agents";
 import { ChatOpenAI } from "@langchain/openai";
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 import { OpenAIFunctionsAgentOutputParser } from "langchain/agents/openai/output_parser";
-import { convertToOpenAIFunction } from "@langchain/core/utils/function_calling";
+import { convertToOpenAIFunction } from "@instrukt/langchain-core/utils/function_calling";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import {
   AIMessage,
   BaseMessage,
   FunctionMessage,
-} from "@langchain/core/messages";
-import { AgentStep } from "@langchain/core/agents";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+} from "@instrukt/langchain-core/messages";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 /** Define your list of tools. */
 const tools = [new Calculator(), new SerpAPI()];

@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
 
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 import {
   StructuredOutputParser,

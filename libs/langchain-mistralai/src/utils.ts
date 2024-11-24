@@ -1,5 +1,5 @@
 import { ContentChunk as MistralAIContentChunk } from "@mistralai/mistralai/models/components/contentchunk.js";
-import { MessageContentComplex } from "@langchain/core/messages";
+import { MessageContentComplex } from "@instrukt/langchain-core/messages";
 
 // Mistral enforces a specific pattern for tool call IDs
 const TOOL_CALL_ID_PATTERN = /^[a-zA-Z0-9]{9}$/;

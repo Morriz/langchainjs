@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { LLMGraphTransformer } from "./llm.js";
 import {
   GraphDocument,

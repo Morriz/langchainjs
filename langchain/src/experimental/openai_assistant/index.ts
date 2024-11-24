@@ -1,6 +1,6 @@
 import { type ClientOptions, OpenAIClient } from "@langchain/openai";
-import { StructuredTool } from "@langchain/core/tools";
-import { Runnable, RunnableConfig } from "@langchain/core/runnables";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
+import { Runnable, RunnableConfig } from "@instrukt/langchain-core/runnables";
 import { formatToOpenAIAssistantTool } from "@langchain/openai";
 import { sleep } from "../../util/time.js";
 import type {

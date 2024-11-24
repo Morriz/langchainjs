@@ -1,4 +1,4 @@
-import { Friendli } from "@langchain/community/llms/friendli";
+import { Friendli } from "@instrukt/langchain-community/llms/friendli";
 
 const model = new Friendli({
   model: "mixtral-8x7b-instruct-v0-1", // Default value

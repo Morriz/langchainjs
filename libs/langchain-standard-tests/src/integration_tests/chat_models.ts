@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { expect } from "@jest/globals";
-import { BaseChatModelCallOptions } from "@langchain/core/language_models/chat_models";
+import { BaseChatModelCallOptions } from "@instrukt/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   AIMessageChunk,
@@ -10,18 +10,18 @@ import {
   ToolMessage,
   UsageMetadata,
   getBufferString,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { z } from "zod";
 import {
   StructuredTool,
   StructuredToolParams,
   tool,
-} from "@langchain/core/tools";
+} from "@instrukt/langchain-core/tools";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableLambda } from "@langchain/core/runnables";
-import { concat } from "@langchain/core/utils/stream";
-import { StreamEvent } from "@langchain/core/tracers/log_stream";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { RunnableLambda } from "@instrukt/langchain-core/runnables";
+import { concat } from "@instrukt/langchain-core/utils/stream";
+import { StreamEvent } from "@instrukt/langchain-core/tracers/log_stream";
 import {
   BaseChatModelsTests,
   BaseChatModelsTestsFields,

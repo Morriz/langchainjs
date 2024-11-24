@@ -1,5 +1,5 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
+import { PGVectorStore } from "@instrukt/langchain-community/vectorstores/pgvector";
 import pg from "pg";
 
 // First, follow set-up instructions at

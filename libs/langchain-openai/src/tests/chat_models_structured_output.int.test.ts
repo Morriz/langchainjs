@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { AIMessage, AIMessageChunk } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { AIMessage, AIMessageChunk } from "@instrukt/langchain-core/messages";
 import { test, expect, describe, it } from "@jest/globals";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import { ChatOpenAI } from "../chat_models.js";
 
 test("withStructuredOutput zod schema function calling", async () => {

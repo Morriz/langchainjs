@@ -1,11 +1,11 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { AzureCosmsosDBNoSQLChatMessageHistory } from "@langchain/azure-cosmosdb";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const model = new ChatOpenAI({
   model: "gpt-3.5-turbo",

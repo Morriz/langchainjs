@@ -1,7 +1,7 @@
 import { BufferMemory } from "langchain/memory";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
-import { XataChatMessageHistory } from "@langchain/community/stores/message/xata";
+import { XataChatMessageHistory } from "@instrukt/langchain-community/stores/message/xata";
 import { BaseClient } from "@xata.io/client";
 
 // if you use the generated client, you don't need this function.

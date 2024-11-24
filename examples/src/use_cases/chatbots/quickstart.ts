@@ -9,7 +9,7 @@ const chat = new ChatOpenAI({
   temperature: 0.2,
 });
 
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 await chat.invoke([
   new HumanMessage(
@@ -19,7 +19,7 @@ await chat.invoke([
 
 await chat.invoke([new HumanMessage("What did you just say?")]);
 
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@instrukt/langchain-core/messages";
 
 await chat.invoke([
   new HumanMessage(
@@ -32,7 +32,7 @@ await chat.invoke([
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   [
@@ -54,7 +54,7 @@ await chain.invoke({
   ],
 });
 
-import { ChatMessageHistory } from "@langchain/community/stores/message/in_memory";
+import { ChatMessageHistory } from "@instrukt/langchain-community/stores/message/in_memory";
 
 const demoEphemeralChatMessageHistory = new ChatMessageHistory();
 
@@ -86,7 +86,7 @@ const responseMessage2 = await chain.invoke({
 
 console.log(responseMessage2);
 
-import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
+import { CheerioWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/cheerio";
 
 const loader = new CheerioWebBaseLoader(
   "https://docs.smith.langchain.com/user_guide"
@@ -145,11 +145,11 @@ console.log(
   })
 );
 
-import type { BaseMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 
 const parseRetrieverInput = (params: { messages: BaseMessage[] }) => {
   return params.messages[params.messages.length - 1].content;
@@ -195,8 +195,8 @@ console.log(await retriever.invoke("how can langsmith help with testing?"));
 
 console.log(await retriever.invoke("tell me more about that!"));
 
-import { RunnableBranch } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableBranch } from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const queryTransformPrompt = ChatPromptTemplate.fromMessages([
   new MessagesPlaceholder("messages"),

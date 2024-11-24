@@ -1,10 +1,10 @@
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
+import type { BaseRetrieverInterface } from "@instrukt/langchain-core/retrievers";
 import { z } from "zod";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   DynamicStructuredTool,
   type DynamicStructuredToolInput,
-} from "@langchain/core/tools";
+} from "@instrukt/langchain-core/tools";
 import { formatDocumentsAsString } from "../util/document.js";
 
 export function createRetrieverTool(

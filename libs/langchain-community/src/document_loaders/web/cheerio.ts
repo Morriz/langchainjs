@@ -4,14 +4,14 @@ import type {
   load as LoadT,
   SelectorType,
 } from "cheerio";
-import { Document } from "@langchain/core/documents";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 import type { WebBaseLoaderParams, WebBaseLoader } from "./html.js";
 
 /**
- * @deprecated Either import the CheerioWebBaseLoaderParams from @langchain/community/document_loaders/web/cheerio
- * or use the WebBaseLoaderParams from @langchain/community/document_loaders/web/html.
+ * @deprecated Either import the CheerioWebBaseLoaderParams from @instrukt/langchain-community/document_loaders/web/cheerio
+ * or use the WebBaseLoaderParams from @instrukt/langchain-community/document_loaders/web/html.
  */
 export { WebBaseLoaderParams };
 

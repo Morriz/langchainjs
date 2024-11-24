@@ -1,4 +1,4 @@
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 // Create a vector store through any method, here from texts as an example

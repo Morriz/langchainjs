@@ -1,17 +1,20 @@
-import { BaseMemory } from "@langchain/core/memory";
-import { ChainValues } from "@langchain/core/utils/types";
-import { RUN_KEY } from "@langchain/core/outputs";
+import { BaseMemory } from "@instrukt/langchain-core/memory";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { RUN_KEY } from "@instrukt/langchain-core/outputs";
 import {
   CallbackManagerForChainRun,
   CallbackManager,
   Callbacks,
   parseCallbackConfigArg,
-} from "@langchain/core/callbacks/manager";
-import { ensureConfig, type RunnableConfig } from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/callbacks/manager";
+import {
+  ensureConfig,
+  type RunnableConfig,
+} from "@instrukt/langchain-core/runnables";
 import {
   BaseLangChain,
   BaseLangChainParams,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import { SerializedBaseChain } from "./serde.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -105,6 +108,9 @@ export abstract class BaseChain<
       config?.runName
     );
     let outputValues: RunOutput;
+    if (!(this.memory == null)) {
+      await this.memory.saveContext(this._selectMemoryInputs(input));
+    }
     try {
       outputValues = await (fullValues.signal
         ? (Promise.race([
@@ -121,10 +127,7 @@ export abstract class BaseChain<
       throw e;
     }
     if (!(this.memory == null)) {
-      await this.memory.saveContext(
-        this._selectMemoryInputs(input),
-        outputValues
-      );
+      await this.memory.saveContext(undefined, outputValues);
     }
     await runManager?.handleChainEnd(outputValues);
     // add the runManager's currentRunId to the outputValues

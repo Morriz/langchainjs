@@ -8,12 +8,12 @@ import {
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { Callbacks } from "@langchain/core/callbacks/manager";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
+import { Callbacks } from "@instrukt/langchain-core/callbacks/manager";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 
 function zepDocsToDocumentsAndScore(
   results: DocumentSearchResult[]

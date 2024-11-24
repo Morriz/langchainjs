@@ -5,8 +5,8 @@ import { RedisClientType, createClient } from "redis";
 import { v4 as uuidv4 } from "uuid";
 import { test, expect } from "@jest/globals";
 import { faker } from "@faker-js/faker";
-import { Document } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { RedisVectorStore } from "../vectorstores.js";
 
 describe("RedisVectorStore", () => {

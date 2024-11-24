@@ -1,7 +1,7 @@
-import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
+import { CheerioWebBaseLoader } from "@instrukt/langchain-community/document_loaders/web/cheerio";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/hf_transformers";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
+import { HuggingFaceTransformersEmbeddings } from "@instrukt/langchain-community/embeddings/hf_transformers";
 
 const loader = new CheerioWebBaseLoader(
   "https://lilianweng.github.io/posts/2023-06-23-agent/"

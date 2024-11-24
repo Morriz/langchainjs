@@ -1,12 +1,16 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BaseMemory, InputValues, OutputValues } from "@langchain/core/memory";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import {
+  BaseMemory,
+  InputValues,
+  OutputValues,
+} from "@instrukt/langchain-core/memory";
 import {
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import { TimeWeightedVectorStoreRetriever } from "../../retrievers/time_weighted.js";
 import { BaseChain } from "../../chains/base.js";
 import { LLMChain } from "../../chains/llm_chain.js";

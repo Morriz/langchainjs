@@ -1,4 +1,4 @@
-import { DriaRetriever } from "@langchain/community/retrievers/dria";
+import { DriaRetriever } from "@instrukt/langchain-community/retrievers/dria";
 
 // contract of TypeScript Handbook v4.9 uploaded to Dria
 // https://dria.co/knowledge/-B64DjhUtCwBdXSpsRytlRQCu-bie-vSTvTIT8Ap3g0

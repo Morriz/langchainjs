@@ -8,33 +8,36 @@ import {
   SafetySetting,
   Part as GenerativeAIPart,
 } from "@google/generative-ai";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   AIMessageChunk,
   BaseMessage,
   UsageMetadata,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/messages";
+import {
+  ChatGenerationChunk,
+  ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   BaseChatModel,
   type BaseChatModelCallOptions,
   type LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import type { z } from "zod";
-import { isZodSchema } from "@langchain/core/utils/types";
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
+import { isZodSchema } from "@instrukt/langchain-core/utils/types";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { zodToGenerativeAIParameters } from "./utils/zod_to_genai_parameters.js";
 import {
   convertBaseMessagesToContent,
@@ -331,8 +334,8 @@ export interface GoogleGenerativeAIChatInput
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -442,7 +445,7 @@ export interface GoogleGenerativeAIChatInput
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@instrukt/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

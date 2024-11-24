@@ -4,8 +4,7 @@ import {
   OutputValues,
   MemoryVariables,
   getInputValue,
-  getOutputValue,
-} from "@langchain/core/memory";
+} from "@instrukt/langchain-core/memory";
 import {
   getBufferString,
   AIMessage,
@@ -13,7 +12,7 @@ import {
   ChatMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 /**
@@ -185,25 +184,30 @@ export class ZepMemory extends BaseChatMemory implements ZepMemoryInput {
    * @returns Promise that resolves when the messages have been saved.
    */
   async saveContext(
-    inputValues: InputValues,
-    outputValues: OutputValues
+    inputValues?: InputValues | undefined,
+    outputValues?: OutputValues | undefined
   ): Promise<void> {
-    const input = getInputValue(inputValues, this.inputKey);
-    const output = getOutputValue(outputValues, this.outputKey);
-
-    // Create new Memory and Message instances
-    const memory = new Memory({
-      messages: [
+    const messages: Message[] = [];
+    if (inputValues) {
+      const input = getInputValue(inputValues, this.inputKey);
+      messages.push(
         new Message({
           role: this.humanPrefix,
           content: `${input}`,
-        }),
+        })
+      );
+    }
+    if (outputValues) {
+      const output = getInputValue(outputValues, this.outputKey);
+      messages.push(
         new Message({
-          role: this.aiPrefix,
+          role: this.humanPrefix,
           content: `${output}`,
-        }),
-      ],
-    });
+        })
+      );
+    }
+    // Create new Memory and Message instances
+    const memory = new Memory({ messages });
 
     // Wait for ZepClient to be initialized
     const zepClient = await this.zepClientPromise;

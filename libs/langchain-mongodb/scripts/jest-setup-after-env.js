@@ -1,4 +1,4 @@
-import { awaitAllCallbacks } from "@langchain/core/callbacks/promises";
+import { awaitAllCallbacks } from "@instrukt/langchain-core/callbacks/promises";
 import { afterAll, jest } from "@jest/globals";
 
 afterAll(awaitAllCallbacks);

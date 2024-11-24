@@ -2,7 +2,7 @@ import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/outputs";
 import {
   BaseMessage,
   BaseMessageChunk,
@@ -13,12 +13,12 @@ import {
   MessageContentImageUrl,
   AIMessageFields,
   AIMessageChunkFields,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ToolCall,
   ToolCallChunk,
   ToolMessage,
-} from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/messages/tool";
 import {
   AnthropicAPIConfig,
   AnthropicContent,

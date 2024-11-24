@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const model = new ChatOpenAI({});
 const promptTemplate = PromptTemplate.fromTemplate(

@@ -1,4 +1,4 @@
-import { UnstructuredLoader } from "@langchain/community/document_loaders/fs/unstructured";
+import { UnstructuredLoader } from "@instrukt/langchain-community/document_loaders/fs/unstructured";
 
 const options = {
   apiKey: "MY_API_KEY",

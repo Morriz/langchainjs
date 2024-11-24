@@ -2,10 +2,10 @@
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { ChatAnthropic } from "@langchain/anthropic";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
-import { UpstashRedisChatMessageHistory } from "@langchain/community/stores/message/upstash_redis";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
+import { UpstashRedisChatMessageHistory } from "@instrukt/langchain-community/stores/message/upstash_redis";
 // For demos, you can also use an in-memory store:
 // import { ChatMessageHistory } from "langchain/stores/message/in_memory";
 

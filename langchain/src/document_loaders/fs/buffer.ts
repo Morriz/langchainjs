@@ -1,6 +1,6 @@
 import type { readFile as ReadFileT } from "node:fs/promises";
-import { Document } from "@langchain/core/documents";
-import { getEnv } from "@langchain/core/utils/env";
+import { Document } from "@instrukt/langchain-core/documents";
+import { getEnv } from "@instrukt/langchain-core/utils/env";
 import { BaseDocumentLoader } from "../base.js";
 
 /**

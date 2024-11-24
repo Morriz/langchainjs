@@ -2,7 +2,7 @@ import { type ClientOptions, AzureOpenAI as AzureOpenAIClient } from "openai";
 import {
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import { ChatOpenAI } from "../chat_models.js";
 import { OpenAIEndpointConfig, getEndpoint } from "../utils/azure.js";
 import {
@@ -163,8 +163,8 @@ import {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -307,7 +307,7 @@ import {
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@instrukt/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

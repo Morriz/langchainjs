@@ -3,9 +3,9 @@ import { createClient } from "@supabase/supabase-js";
 import { AttributeInfo } from "langchain/schema/query_constructor";
 import { OpenAIEmbeddings, OpenAI } from "@langchain/openai";
 import { SelfQueryRetriever } from "langchain/retrievers/self_query";
-import { SupabaseTranslator } from "@langchain/community/structured_query/supabase";
-import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
-import { Document } from "@langchain/core/documents";
+import { SupabaseTranslator } from "@instrukt/langchain-community/structured_query/supabase";
+import { SupabaseVectorStore } from "@instrukt/langchain-community/vectorstores/supabase";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * First, we create a bunch of documents. You can load your own documents here instead.

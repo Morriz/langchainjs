@@ -1,10 +1,10 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { AgentStep } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import {
   BaseCallbackConfig,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain, LLMChain, LLMChainInput } from "../chains/index.js";
 
 /**

@@ -1,4 +1,4 @@
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
 
 import { GoogleCalendarBase, GoogleCalendarAgentParams } from "./base.js";
 import { VIEW_TOOL_DESCRIPTION } from "./descriptions.js";

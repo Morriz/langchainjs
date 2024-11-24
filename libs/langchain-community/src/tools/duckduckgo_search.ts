@@ -1,4 +1,4 @@
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@instrukt/langchain-core/tools";
 import { search, SearchOptions } from "duck-duck-scrape";
 
 export {
@@ -27,10 +27,10 @@ const DEFAULT_MAX_RESULTS = 10;
  * DuckDuckGo tool integration.
  *
  * Setup:
- * Install `@langchain/community` and `duck-duck-scrape`.
+ * Install `@instrukt/langchain-community` and `duck-duck-scrape`.
  *
  * ```bash
- * npm install @langchain/community duck-duck-scrape
+ * npm install @instrukt/langchain-community duck-duck-scrape
  * ```
  *
  * ## [Constructor args](https://api.js.langchain.com/classes/_langchain_community.tools_duckduckgo_search.DuckDuckGoSearch.html#constructor)
@@ -39,7 +39,7 @@ const DEFAULT_MAX_RESULTS = 10;
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
+ * import { DuckDuckGoSearch } from "@instrukt/langchain-community/tools/duckduckgo_search";
  *
  * const tool = new DuckDuckGoSearch({ maxResults: 1 });
  * ```

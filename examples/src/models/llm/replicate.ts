@@ -1,4 +1,4 @@
-import { Replicate } from "@langchain/community/llms/replicate";
+import { Replicate } from "@instrukt/langchain-community/llms/replicate";
 
 const modelA = new Replicate({
   model:

@@ -1,7 +1,7 @@
 import { test, expect, afterAll, beforeAll } from "@jest/globals";
 import { ErrorCode, MilvusClient } from "@zilliz/milvus2-sdk-node";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { Milvus } from "../milvus.js";
 
 let collectionName: string;

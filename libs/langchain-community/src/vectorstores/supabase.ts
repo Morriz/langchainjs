@@ -3,10 +3,10 @@ import type { PostgrestFilterBuilder } from "@supabase/postgrest-js";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
 
 /**
  * Interface for the parameters required for searching embeddings.
@@ -49,10 +49,10 @@ export interface SupabaseLibArgs {
  * Supabase vector store integration.
  *
  * Setup:
- * Install `@langchain/community` and `@supabase/supabase-js`.
+ * Install `@instrukt/langchain-community` and `@supabase/supabase-js`.
  *
  * ```bash
- * npm install @langchain/community @supabase/supabase-js
+ * npm install @instrukt/langchain-community @supabase/supabase-js
  * ```
  *
  * See https://js.langchain.com/docs/integrations/vectorstores/supabase for
@@ -64,7 +64,7 @@ export interface SupabaseLibArgs {
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
+ * import { SupabaseVectorStore } from "@instrukt/langchain-community/vectorstores/supabase";
  * import { OpenAIEmbeddings } from "@langchain/openai";
  *
  * import { createClient } from "@supabase/supabase-js";
@@ -92,7 +92,7 @@ export interface SupabaseLibArgs {
  * <summary><strong>Add documents</strong></summary>
  *
  * ```typescript
- * import type { Document } from '@langchain/core/documents';
+ * import type { Document } from '@instrukt/langchain-core/documents';
  *
  * const document1 = { pageContent: "foo", metadata: { baz: "bar" } };
  * const document2 = { pageContent: "thud", metadata: { bar: "baz" } };

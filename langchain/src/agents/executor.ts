@@ -3,21 +3,25 @@ import {
   type ToolInterface,
   ToolInputParsingException,
   Tool,
-} from "@langchain/core/tools";
+} from "@instrukt/langchain-core/tools";
 import {
   Runnable,
   type RunnableConfig,
   patchConfig,
-} from "@langchain/core/runnables";
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
-import { ChainValues } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/runnables";
+import {
+  AgentAction,
+  AgentFinish,
+  AgentStep,
+} from "@instrukt/langchain-core/agents";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import {
   CallbackManager,
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { Serializable } from "@langchain/core/load/serializable";
+} from "@instrukt/langchain-core/callbacks/manager";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
+import { Serializable } from "@instrukt/langchain-core/load/serializable";
 import { SerializedLLMChain } from "../chains/serde.js";
 import { StoppingMethod } from "./types.js";
 import {

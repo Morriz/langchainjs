@@ -423,7 +423,10 @@ async function main() {
   const program = new Command();
   program
     .description("Release a new workspace version to NPM.")
-    .option("--workspace <workspace>", "Workspace name, eg @langchain/core")
+    .option(
+      "--workspace <workspace>",
+      "Workspace name, eg @instrukt/langchain-core"
+    )
     .option(
       "--bump-deps",
       "Whether or not to bump other workspaces that depend on this one."

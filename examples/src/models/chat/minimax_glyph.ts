@@ -1,9 +1,9 @@
-import { ChatMinimax } from "@langchain/community/chat_models/minimax";
+import { ChatMinimax } from "@instrukt/langchain-community/chat_models/minimax";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { HumanMessage } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/prompts";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatMinimax({
   model: "abab5.5-chat",

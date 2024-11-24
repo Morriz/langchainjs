@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { DatetimeOutputParser } from "langchain/output_parsers";
 
 const parser = new DatetimeOutputParser();

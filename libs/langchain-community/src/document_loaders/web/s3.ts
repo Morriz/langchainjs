@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as os from "node:os";
 import { Readable } from "node:stream";
 import { S3Client, GetObjectCommand, S3ClientConfig } from "@aws-sdk/client-s3";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 import { UnstructuredLoader as UnstructuredLoaderDefault } from "../fs/unstructured.js";
 
 /**

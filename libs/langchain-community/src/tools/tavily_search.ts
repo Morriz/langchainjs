@@ -1,6 +1,6 @@
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { Tool, type ToolParams } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
+import { Tool, type ToolParams } from "@instrukt/langchain-core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Options for the TavilySearchResults tool.
@@ -15,10 +15,10 @@ export type TavilySearchAPIRetrieverFields = ToolParams & {
  * Tavily search API tool integration.
  *
  * Setup:
- * Install `@langchain/community`. You'll also need an API key set as `TAVILY_API_KEY`.
+ * Install `@instrukt/langchain-community`. You'll also need an API key set as `TAVILY_API_KEY`.
  *
  * ```bash
- * npm install @langchain/community
+ * npm install @instrukt/langchain-community
  * ```
  *
  * ## [Constructor args](https://api.js.langchain.com/classes/_langchain_community.tools_tavily_search.TavilySearchResults.html#constructor)
@@ -27,7 +27,7 @@ export type TavilySearchAPIRetrieverFields = ToolParams & {
  * <summary><strong>Instantiate</strong></summary>
  *
  * ```typescript
- * import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+ * import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
  *
  * const tool = new TavilySearchResults({
  *   maxResults: 2,

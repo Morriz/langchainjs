@@ -1,10 +1,13 @@
 import {
   SimpleChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { AIMessageChunk, type BaseMessage } from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  AIMessageChunk,
+  type BaseMessage,
+} from "@instrukt/langchain-core/messages";
+import { ChatGenerationChunk } from "@instrukt/langchain-core/outputs";
 
 export interface CustomChatModelInput extends BaseChatModelParams {
   n: number;

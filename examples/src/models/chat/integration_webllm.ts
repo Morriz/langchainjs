@@ -1,7 +1,7 @@
 // Must be run in a web environment, e.g. a web worker
 
-import { ChatWebLLM } from "@langchain/community/chat_models/webllm";
-import { HumanMessage } from "@langchain/core/messages";
+import { ChatWebLLM } from "@instrukt/langchain-community/chat_models/webllm";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 // Initialize the ChatWebLLM model with the model record and chat options.
 // Note that if the appConfig field is set, the list of model records

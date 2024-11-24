@@ -1,4 +1,4 @@
-import { AlibabaTongyiEmbeddings } from "@langchain/community/embeddings/alibaba_tongyi";
+import { AlibabaTongyiEmbeddings } from "@instrukt/langchain-community/embeddings/alibaba_tongyi";
 
 const model = new AlibabaTongyiEmbeddings({});
 const res = await model.embedQuery(

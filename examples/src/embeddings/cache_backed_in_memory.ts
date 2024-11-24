@@ -1,8 +1,8 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CacheBackedEmbeddings } from "langchain/embeddings/cache_backed";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 
 const underlyingEmbeddings = new OpenAIEmbeddings();

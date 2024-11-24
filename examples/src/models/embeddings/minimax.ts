@@ -1,4 +1,4 @@
-import { MinimaxEmbeddings } from "@langchain/community/embeddings/minimax";
+import { MinimaxEmbeddings } from "@instrukt/langchain-community/embeddings/minimax";
 
 export const run = async () => {
   /* Embed queries */

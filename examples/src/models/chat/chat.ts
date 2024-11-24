@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage } from "@instrukt/langchain-core/messages";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ model: "gpt-3.5-turbo" });

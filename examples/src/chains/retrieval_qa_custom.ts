@@ -1,5 +1,5 @@
 import { OpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import * as fs from "fs";
 import { loadQAMapReduceChain } from "langchain/chains";

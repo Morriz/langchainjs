@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable import/no-extraneous-dependencies */
-import { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
+import { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
 import {
   Bucket,
   Cluster,
@@ -12,7 +12,7 @@ import {
   VectorQuery,
   VectorSearch,
 } from "couchbase";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { v4 as uuid } from "uuid";
 
 /**

@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const systemTemplate =
   "You are a helpful assistant that translates {input_language} to {output_language}.";

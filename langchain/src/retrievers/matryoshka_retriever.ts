@@ -1,15 +1,15 @@
-import { DocumentInterface } from "@langchain/core/documents";
-import { Embeddings } from "@langchain/core/embeddings";
+import { DocumentInterface } from "@instrukt/langchain-core/documents";
+import { Embeddings } from "@instrukt/langchain-core/embeddings";
 import {
   cosineSimilarity,
   euclideanDistance,
   innerProduct,
-} from "@langchain/core/utils/math";
+} from "@instrukt/langchain-core/utils/math";
 import {
   VectorStore,
   VectorStoreRetriever,
   VectorStoreRetrieverInput,
-} from "@langchain/core/vectorstores";
+} from "@instrukt/langchain-core/vectorstores";
 
 /**
  * Type for options when adding a document to the VectorStore.

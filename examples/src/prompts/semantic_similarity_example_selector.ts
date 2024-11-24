@@ -1,7 +1,10 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
-import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
+import {
+  PromptTemplate,
+  FewShotPromptTemplate,
+} from "@instrukt/langchain-core/prompts";
+import { SemanticSimilarityExampleSelector } from "@instrukt/langchain-core/example_selectors";
 
 // Create a prompt template that will be used to format the examples.
 const examplePrompt = PromptTemplate.fromTemplate(

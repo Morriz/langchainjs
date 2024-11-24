@@ -1,8 +1,8 @@
 import { test, expect, jest } from "@jest/globals";
 
-import { LLM } from "@langchain/core/language_models/llms";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { LLM } from "@instrukt/langchain-core/language_models/llms";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { ChainTool } from "../chain.js";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { VectorDBQAChain } from "../../chains/vector_db_qa.js";

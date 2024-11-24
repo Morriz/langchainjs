@@ -5,8 +5,8 @@ import {
   deserializeStoredGeneration,
   getCacheKey,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/caches";
+import { Generation } from "@instrukt/langchain-core/outputs";
 
 /**
  * Represents the type of the Redis client used to interact with the Redis
@@ -17,7 +17,7 @@ type RedisClientType =
   | ReturnType<typeof createCluster>;
 
 /**
- * @deprecated Import from "@langchain/community/caches/ioredis" instead.
+ * @deprecated Import from "@instrukt/langchain-community/caches/ioredis" instead.
  * Represents a specific implementation of a caching mechanism using Redis
  * as the underlying storage system. It extends the `BaseCache` class and
  * overrides its methods to provide the Redis-specific logic.

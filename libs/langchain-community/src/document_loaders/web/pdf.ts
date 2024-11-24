@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * A document loader for loading data from PDFs.

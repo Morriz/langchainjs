@@ -1,1 +1,1 @@
-export * from "@langchain/core/runnables/remote";
+export * from "@instrukt/langchain-core/runnables/remote";

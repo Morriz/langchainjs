@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
 
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 import { ChatBaiduQianfan } from "../chat_models.js";
 
 test("invoke", async () => {

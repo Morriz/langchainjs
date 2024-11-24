@@ -1,15 +1,15 @@
 import { ZepClient } from "@getzep/zep-cloud";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
 import { ChatOpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   RunnableLambda,
   RunnableMap,
   RunnablePassthrough,
-} from "@langchain/core/runnables";
-import { ZepCloudVectorStore } from "@langchain/community/vectorstores/zep_cloud";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/runnables";
+import { ZepCloudVectorStore } from "@instrukt/langchain-community/vectorstores/zep_cloud";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 async function combineDocuments(docs: Document[], documentSeparator = "\n\n") {
   const docStrings: string[] = await Promise.all(

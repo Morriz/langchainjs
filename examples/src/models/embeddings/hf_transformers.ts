@@ -1,4 +1,4 @@
-import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/hf_transformers";
+import { HuggingFaceTransformersEmbeddings } from "@instrukt/langchain-community/embeddings/hf_transformers";
 
 const model = new HuggingFaceTransformersEmbeddings({
   model: "Xenova/all-MiniLM-L6-v2",

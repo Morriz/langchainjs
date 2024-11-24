@@ -1,8 +1,8 @@
 // in nodejs environment
-import { TencentHunyuanEmbeddings } from "@langchain/community/embeddings/tencent_hunyuan";
+import { TencentHunyuanEmbeddings } from "@instrukt/langchain-community/embeddings/tencent_hunyuan";
 
 // in browser environment
-// import { TencentHunyuanEmbeddings } from "@langchain/community/embeddings/tencent_hunyuan/web";
+// import { TencentHunyuanEmbeddings } from "@instrukt/langchain-community/embeddings/tencent_hunyuan/web";
 
 /* Embed queries */
 const embeddings = new TencentHunyuanEmbeddings();

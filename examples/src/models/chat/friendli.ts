@@ -1,4 +1,4 @@
-import { ChatFriendli } from "@langchain/community/chat_models/friendli";
+import { ChatFriendli } from "@instrukt/langchain-community/chat_models/friendli";
 
 const model = new ChatFriendli({
   model: "meta-llama-3-8b-instruct", // Default value

@@ -1,4 +1,4 @@
-import { ChaindeskRetriever } from "@langchain/community/retrievers/chaindesk";
+import { ChaindeskRetriever } from "@instrukt/langchain-community/retrievers/chaindesk";
 
 const retriever = new ChaindeskRetriever({
   datastoreId: "DATASTORE_ID",

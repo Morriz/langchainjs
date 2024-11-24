@@ -2,19 +2,19 @@ import { ZepClient } from "@getzep/zep-cloud";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+} from "@instrukt/langchain-core/prompts";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
 import { ChatOpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   RunnableLambda,
   RunnableMap,
   RunnablePassthrough,
   RunnableWithMessageHistory,
-} from "@langchain/core/runnables";
-import { ZepCloudVectorStore } from "@langchain/community/vectorstores/zep_cloud";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ZepCloudChatMessageHistory } from "@langchain/community/stores/message/zep_cloud";
+} from "@instrukt/langchain-core/runnables";
+import { ZepCloudVectorStore } from "@instrukt/langchain-community/vectorstores/zep_cloud";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { ZepCloudChatMessageHistory } from "@instrukt/langchain-community/stores/message/zep_cloud";
 
 interface ChainInput {
   question: string;

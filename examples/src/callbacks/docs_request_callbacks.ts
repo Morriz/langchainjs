@@ -1,5 +1,5 @@
 import { OpenAI } from "@langchain/openai";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
 
 const llm = new OpenAI({
   temperature: 0,

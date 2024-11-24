@@ -15,14 +15,14 @@ import {
 import {
   BaseChatModel,
   BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   BaseFunctionCallOptions,
   FunctionCallOption,
   FunctionDefinition,
   TokenUsage,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   AIMessage,
   AIMessageChunk,
@@ -34,19 +34,19 @@ import {
   SystemMessageChunk,
   ToolMessage,
   ToolMessageChunk,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   KeyCredential,
   TokenCredential,
   isTokenCredential,
 } from "@azure/core-auth";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import {
   AzureOpenAIInput,
   OpenAIChatInput,

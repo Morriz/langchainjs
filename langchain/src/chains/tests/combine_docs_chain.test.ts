@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
 import { loadQAMapReduceChain } from "../question_answering/load.js";
 import { loadSummarizationChain } from "../index.js";
 

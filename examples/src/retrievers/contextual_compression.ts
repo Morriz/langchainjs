@@ -2,7 +2,7 @@ import * as fs from "fs";
 
 import { OpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
+import { HNSWLib } from "@instrukt/langchain-community/vectorstores/hnswlib";
 import { ContextualCompressionRetriever } from "langchain/retrievers/contextual_compression";
 import { LLMChainExtractor } from "langchain/retrievers/document_compressors/chain_extract";
 

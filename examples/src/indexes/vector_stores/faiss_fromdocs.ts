@@ -1,4 +1,4 @@
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 

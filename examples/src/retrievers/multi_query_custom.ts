@@ -3,8 +3,8 @@ import { CohereEmbeddings } from "@langchain/cohere";
 import { MultiQueryRetriever } from "langchain/retrievers/multi_query";
 import { LLMChain } from "langchain/chains";
 import { pull } from "langchain/hub";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 type LineList = {

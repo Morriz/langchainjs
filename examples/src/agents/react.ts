@@ -1,6 +1,6 @@
 import { OpenAI } from "@langchain/openai";
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
-import type { PromptTemplate } from "@langchain/core/prompts";
+import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
+import type { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { pull } from "langchain/hub";
 import { AgentExecutor, createReactAgent } from "langchain/agents";

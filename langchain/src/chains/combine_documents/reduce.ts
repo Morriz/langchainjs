@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * Splits a list of documents into sublists based on a maximum token limit.

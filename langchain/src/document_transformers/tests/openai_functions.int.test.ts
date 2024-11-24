@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { expect, test } from "@jest/globals";
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { createMetadataTaggerFromZod } from "../openai_functions.js";
 
 const taggingChainTemplate = `Extract the desired information from the following passage.

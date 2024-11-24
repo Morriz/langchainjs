@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
 import { OpenAI } from "@langchain/openai";
-import type { PromptTemplate } from "@langchain/core/prompts";
+import type { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { TavilySearchResults } from "../../util/testing/tools/tavily_search.js";
 import { pull } from "../../hub.js";
 import { AgentExecutor, createReactAgent } from "../index.js";

@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { createRetrievalChain } from "langchain/chains/retrieval";
@@ -6,7 +6,7 @@ import hanaClient from "hdb";
 import {
   HanaDB,
   HanaDBArgs,
-} from "@langchain/community/vectorstores/hanavector";
+} from "@instrukt/langchain-community/vectorstores/hanavector";
 
 // Connection parameters
 const connectionParams = {

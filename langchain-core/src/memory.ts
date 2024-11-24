@@ -48,8 +48,8 @@ export abstract class BaseMemory {
    * @returns Promise that resolves when the context has been saved.
    */
   abstract saveContext(
-    inputValues: InputValues,
-    outputValues: OutputValues
+    inputValues?: InputValues,
+    outputValues?: OutputValues
   ): Promise<void>;
 }
 

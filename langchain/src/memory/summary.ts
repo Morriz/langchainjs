@@ -1,15 +1,15 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
 import {
   BaseMessage,
   SystemMessage,
   getBufferString,
-} from "@langchain/core/messages";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/messages";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   InputValues,
   MemoryVariables,
   OutputValues,
-} from "@langchain/core/memory";
+} from "@instrukt/langchain-core/memory";
 import { LLMChain } from "../chains/llm_chain.js";
 import { SUMMARY_PROMPT } from "./prompt.js";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";

@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 import { test, expect } from "@jest/globals";
 import { ChatModelIntegrationTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import { ChatXAI, ChatXAICallOptions } from "../chat_models.js";
 
 class ChatXAIStandardIntegrationTests extends ChatModelIntegrationTests<

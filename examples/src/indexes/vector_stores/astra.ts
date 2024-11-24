@@ -2,7 +2,7 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import {
   AstraDBVectorStore,
   AstraLibArgs,
-} from "@langchain/community/vectorstores/astradb";
+} from "@instrukt/langchain-community/vectorstores/astradb";
 
 const astraConfig: AstraLibArgs = {
   token: process.env.ASTRA_DB_APPLICATION_TOKEN as string,

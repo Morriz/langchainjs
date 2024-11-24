@@ -1,9 +1,9 @@
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { StructuredTool } from "@langchain/core/tools";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import { ZodOptional, ZodString, z } from "zod";
 
 /**

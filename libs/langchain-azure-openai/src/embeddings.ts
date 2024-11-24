@@ -1,4 +1,4 @@
-import { Embeddings } from "@langchain/core/embeddings";
+import { Embeddings } from "@instrukt/langchain-core/embeddings";
 import {
   type OpenAIClientOptions as AzureOpenAIClientOptions,
   OpenAIClient as AzureOpenAIClient,
@@ -10,8 +10,8 @@ import {
   TokenCredential,
   isTokenCredential,
 } from "@azure/core-auth";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
 import { AzureOpenAIInput, AzureOpenAIEmbeddingsParams } from "./types.js";
 import { USER_AGENT_PREFIX } from "./constants.js";
 

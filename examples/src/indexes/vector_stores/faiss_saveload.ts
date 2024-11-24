@@ -1,4 +1,4 @@
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 // Create a vector store through any method, here from texts as an example

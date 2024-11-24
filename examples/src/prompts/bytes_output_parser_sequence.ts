@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { BytesOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { BytesOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 
 const chain = RunnableSequence.from([
   new ChatOpenAI({ temperature: 0 }),

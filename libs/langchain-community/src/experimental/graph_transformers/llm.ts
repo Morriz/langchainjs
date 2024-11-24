@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
+import { BaseLanguageModel } from "@instrukt/langchain-core/language_models/base";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   Node,
   Relationship,

@@ -3,7 +3,7 @@
 import rockset from "@rockset/client";
 import { test, expect } from "@jest/globals";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { RocksetStore, SimilarityMetric } from "../rockset.js";
 
 const getPageContents = (documents: Document[]) =>

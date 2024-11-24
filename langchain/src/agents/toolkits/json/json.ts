@@ -1,5 +1,8 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { type ToolInterface, BaseToolkit } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import {
+  type ToolInterface,
+  BaseToolkit,
+} from "@instrukt/langchain-core/tools";
 import {
   JsonGetValueTool,
   JsonListKeysTool,

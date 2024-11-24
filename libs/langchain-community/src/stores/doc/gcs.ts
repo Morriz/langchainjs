@@ -1,6 +1,6 @@
 import { Storage, File } from "@google-cloud/storage";
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { Docstore } from "langchain/stores/doc/base";
 
 /**

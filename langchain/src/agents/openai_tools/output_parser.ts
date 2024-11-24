@@ -1,8 +1,8 @@
 import type { OpenAIClient } from "@langchain/openai";
-import { AgentAction, AgentFinish } from "@langchain/core/agents";
-import { BaseMessage, isBaseMessage } from "@langchain/core/messages";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { OutputParserException } from "@langchain/core/output_parsers";
+import { AgentAction, AgentFinish } from "@instrukt/langchain-core/agents";
+import { BaseMessage, isBaseMessage } from "@instrukt/langchain-core/messages";
+import { ChatGeneration } from "@instrukt/langchain-core/outputs";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
 import { AgentMultiActionOutputParser } from "../types.js";
 import {
   ToolsAgentAction,

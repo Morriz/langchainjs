@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { JsonOutputFunctionsParser } from "@langchain/core/output_parsers/openai_functions";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { JsonOutputFunctionsParser } from "@instrukt/langchain-core/output_parsers/openai_functions";
 
 const schema = z.object({
   setup: z.string().describe("The setup for the joke"),

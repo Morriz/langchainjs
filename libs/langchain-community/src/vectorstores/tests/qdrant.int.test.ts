@@ -4,7 +4,7 @@ import { describe, expect, test } from "@jest/globals";
 import { QdrantClient } from "@qdrant/js-client-rest";
 import { faker } from "@faker-js/faker";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { QdrantVectorStore } from "../qdrant.js";
 import { OllamaEmbeddings } from "../../embeddings/ollama.js";
 

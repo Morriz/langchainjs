@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { Tool, DynamicStructuredTool } from "@langchain/core/tools";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { Tool, DynamicStructuredTool } from "@instrukt/langchain-core/tools";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "../../chains/base.js";
 import {
   BasePlanner,

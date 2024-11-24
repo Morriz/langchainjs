@@ -1,5 +1,5 @@
-import { ZepVectorStore } from "@langchain/community/vectorstores/zep";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { ZepVectorStore } from "@instrukt/langchain-community/vectorstores/zep";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { randomUUID } from "crypto";
 

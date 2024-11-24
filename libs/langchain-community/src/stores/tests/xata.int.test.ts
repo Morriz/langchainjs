@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BaseClient } from "@xata.io/client";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { XataChatMessageHistory } from "../message/xata.js";
 
 describe("XataChatMessageHistory", () => {

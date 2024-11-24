@@ -1,9 +1,9 @@
 import { google, calendar_v3 } from "googleapis";
 import type { JWT, GaxiosResponse } from "googleapis-common";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { CREATE_EVENT_PROMPT } from "../prompts/index.js";
 import { getTimezoneOffsetInHours } from "../utils/get-timezone-offset-in-hours.js";
 

@@ -5,18 +5,22 @@ import {
 } from "langchain/agents";
 import { LLMChain } from "langchain/chains";
 import { ChatOpenAI } from "@langchain/openai";
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 import {
   BaseChatPromptTemplate,
   SerializedBasePromptTemplate,
   renderTemplate,
-} from "@langchain/core/prompts";
-import { AgentAction, AgentFinish, AgentStep } from "@langchain/core/agents";
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
-import { InputValues } from "@langchain/core/memory";
-import { PartialValues } from "@langchain/core/utils/types";
-import { Tool } from "@langchain/core/tools";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+} from "@instrukt/langchain-core/prompts";
+import {
+  AgentAction,
+  AgentFinish,
+  AgentStep,
+} from "@instrukt/langchain-core/agents";
+import { BaseMessage, HumanMessage } from "@instrukt/langchain-core/messages";
+import { InputValues } from "@instrukt/langchain-core/memory";
+import { PartialValues } from "@instrukt/langchain-core/utils/types";
+import { Tool } from "@instrukt/langchain-core/tools";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 const PREFIX = `Answer the following questions as best you can. You have access to the following tools:`;
 const formatInstructions = (

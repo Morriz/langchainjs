@@ -2,7 +2,7 @@ import hanaClient from "hdb";
 import {
   HanaDB,
   HanaDBArgs,
-} from "@langchain/community/vectorstores/hanavector";
+} from "@instrukt/langchain-community/vectorstores/hanavector";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { CharacterTextSplitter } from "@langchain/textsplitters";

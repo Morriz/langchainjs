@@ -4,14 +4,14 @@ import {
   AIMessageChunk,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { z } from "zod";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { LLMResult } from "@langchain/core/outputs";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { tool } from "@langchain/core/tools";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { tool } from "@instrukt/langchain-core/tools";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import { ChatWatsonx } from "../ibm.js";
 
 describe("Tests for chat", () => {

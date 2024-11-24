@@ -1,4 +1,4 @@
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 // If a template is passed in, the input variables are inferred automatically from the template.
 const prompt = PromptTemplate.fromTemplate(

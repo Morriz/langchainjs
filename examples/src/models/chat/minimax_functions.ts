@@ -1,5 +1,5 @@
-import { ChatMinimax } from "@langchain/community/chat_models/minimax";
-import { HumanMessage } from "@langchain/core/messages";
+import { ChatMinimax } from "@instrukt/langchain-community/chat_models/minimax";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const functionSchema = {
   name: "get_weather",

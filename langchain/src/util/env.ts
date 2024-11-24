@@ -8,4 +8,4 @@ export {
   type RuntimeEnvironment,
   getRuntimeEnvironment,
   getEnvironmentVariable,
-} from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/utils/env";

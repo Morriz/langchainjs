@@ -31,48 +31,48 @@ import {
   ChatMessageChunk,
   FunctionMessageChunk,
   isAIMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import type {
   BaseLanguageModelInput,
   BaseLanguageModelCallOptions,
   StructuredOutputMethodOptions,
   FunctionDefinition,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   BindToolsInput,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@instrukt/langchain-core/outputs";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import { z } from "zod";
 import {
   type BaseLLMOutputParser,
   JsonOutputParser,
   StructuredOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import {
   JsonOutputKeyToolsParser,
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
+} from "@instrukt/langchain-core/output_parsers/openai_tools";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
 import {
   _convertToolCallIdToMistralCompatible,
   _mistralContentChunkToMessageContentComplex,
@@ -702,8 +702,8 @@ function _convertToolToMistralTool(
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

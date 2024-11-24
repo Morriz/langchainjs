@@ -1,4 +1,4 @@
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 
 /**
  * Type alias for StructuredTool. It is part of the tools module in

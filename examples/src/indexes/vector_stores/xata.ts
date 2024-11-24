@@ -1,8 +1,8 @@
-import { XataVectorSearch } from "@langchain/community/vectorstores/xata";
+import { XataVectorSearch } from "@instrukt/langchain-community/vectorstores/xata";
 import { OpenAIEmbeddings, OpenAI } from "@langchain/openai";
 import { BaseClient } from "@xata.io/client";
 import { VectorDBQAChain } from "langchain/chains";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 // First, follow set-up instructions at
 // https://js.langchain.com/docs/modules/data_connection/vectorstores/integrations/xata

@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 
 import { expect, test } from "@jest/globals";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
 import { OpenAIChat } from "../legacy.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

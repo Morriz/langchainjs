@@ -1,4 +1,4 @@
-import { Portkey } from "@langchain/community/llms/portkey";
+import { Portkey } from "@instrukt/langchain-community/llms/portkey";
 
 export const run = async () => {
   const model = new Portkey({

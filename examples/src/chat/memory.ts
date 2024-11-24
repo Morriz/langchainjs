@@ -3,7 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { BufferMemory } from "langchain/memory";
 
 const chat = new ChatOpenAI({ temperature: 0 });

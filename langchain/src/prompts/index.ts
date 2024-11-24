@@ -2,6 +2,6 @@
   [
     `[ERROR]: The "langchain/prompts" entrypoint was removed in LangChain version 0.2.0.`,
     ``,
-    `Instead, please import from "@langchain/core/prompts".`,
+    `Instead, please import from "@instrukt/langchain-core/prompts".`,
   ].join("\n")
 );

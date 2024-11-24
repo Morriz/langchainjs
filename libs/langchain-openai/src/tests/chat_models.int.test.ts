@@ -7,19 +7,19 @@ import {
   ChatMessage,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
-import { ChatGeneration, LLMResult } from "@langchain/core/outputs";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@instrukt/langchain-core/messages";
+import { ChatGeneration, LLMResult } from "@instrukt/langchain-core/outputs";
+import { ChatPromptValue } from "@instrukt/langchain-core/prompt_values";
 import {
   PromptTemplate,
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
-import { InMemoryCache } from "@langchain/core/caches";
-import { concat } from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/prompts";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
+import { InMemoryCache } from "@instrukt/langchain-core/caches";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import { ChatOpenAI } from "../chat_models.js";
 
 // Save the original value of the 'LANGCHAIN_CALLBACKS_BACKGROUND' environment variable

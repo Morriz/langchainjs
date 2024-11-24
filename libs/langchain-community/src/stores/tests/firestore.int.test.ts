@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { test, expect } from "@jest/globals";
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import admin from "firebase-admin";
 import { FirestoreChatMessageHistory } from "../message/firestore.js";
 

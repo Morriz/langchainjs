@@ -1,6 +1,6 @@
 import { test, expect, jest } from "@jest/globals";
-import { HumanMessage, ToolMessage } from "@langchain/core/messages";
-import { InMemoryCache } from "@langchain/core/caches";
+import { HumanMessage, ToolMessage } from "@instrukt/langchain-core/messages";
+import { InMemoryCache } from "@instrukt/langchain-core/caches";
 import { AzureChatOpenAI } from "../chat_models.js";
 
 test("Test ChatOpenAI JSON mode", async () => {

@@ -81,7 +81,7 @@ import {
   SystemMessagePromptTemplate,
   ImagePromptTemplate,
   PipelinePromptTemplate
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import {
   AIMessage,
   AIMessageChunk,
@@ -97,10 +97,10 @@ import {
   SystemMessageChunk,
   ToolMessage,
   ToolMessageChunk
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   StringPromptValue
-} from "@langchain/core/prompt_values";
+} from "@instrukt/langchain-core/prompt_values";
 import {
   RouterRunnable,
   RunnableAssign,
@@ -115,14 +115,14 @@ import {
   RunnableSequence,
   RunnableWithFallbacks,
   RunnableWithMessageHistory
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import {
   StringOutputParser
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import {
   ChatGenerationChunk,
   GenerationChunk
-} from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/outputs";
 const chat_models__openai = {
   ChatOpenAI
 };

@@ -1,4 +1,4 @@
-import { LanceDB } from "@langchain/community/vectorstores/lancedb";
+import { LanceDB } from "@instrukt/langchain-community/vectorstores/lancedb";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";

@@ -3,13 +3,12 @@ import {
   OutputValues,
   MemoryVariables,
   getInputValue,
-  getOutputValue,
-} from "@langchain/core/memory";
-import { getBufferString } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/memory";
+import { getBufferString } from "@instrukt/langchain-core/messages";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/utils/async_caller";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 /**
@@ -172,21 +171,29 @@ export class MotorheadMemory extends BaseChatMemory {
    * @returns A promise that resolves when the context is saved.
    */
   async saveContext(
-    inputValues: InputValues,
-    outputValues: OutputValues
+    inputValues?: InputValues,
+    outputValues?: OutputValues
   ): Promise<void> {
-    const input = getInputValue(inputValues, this.inputKey);
-    const output = getOutputValue(outputValues, this.outputKey);
+    const messages = [];
+    if (inputValues) {
+      const input = getInputValue(inputValues, this.inputKey);
+      messages.push({
+        role: "Human",
+        content: `${input}`,
+      });
+    }
+    if (outputValues) {
+      const output = getInputValue(outputValues, this.outputKey);
+      messages.push({
+        role: "AI",
+        content: `${output}`,
+      });
+    }
     await Promise.all([
       this.caller.call(fetch, `${this.url}/sessions/${this.sessionId}/memory`, {
         signal: this.timeout ? AbortSignal.timeout(this.timeout) : undefined,
         method: "POST",
-        body: JSON.stringify({
-          messages: [
-            { role: "Human", content: `${input}` },
-            { role: "AI", content: `${output}` },
-          ],
-        }),
+        body: JSON.stringify({ messages }),
         headers: this._getHeaders(),
       }),
       super.saveContext(inputValues, outputValues),

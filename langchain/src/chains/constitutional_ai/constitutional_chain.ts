@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "../base.js";
 import { LLMChain } from "../llm_chain.js";
 import { SerializedBaseChain } from "../serde.js";

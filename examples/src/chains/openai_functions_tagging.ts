@@ -1,6 +1,6 @@
 import { createTaggingChain } from "langchain/chains";
 import { ChatOpenAI } from "@langchain/openai";
-import { FunctionParameters } from "@langchain/core/output_parsers/openai_functions";
+import { FunctionParameters } from "@instrukt/langchain-core/output_parsers/openai_functions";
 
 const schema: FunctionParameters = {
   type: "object",

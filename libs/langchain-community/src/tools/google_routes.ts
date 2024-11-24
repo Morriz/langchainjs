@@ -1,5 +1,5 @@
-import { StructuredTool } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import { z } from "zod";
 
 /**

@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 
 import { MongoClient, ObjectId } from "mongodb";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { MongoDBChatMessageHistory } from "../chat_history.js";
 
 afterAll(async () => {

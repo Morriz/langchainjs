@@ -1,5 +1,5 @@
 import neo4j, { RoutingControl } from "neo4j-driver";
-import { insecureHash } from "@langchain/core/utils/hash";
+import { insecureHash } from "@instrukt/langchain-core/utils/hash";
 import { GraphDocument } from "./graph_document.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -1,5 +1,5 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Tool } from "@langchain/core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * A tool for web search functionality using Bing's search engine. It

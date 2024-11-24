@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { BASE_ENTITY_LABEL, Neo4jGraph } from "../neo4j_graph.js";
 import { GraphDocument, Relationship, Node } from "../graph_document.js";
 

@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
-import { PythonInterpreterTool } from "@langchain/community/experimental/tools/pyinterpreter";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { PythonInterpreterTool } from "@instrukt/langchain-community/experimental/tools/pyinterpreter";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const prompt = ChatPromptTemplate.fromTemplate(
   `Generate python code that does {input}. Do not generate anything else.`
@@ -15,7 +15,7 @@ const interpreter = await PythonInterpreterTool.initialize({
 
 // Note: In Deno, it may be easier to initialize the interpreter yourself:
 // import pyodideModule from "npm:pyodide/pyodide.js";
-// import { PythonInterpreterTool } from "npm:@langchain/community/experimental/tools/pyinterpreter";
+// import { PythonInterpreterTool } from "npm:@instrukt/langchain-community/experimental/tools/pyinterpreter";
 
 // const pyodide = await pyodideModule.loadPyodide();
 // const pythonTool = new PythonInterpreterTool({instance: pyodide})

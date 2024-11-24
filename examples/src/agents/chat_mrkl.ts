@@ -1,7 +1,7 @@
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { ChatOpenAI } from "@langchain/openai";
-import { Calculator } from "@langchain/community/tools/calculator";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 export const run = async () => {
   const model = new ChatOpenAI({ temperature: 0 });

@@ -1,5 +1,5 @@
-import { CassandraKVStore } from "@langchain/community/storage/cassandra";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { CassandraKVStore } from "@instrukt/langchain-community/storage/cassandra";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 
 // This document is the Cassandra driver connection document; the example is to AstraDB but
 // any valid Cassandra connection can be used.

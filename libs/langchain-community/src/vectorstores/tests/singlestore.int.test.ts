@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { test, expect } from "@jest/globals";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { SingleStoreVectorStore, SearchStrategy } from "../singlestore.js";
 
 class MockEmbeddings extends OpenAIEmbeddings {

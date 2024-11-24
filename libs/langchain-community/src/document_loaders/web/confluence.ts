@@ -1,6 +1,6 @@
 import { htmlToText } from "html-to-text";
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * Interface representing the parameters for configuring the

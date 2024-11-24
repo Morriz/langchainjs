@@ -114,7 +114,7 @@ export interface LangChainConfig {
    */
   deprecatedOmitFromImportMap?: string[];
   /**
-   * The suffix of the package. Eg. `community` for `@langchain/community`.
+   * The suffix of the package. Eg. `community` for `@instrukt/langchain-community`.
    * Used in the generated import map.
    */
   packageSuffix?: string;

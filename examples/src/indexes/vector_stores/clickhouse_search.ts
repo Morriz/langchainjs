@@ -1,4 +1,4 @@
-import { ClickHouseStore } from "@langchain/community/vectorstores/clickhouse";
+import { ClickHouseStore } from "@instrukt/langchain-community/vectorstores/clickhouse";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 // Initialize ClickHouse store

@@ -1,16 +1,16 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { AgentExecutor } from "langchain/agents";
-import { Calculator } from "@langchain/community/tools/calculator";
+import { Calculator } from "@instrukt/langchain-community/tools/calculator";
 import { pull } from "langchain/hub";
 import { BufferMemory } from "langchain/memory";
 import { formatLogToString } from "langchain/agents/format_scratchpad/log";
 import { renderTextDescription } from "langchain/tools/render";
 import { ReActSingleInputOutputParser } from "langchain/agents/react/output_parser";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { AgentStep } from "@langchain/core/agents";
-import { BaseMessage } from "@langchain/core/messages";
-import { SerpAPI } from "@langchain/community/tools/serpapi";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { BaseMessage } from "@instrukt/langchain-core/messages";
+import { SerpAPI } from "@instrukt/langchain-community/tools/serpapi";
 
 /** Define your chat model */
 const model = new ChatOpenAI({ model: "gpt-4" });

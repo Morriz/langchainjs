@@ -3,4 +3,4 @@ export {
   ToolInputParsingException,
   StructuredTool,
   Tool,
-} from "@langchain/core/tools";
+} from "@instrukt/langchain-core/tools";

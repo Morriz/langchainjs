@@ -2,7 +2,7 @@ import { htmlToText, type HtmlToTextOptions } from "html-to-text";
 import {
   MappingDocumentTransformer,
   Document,
-} from "@langchain/core/documents";
+} from "@instrukt/langchain-core/documents";
 
 /**
  * A transformer that converts HTML content to plain text.

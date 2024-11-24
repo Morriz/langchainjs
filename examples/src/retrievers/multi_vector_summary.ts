@@ -2,14 +2,14 @@ import * as uuid from "uuid";
 
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { MultiVectorRetriever } from "langchain/retrievers/multi_vector";
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
 import { TextLoader } from "langchain/document_loaders/fs/text";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { Document } from "@langchain/core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { Document } from "@instrukt/langchain-core/documents";
 
 const textLoader = new TextLoader("../examples/state_of_the_union.txt");
 const parentDocuments = await textLoader.load();

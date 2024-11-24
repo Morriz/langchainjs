@@ -1,4 +1,4 @@
-import { WolframAlphaTool } from "@langchain/community/tools/wolframalpha";
+import { WolframAlphaTool } from "@instrukt/langchain-community/tools/wolframalpha";
 
 const tool = new WolframAlphaTool({
   appid: "YOUR_APP_ID",

@@ -1,10 +1,10 @@
-import { PostgresRecordManager } from "@langchain/community/indexes/postgres";
+import { PostgresRecordManager } from "@instrukt/langchain-community/indexes/postgres";
 import { index } from "langchain/indexes";
-import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
+import { PGVectorStore } from "@instrukt/langchain-community/vectorstores/pgvector";
 import { PoolConfig } from "pg";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CharacterTextSplitter } from "@langchain/textsplitters";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 // First, follow set-up instructions at
 // https://js.langchain.com/docs/modules/indexes/vector_stores/integrations/pgvector

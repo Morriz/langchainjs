@@ -1,4 +1,4 @@
-import { GooglePlacesAPI } from "@langchain/community/tools/google_places";
+import { GooglePlacesAPI } from "@instrukt/langchain-community/tools/google_places";
 import { OpenAI } from "@langchain/openai";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 

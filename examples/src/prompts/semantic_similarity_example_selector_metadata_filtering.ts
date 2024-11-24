@@ -1,9 +1,12 @@
 // Ephemeral, in-memory vector store for demo purposes
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
-import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import {
+  PromptTemplate,
+  FewShotPromptTemplate,
+} from "@instrukt/langchain-core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
+import { SemanticSimilarityExampleSelector } from "@instrukt/langchain-core/example_selectors";
 
 const embeddings = new OpenAIEmbeddings();
 

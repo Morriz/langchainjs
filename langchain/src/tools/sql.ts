@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
 import { OpenAI } from "@langchain/openai";
-import { Tool } from "@langchain/core/tools";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { Tool } from "@instrukt/langchain-core/tools";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "../chains/llm_chain.js";
 import type { SqlDatabase } from "../sql_db.js";
 import { SqlTable } from "../util/sql_utils.js";

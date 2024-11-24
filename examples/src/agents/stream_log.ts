@@ -1,6 +1,6 @@
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { TavilySearchResults } from "@instrukt/langchain-community/tools/tavily_search";
 import { ChatOpenAI } from "@langchain/openai";
-import type { ChatPromptTemplate } from "@langchain/core/prompts";
+import type { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { pull } from "langchain/hub";
 import { AgentExecutor, createOpenAIFunctionsAgent } from "langchain/agents";

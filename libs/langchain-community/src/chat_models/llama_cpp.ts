@@ -13,15 +13,15 @@ import {
 import {
   SimpleChatModel,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import type { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseMessage,
   AIMessageChunk,
   ChatMessage,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/messages";
+import { ChatGenerationChunk } from "@instrukt/langchain-core/outputs";
 import {
   LlamaBaseCppInputs,
   createLlamaModel,

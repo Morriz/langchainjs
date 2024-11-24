@@ -1,7 +1,7 @@
 import { test } from "@jest/globals";
 import { OpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { Document } from "@langchain/core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
 import { LLMChain } from "../llm_chain.js";
 import { StuffDocumentsChain } from "../combine_docs_chain.js";
 import { VectorDBQAChain } from "../vector_db_qa.js";

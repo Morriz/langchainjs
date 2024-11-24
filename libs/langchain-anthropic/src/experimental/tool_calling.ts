@@ -5,21 +5,21 @@ import {
   BaseMessageLike,
   SystemMessage,
   coerceMessageLikeToMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import type {
   ChatGenerationChunk,
   ChatResult,
   LLMResult,
-} from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/outputs";
 import {
   BaseChatModel,
   BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   CallbackManagerForLLMRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/callbacks/manager";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import type {
   BaseLanguageModelCallOptions,
   BaseLanguageModelInput,
@@ -27,14 +27,14 @@ import type {
   StructuredOutputMethodOptions,
   ToolDefinition,
   FunctionDefinition,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { JsonOutputKeyToolsParser } from "@langchain/core/output_parsers/openai_tools";
-import type { BaseLLMOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/runnables";
+import { JsonOutputKeyToolsParser } from "@instrukt/langchain-core/output_parsers/openai_tools";
+import type { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { JsonSchema7ObjectType, zodToJsonSchema } from "zod-to-json-schema";
 import { z } from "zod";
 import { ChatAnthropic, type AnthropicInput } from "../chat_models.js";

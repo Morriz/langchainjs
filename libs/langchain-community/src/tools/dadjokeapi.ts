@@ -1,4 +1,4 @@
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * The DadJokeAPI class is a tool for generating dad jokes based on a

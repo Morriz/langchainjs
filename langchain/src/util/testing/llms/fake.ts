@@ -1,6 +1,9 @@
-import { GenerationChunk } from "@langchain/core/outputs";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { LLM, BaseLLMParams } from "@langchain/core/language_models/llms";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  LLM,
+  BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
 
 /**
  * Interface for the input parameters specific to the Fake List model.

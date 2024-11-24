@@ -4,7 +4,7 @@ import { v } from "convex/values";
 import { BufferMemory } from "langchain/memory";
 import { ChatOpenAI } from "@langchain/openai";
 import { ConversationChain } from "langchain/chains";
-import { ConvexChatMessageHistory } from "@langchain/community/stores/message/convex";
+import { ConvexChatMessageHistory } from "@instrukt/langchain-community/stores/message/convex";
 import { action } from "./_generated/server.js";
 
 export const ask = action({

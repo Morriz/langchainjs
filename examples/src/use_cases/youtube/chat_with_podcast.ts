@@ -1,10 +1,10 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { SearchApiLoader } from "@langchain/community/document_loaders/web/searchapi";
+import { SearchApiLoader } from "@instrukt/langchain-community/document_loaders/web/searchapi";
 import { TokenTextSplitter } from "@langchain/textsplitters";
-import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import { FaissStore } from "@instrukt/langchain-community/vectorstores/faiss";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const loader = new SearchApiLoader({
   engine: "youtube_transcripts",

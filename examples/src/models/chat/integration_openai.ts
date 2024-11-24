@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatOpenAI({
   temperature: 0.9,

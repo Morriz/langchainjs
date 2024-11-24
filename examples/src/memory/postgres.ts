@@ -1,13 +1,13 @@
 import pg from "pg";
 
-import { PostgresChatMessageHistory } from "@langchain/community/stores/message/postgres";
+import { PostgresChatMessageHistory } from "@instrukt/langchain-community/stores/message/postgres";
 import { ChatOpenAI } from "@langchain/openai";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const poolConfig = {
   host: "127.0.0.1",

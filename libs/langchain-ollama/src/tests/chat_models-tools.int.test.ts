@@ -3,10 +3,10 @@ import {
   AIMessage,
   ToolMessage,
   AIMessageChunk,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+} from "@instrukt/langchain-core/messages";
+import { tool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
-import { concat } from "@langchain/core/utils/stream";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import { ChatOllama } from "../chat_models.js";
 
 const messageHistory = [

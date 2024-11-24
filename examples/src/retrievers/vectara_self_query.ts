@@ -1,9 +1,9 @@
 import { SelfQueryRetriever } from "langchain/retrievers/self_query";
 import { OpenAI } from "@langchain/openai";
-import { VectaraStore } from "@langchain/community/vectorstores/vectara";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
-import { VectaraTranslator } from "@langchain/community/structured_query/vectara";
+import { VectaraStore } from "@instrukt/langchain-community/vectorstores/vectara";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { VectaraTranslator } from "@instrukt/langchain-community/structured_query/vectara";
 import type { AttributeInfo } from "langchain/chains/query_constructor";
 
 /**
