@@ -16,9 +16,9 @@ import type {
 } from "notion-to-md/build/types";
 import yaml from "js-yaml";
 
-import { Document } from "@langchain/core/documents";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type GuardType<T> = T extends (x: any, ...rest: any) => x is infer U

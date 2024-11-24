@@ -1,9 +1,13 @@
 /* eslint-disable no-promise-executor-return */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { test, expect, jest } from "@jest/globals";
-import { AIMessage, HumanMessage, ToolMessage } from "@langchain/core/messages";
-import { concat } from "@langchain/core/utils/stream";
-import { InMemoryCache } from "@langchain/core/caches";
+import {
+  AIMessage,
+  HumanMessage,
+  ToolMessage,
+} from "@instrukt/langchain-core/messages";
+import { concat } from "@instrukt/langchain-core/utils/stream";
+import { InMemoryCache } from "@instrukt/langchain-core/caches";
 import { ChatOpenAI } from "../chat_models.js";
 
 test("Test ChatOpenAI JSON mode", async () => {
@@ -486,7 +490,7 @@ These prompt templates are used to format a single string, and generally are use
 For example, a common way to construct and use a PromptTemplate is as follows:
 
 \`\`\`typescript
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const promptTemplate = PromptTemplate.fromTemplate(
   "Tell me a joke about {topic}"
@@ -501,7 +505,7 @@ These prompt templates are used to format an array of messages. These "templates
 For example, a common way to construct and use a ChatPromptTemplate is as follows:
 
 \`\`\`typescript
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],
@@ -528,8 +532,8 @@ This is how you use MessagesPlaceholder.
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { HumanMessage } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/prompts";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const promptTemplate = ChatPromptTemplate.fromMessages([
   ["system", "You are a helpful assistant"],

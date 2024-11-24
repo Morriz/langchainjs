@@ -1,6 +1,6 @@
 import { Index } from "@upstash/vector";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { UpstashVectorStore } from "@langchain/community/vectorstores/upstash";
 
 const index = new Index({

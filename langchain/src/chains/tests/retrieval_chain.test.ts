@@ -1,7 +1,7 @@
 import { test } from "@jest/globals";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { FakeRetriever } from "@langchain/core/utils/testing";
-import { Document } from "@langchain/core/documents";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { FakeRetriever } from "@instrukt/langchain-core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
 import { createRetrievalChain } from "../retrieval.js";
 import { FakeListLLM } from "../../util/testing/llms/fake.js";
 

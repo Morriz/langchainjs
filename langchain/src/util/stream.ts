@@ -1,1 +1,1 @@
-export * from "@langchain/core/utils/stream";
+export * from "@instrukt/langchain-core/utils/stream";

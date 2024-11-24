@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const chat = new ChatOpenAI({
   maxTokens: 25,

@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import type { Tool as AnthropicTool } from "@anthropic-ai/sdk/resources/index.mjs";
-import { BindToolsInput } from "@langchain/core/language_models/chat_models";
+import { BindToolsInput } from "@instrukt/langchain-core/language_models/chat_models";
 
 export type AnthropicToolResponse = {
   type: "tool_use";

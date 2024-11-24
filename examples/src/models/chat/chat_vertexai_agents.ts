@@ -1,9 +1,9 @@
 import { z } from "zod";
 
-import { tool } from "@langchain/core/tools";
+import { tool } from "@instrukt/langchain-core/tools";
 import { AgentExecutor, createToolCallingAgent } from "langchain/agents";
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatVertexAI } from "@langchain/google-vertexai";
 // Uncomment this if you're running inside a web/edge environment.
 // import { ChatVertexAI } from "@langchain/google-vertexai-web";

@@ -1,16 +1,16 @@
 import { z } from "zod";
 import { zodToJsonSchema, JsonSchema7Type } from "zod-to-json-schema";
 
-import { Validator } from "@langchain/core/utils/json_schema";
+import { Validator } from "@instrukt/langchain-core/utils/json_schema";
 import { ChatOpenAI } from "@langchain/openai";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   BaseLLMOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { ChatGeneration } from "@langchain/core/outputs";
-import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import type { BaseFunctionCallOptions } from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/output_parsers";
+import { ChatGeneration } from "@instrukt/langchain-core/outputs";
+import type { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
+import type { BaseFunctionCallOptions } from "@instrukt/langchain-core/language_models/base";
 import { LLMChain, type LLMChainInput } from "../llm_chain.js";
 import { OutputFunctionsParser } from "../../output_parsers/openai_functions.js";
 

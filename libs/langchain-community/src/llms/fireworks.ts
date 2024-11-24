@@ -5,8 +5,8 @@ import {
   type OpenAICoreRequestOptions,
   OpenAI,
 } from "@langchain/openai";
-import type { BaseLLMParams } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import type { BaseLLMParams } from "@instrukt/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 type FireworksUnsupportedArgs =
   | "frequencyPenalty"

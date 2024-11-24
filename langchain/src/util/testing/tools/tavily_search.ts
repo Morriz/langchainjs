@@ -1,6 +1,6 @@
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { Tool, type ToolParams } from "@langchain/core/tools";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
+import { Tool, type ToolParams } from "@instrukt/langchain-core/tools";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Options for the TavilySearchResults tool.

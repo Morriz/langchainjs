@@ -1,6 +1,6 @@
 import { test } from "@jest/globals";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StructuredTool } from "@langchain/core/tools";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
 import {
   AIMessage,
@@ -8,7 +8,7 @@ import {
   HumanMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { ContentChunk as MistralAIContentChunk } from "@mistralai/mistralai/models/components/contentchunk.js";
 import { HTTPClient } from "@mistralai/mistralai/lib/http.js";
 import { zodToJsonSchema } from "zod-to-json-schema";

@@ -2,7 +2,7 @@
 import { test, expect } from "@jest/globals";
 import weaviate from "weaviate-ts-client";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { WeaviateStore } from "../weaviate.js";
 
 test("WeaviateStore", async () => {

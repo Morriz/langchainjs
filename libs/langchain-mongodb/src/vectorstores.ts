@@ -2,15 +2,15 @@ import { type Collection, type Document as MongoDBDocument } from "mongodb";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
-import { Document } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
+import { Document } from "@instrukt/langchain-core/documents";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/utils/async_caller";
 
 /**
  * Type that defines the arguments required to initialize the

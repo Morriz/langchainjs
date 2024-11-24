@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 import { createHistoryAwareRetriever } from "../history_aware_retriever.js";

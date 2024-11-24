@@ -5,8 +5,8 @@ import {
   deserializeStoredGeneration,
   getCacheKey,
   serializeGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/caches";
+import { Generation } from "@instrukt/langchain-core/outputs";
 
 /**
  * Represents the type of the Redis client used to interact with the Redis

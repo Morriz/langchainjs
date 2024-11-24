@@ -7,7 +7,7 @@ import {
 import {
   Document,
   MappingDocumentTransformer,
-} from "@langchain/core/documents";
+} from "@instrukt/langchain-core/documents";
 import { ChatOpenAI } from "@langchain/openai";
 import { BaseChain } from "../chains/base.js";
 import {

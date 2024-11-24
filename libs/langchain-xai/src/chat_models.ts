@@ -3,9 +3,9 @@ import {
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { Serialized } from "@langchain/core/load/serializable";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { Serialized } from "@instrukt/langchain-core/load/serializable";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   type OpenAICoreRequestOptions,
   type OpenAIClient,
@@ -264,8 +264,8 @@ export interface ChatXAIInput extends BaseChatModelParams {
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;

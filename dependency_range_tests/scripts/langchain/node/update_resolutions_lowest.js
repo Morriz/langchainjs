@@ -3,23 +3,33 @@ const semver = require("semver");
 
 const communityPackageJsonPath = "package.json";
 
-const currentPackageJson = JSON.parse(fs.readFileSync(communityPackageJsonPath));
+const currentPackageJson = JSON.parse(
+  fs.readFileSync(communityPackageJsonPath)
+);
 
-if (currentPackageJson.peerDependencies["@langchain/core"] && !currentPackageJson.peerDependencies["@langchain/core"].includes("rc")) {
+if (
+  currentPackageJson.peerDependencies["@instrukt/langchain-core"] &&
+  !currentPackageJson.peerDependencies["@instrukt/langchain-core"].includes(
+    "rc"
+  )
+) {
   const minVersion = semver.minVersion(
-    currentPackageJson.peerDependencies["@langchain/core"]
+    currentPackageJson.peerDependencies["@instrukt/langchain-core"]
   ).version;
   currentPackageJson.peerDependencies = {
     ...currentPackageJson.peerDependencies,
-    "@langchain/core": minVersion,
+    "@instrukt/langchain-core": minVersion,
   };
 }
 
-if (currentPackageJson.devDependencies["@langchain/core"]) {
-  delete currentPackageJson.devDependencies["@langchain/core"];
+if (currentPackageJson.devDependencies["@instrukt/langchain-core"]) {
+  delete currentPackageJson.devDependencies["@instrukt/langchain-core"];
 }
 
-if (currentPackageJson.dependencies["@langchain/openai"] && !currentPackageJson.dependencies["@langchain/openai"].includes("rc")) {
+if (
+  currentPackageJson.dependencies["@langchain/openai"] &&
+  !currentPackageJson.dependencies["@langchain/openai"].includes("rc")
+) {
   const minVersion = semver.minVersion(
     currentPackageJson.dependencies["@langchain/openai"]
   ).version;
@@ -29,7 +39,10 @@ if (currentPackageJson.dependencies["@langchain/openai"] && !currentPackageJson.
   };
 }
 
-if (currentPackageJson.dependencies["@langchain/textsplitters"] && !currentPackageJson.dependencies["@langchain/textsplitters"].includes("rc")) {
+if (
+  currentPackageJson.dependencies["@langchain/textsplitters"] &&
+  !currentPackageJson.dependencies["@langchain/textsplitters"].includes("rc")
+) {
   const minVersion = semver.minVersion(
     currentPackageJson.dependencies["@langchain/textsplitters"]
   ).version;
@@ -42,7 +55,10 @@ if (currentPackageJson.dependencies["@langchain/textsplitters"] && !currentPacka
 // Stupid hack
 currentPackageJson.resolutions = {
   ...currentPackageJson.resolutions,
-  "jackspeak": "2.1.1"
+  jackspeak: "2.1.1",
 };
 
-fs.writeFileSync(communityPackageJsonPath, JSON.stringify(currentPackageJson, null, 2));
+fs.writeFileSync(
+  communityPackageJsonPath,
+  JSON.stringify(currentPackageJson, null, 2)
+);

@@ -1,5 +1,5 @@
 import { ChatOllama } from "@langchain/ollama";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const model = new ChatOllama({
   baseUrl: "http://localhost:11434", // Default value

@@ -1,6 +1,6 @@
 import { OpenAIModerationChain, LLMChain } from "langchain/chains";
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 // A string containing potentially offensive content from the user
 const badString = "Bad naughty words from user";

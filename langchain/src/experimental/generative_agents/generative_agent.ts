@@ -1,10 +1,10 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { ChainValues } from "@langchain/core/utils/types";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import {
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { GenerativeAgentMemory } from "./generative_agent_memory.js";
 import { BaseChain } from "../../chains/base.js";

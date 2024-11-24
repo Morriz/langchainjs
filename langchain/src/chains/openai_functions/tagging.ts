@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { zodToJsonSchema, JsonSchema7ObjectType } from "zod-to-json-schema";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-import { BaseFunctionCallOptions } from "@langchain/core/language_models/base";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
+import { BaseFunctionCallOptions } from "@instrukt/langchain-core/language_models/base";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   FunctionParameters,
   JsonOutputFunctionsParser,

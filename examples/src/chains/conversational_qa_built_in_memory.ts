@@ -5,10 +5,10 @@ import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { BufferMemory } from "langchain/memory";
 import * as fs from "fs";
 import { formatDocumentsAsString } from "langchain/util/document";
-import { Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { BaseMessage } from "@langchain/core/messages";
+import { Document } from "@instrukt/langchain-core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { BaseMessage } from "@instrukt/langchain-core/messages";
 
 const text = fs.readFileSync("state_of_the_union.txt", "utf8");
 

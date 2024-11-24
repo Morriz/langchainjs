@@ -1,9 +1,9 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { AgentExecutor } from "langchain/agents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { AgentFinish, AgentAction } from "@langchain/core/agents";
-import { BaseMessageChunk } from "@langchain/core/messages";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { AgentFinish, AgentAction } from "@instrukt/langchain-core/agents";
+import { BaseMessageChunk } from "@instrukt/langchain-core/messages";
 import { SearchApi } from "@langchain/community/tools/searchapi";
 
 const model = new ChatOpenAI({

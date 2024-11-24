@@ -2,14 +2,14 @@ import { AgentExecutor } from "langchain/agents";
 import { XMLAgentOutputParser } from "langchain/agents/xml/output_parser";
 import { renderTextDescription } from "langchain/tools/render";
 import { formatLogToMessage } from "langchain/agents/format_scratchpad/log_to_message";
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@instrukt/langchain-core/tools";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { AgentStep } from "@langchain/core/agents";
+} from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { AgentStep } from "@instrukt/langchain-core/agents";
 import { ChatAnthropic } from "@langchain/anthropic";
 import { SerpAPI } from "@langchain/community/tools/serpapi";
 

@@ -4,14 +4,14 @@ import {
   VectorizeIndex,
   VectorizeVectorMetadata,
 } from "@cloudflare/workers-types";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { VectorStore } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   AsyncCaller,
   type AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
 
 /**
  * @deprecated Install and import from "@langchain/cloudflare" instead.

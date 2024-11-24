@@ -1,6 +1,6 @@
 import { LunaryHandler } from "@langchain/community/callbacks/handlers/lunary";
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage, SystemMessage } from "@instrukt/langchain-core/messages";
 
 import lunary from "lunary";
 

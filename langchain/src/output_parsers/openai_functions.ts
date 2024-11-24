@@ -2,16 +2,16 @@ import { JsonSchema7ObjectType } from "zod-to-json-schema";
 import {
   compare,
   type Operation as JSONPatchOperation,
-} from "@langchain/core/utils/json_patch";
+} from "@instrukt/langchain-core/utils/json_patch";
 
-import { ChatGeneration, Generation } from "@langchain/core/outputs";
+import { ChatGeneration, Generation } from "@instrukt/langchain-core/outputs";
 import {
   BaseCumulativeTransformOutputParser,
   type BaseCumulativeTransformOutputParserInput,
   BaseLLMOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { parsePartialJson } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
+import { parsePartialJson } from "@instrukt/langchain-core/output_parsers";
 import { Optional } from "../types/type-utils.js";
 
 /**

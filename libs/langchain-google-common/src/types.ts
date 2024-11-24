@@ -1,14 +1,17 @@
-import type { BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLLMParams } from "@instrukt/langchain-core/language_models/llms";
 import type {
   BaseChatModelCallOptions,
   BindToolsInput,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   BaseMessage,
   BaseMessageChunk,
   MessageContent,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/messages";
+import {
+  ChatGenerationChunk,
+  ChatResult,
+} from "@instrukt/langchain-core/outputs";
 import type { JsonStream } from "./utils/stream.js";
 import { MediaManager } from "./experimental/utils/media_core.js";
 import {

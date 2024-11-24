@@ -1,5 +1,5 @@
 import { describe, expect, it, jest } from "@jest/globals";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 import { GoogleVertexAILLMConnection } from "../googlevertexai-connection.js";
 
 describe("GoogleVertexAILLMConnection", () => {

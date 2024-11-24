@@ -1,5 +1,5 @@
 import { ChatTogetherAI } from "@langchain/community/chat_models/togetherai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatTogetherAI({
   temperature: 0.9,

@@ -1,11 +1,11 @@
-import { AIMessage, BaseMessage } from "@langchain/core/messages";
-import { ChatResult } from "@langchain/core/outputs";
+import { AIMessage, BaseMessage } from "@instrukt/langchain-core/messages";
+import { ChatResult } from "@instrukt/langchain-core/outputs";
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
   BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 
 export interface AdvancedCustomChatModelOptions
   extends BaseChatModelCallOptions {}

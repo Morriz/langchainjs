@@ -3,7 +3,7 @@
 import { test } from "@jest/globals";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { AnalyticDBVectorStore } from "../analyticdb.js";
 
 const connectionOptions = {

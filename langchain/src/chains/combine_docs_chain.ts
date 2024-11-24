@@ -1,7 +1,10 @@
-import { Document } from "@langchain/core/documents";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
-import { BasePromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  BasePromptTemplate,
+  PromptTemplate,
+} from "@instrukt/langchain-core/prompts";
 import type {
   SerializedStuffDocumentsChain,
   SerializedMapReduceDocumentsChain,

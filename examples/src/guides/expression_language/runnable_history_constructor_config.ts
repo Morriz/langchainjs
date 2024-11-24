@@ -2,11 +2,11 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import {
   RunnableConfig,
   RunnableWithMessageHistory,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import { ChatMessageHistory } from "@langchain/community/stores/message/in_memory";
 
 // Construct your runnable with a prompt and chat model.

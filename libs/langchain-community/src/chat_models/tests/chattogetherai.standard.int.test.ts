@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 import { test, expect } from "@jest/globals";
 import { ChatModelIntegrationTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import { ChatTogetherAI, ChatTogetherAICallOptions } from "../togetherai.js";
 
 class ChatTogetherAIStandardIntegrationTests extends ChatModelIntegrationTests<

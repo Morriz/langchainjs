@@ -1,5 +1,5 @@
 import { type ClientOptions, AzureOpenAI as AzureOpenAIClient } from "openai";
-import { type BaseLLMParams } from "@langchain/core/language_models/llms";
+import { type BaseLLMParams } from "@instrukt/langchain-core/language_models/llms";
 import { OpenAI } from "../llms.js";
 import { OpenAIEndpointConfig, getEndpoint } from "../utils/azure.js";
 import type {

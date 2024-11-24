@@ -1,1 +1,1 @@
-export * from "@langchain/core/utils/tiktoken";
+export * from "@instrukt/langchain-core/utils/tiktoken";

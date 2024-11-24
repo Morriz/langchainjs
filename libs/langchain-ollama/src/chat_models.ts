@@ -2,28 +2,31 @@ import {
   AIMessage,
   UsageMetadata,
   type BaseMessage,
-} from "@langchain/core/messages";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/messages";
+import { BaseLanguageModelInput } from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   LangSmithParams,
   BaseChatModelCallOptions,
   BindToolsInput,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import { Ollama } from "ollama/browser";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { AIMessageChunk } from "@langchain/core/messages";
+import {
+  ChatGenerationChunk,
+  ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import type {
   ChatRequest as OllamaChatRequest,
   ChatResponse as OllamaChatResponse,
   Message as OllamaMessage,
   Tool as OllamaTool,
 } from "ollama";
-import { Runnable } from "@langchain/core/runnables";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { concat } from "@langchain/core/utils/stream";
+import { Runnable } from "@instrukt/langchain-core/runnables";
+import { convertToOpenAITool } from "@instrukt/langchain-core/utils/function_calling";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import {
   convertOllamaMessagesToLangChain,
   convertToOllamaMessages,

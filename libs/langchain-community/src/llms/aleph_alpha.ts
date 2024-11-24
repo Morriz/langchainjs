@@ -1,5 +1,8 @@
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import {
+  LLM,
+  type BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Interface for the input parameters specific to the Aleph Alpha LLM.

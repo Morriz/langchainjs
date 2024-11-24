@@ -1,8 +1,8 @@
-import { ChainValues } from "@langchain/core/utils/types";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import {
   CallbackManagerForChainRun,
   Callbacks,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain, ChainInputs } from "../../chains/base.js";
 
 /**

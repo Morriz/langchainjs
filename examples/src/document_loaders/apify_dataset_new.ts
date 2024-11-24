@@ -1,8 +1,8 @@
 import { ApifyDatasetLoader } from "@langchain/community/document_loaders/web/apify_dataset";
 import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 

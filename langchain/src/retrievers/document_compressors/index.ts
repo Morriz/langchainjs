@@ -1,6 +1,6 @@
-import type { DocumentInterface } from "@langchain/core/documents";
-import { BaseDocumentTransformer } from "@langchain/core/documents";
-import { Callbacks } from "@langchain/core/callbacks/manager";
+import type { DocumentInterface } from "@instrukt/langchain-core/documents";
+import { BaseDocumentTransformer } from "@instrukt/langchain-core/documents";
+import { Callbacks } from "@instrukt/langchain-core/callbacks/manager";
 
 /**
  * Base Document Compression class. All compressors should extend this class.

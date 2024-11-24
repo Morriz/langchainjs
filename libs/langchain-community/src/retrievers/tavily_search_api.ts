@@ -1,10 +1,10 @@
-import { Document } from "@langchain/core/documents";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+import { Document } from "@instrukt/langchain-core/documents";
+import { CallbackManagerForRetrieverRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/retrievers";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Options for the TavilySearchAPIRetriever class, which includes a BaseLanguageModel

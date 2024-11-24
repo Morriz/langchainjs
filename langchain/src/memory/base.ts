@@ -1,2 +1,2 @@
-export * from "@langchain/core/memory";
-export { getBufferString } from "@langchain/core/messages";
+export * from "@instrukt/langchain-core/memory";
+export { getBufferString } from "@instrukt/langchain-core/messages";

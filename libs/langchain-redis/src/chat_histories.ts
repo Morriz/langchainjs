@@ -5,12 +5,12 @@ import {
   RedisFunctions,
   RedisScripts,
 } from "redis";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import {
   BaseMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { pool } from "./connections.js";
 
 /**

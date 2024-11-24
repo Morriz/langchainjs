@@ -17,15 +17,15 @@ import {
   MessageContentComplex,
   UsageMetadata,
   isBaseMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   ChatGeneration,
   ChatGenerationChunk,
   ChatResult,
-} from "@langchain/core/outputs";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
-import { isOpenAITool } from "@langchain/core/language_models/base";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/outputs";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
+import { isOpenAITool } from "@instrukt/langchain-core/language_models/base";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
 import {
   jsonSchemaToGeminiParameters,
   zodToGenerativeAIParameters,

@@ -7,7 +7,7 @@ import {
   HumanMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { ChatGoogleGenerativeAI } from "../chat_models.js";
 import { removeAdditionalProperties } from "../utils/zod_to_genai_parameters.js";
 import {

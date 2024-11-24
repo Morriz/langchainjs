@@ -13,7 +13,7 @@ console.log(await chatModel.invoke("what is LangSmith?"));
   }
 */
 
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   ["system", "You are a world class technical documentation writer."],
@@ -28,7 +28,7 @@ console.log(
   })
 );
 
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const outputParser = new StringOutputParser();
 

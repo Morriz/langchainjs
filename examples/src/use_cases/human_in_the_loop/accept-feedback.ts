@@ -1,5 +1,5 @@
 import * as readline from "readline";
-import { JsonOutputToolsParser } from "@langchain/core/output_parsers/openai_tools";
+import { JsonOutputToolsParser } from "@instrukt/langchain-core/output_parsers/openai_tools";
 import { callToolList, model } from "./helpers.js";
 
 // Use readline to ask the user for approval

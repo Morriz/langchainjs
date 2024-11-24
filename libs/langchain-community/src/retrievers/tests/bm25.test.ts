@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { BM25Retriever } from "../bm25.js";
 
 test("BM25Retriever", async () => {

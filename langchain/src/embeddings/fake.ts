@@ -1,1 +1,1 @@
-export * from "@langchain/core/utils/testing";
+export * from "@instrukt/langchain-core/utils/testing";

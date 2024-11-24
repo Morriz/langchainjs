@@ -11,7 +11,7 @@ import {
 } from "convex/server";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Value } from "convex/values";
-import { BaseStore } from "@langchain/core/stores";
+import { BaseStore } from "@instrukt/langchain-core/stores";
 
 /**
  * Type that defines the config required to initialize the

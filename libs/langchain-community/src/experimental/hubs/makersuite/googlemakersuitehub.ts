@@ -1,13 +1,13 @@
 import type { protos } from "@google-ai/generativelanguage";
 import type { google } from "@google-ai/generativelanguage/build/protos/protos.js";
 import { GoogleAuth, GoogleAuthOptions } from "google-auth-library";
-import type { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { Runnable } from "@langchain/core/runnables";
-import { PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModel } from "@instrukt/langchain-core/language_models/base";
+import { Runnable } from "@instrukt/langchain-core/runnables";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   AsyncCaller,
   AsyncCallerCallOptions,
-} from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/utils/async_caller";
 
 import { ChatGooglePaLM } from "./chat_models.js";
 import { GooglePaLM } from "./llms.js";

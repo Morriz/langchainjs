@@ -1,12 +1,12 @@
 import { Zep, ZepClient } from "@getzep/zep-cloud";
 import { Memory, NotFoundError, RoleType } from "@getzep/zep-cloud/api";
-import { BaseChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import {
   AIMessage,
   BaseMessage,
   HumanMessage,
   MessageType,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   condenseZepMemoryIntoHumanMessage,
   zepMemoryToMessages,

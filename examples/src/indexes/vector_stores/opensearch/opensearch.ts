@@ -2,7 +2,7 @@ import { Client } from "@opensearch-project/opensearch";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { OpenSearchVectorStore } from "@langchain/community/vectorstores/opensearch";
 import * as uuid from "uuid";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 export async function run() {
   const client = new Client({

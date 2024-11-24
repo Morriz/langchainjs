@@ -1,6 +1,6 @@
 import { kv, type VercelKV } from "@vercel/kv";
 
-import { BaseStore } from "@langchain/core/stores";
+import { BaseStore } from "@instrukt/langchain-core/stores";
 
 /**
  * Class that extends the BaseStore class to interact with a Vercel KV

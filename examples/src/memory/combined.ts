@@ -5,7 +5,7 @@ import {
   ConversationSummaryMemory,
 } from "langchain/memory";
 import { ConversationChain } from "langchain/chains";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 // buffer memory
 const bufferMemory = new BufferMemory({

@@ -1,9 +1,9 @@
 import { zodToJsonSchema } from "zod-to-json-schema";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
 import {
   convertToOpenAIFunction,
   convertToOpenAITool,
-} from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/utils/function_calling";
 
 export {
   convertToOpenAIFunction as formatToOpenAIFunction,

@@ -1,4 +1,4 @@
-import { BaseStore } from "@langchain/core/stores";
+import { BaseStore } from "@instrukt/langchain-core/stores";
 import { Collection, Document as MongoDocument } from "mongodb";
 
 /**

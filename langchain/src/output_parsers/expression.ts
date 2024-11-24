@@ -1,4 +1,4 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { MasterHandler } from "./expression_type_handlers/factory.js";
 import { ParsedType } from "./expression_type_handlers/types.js";
 import { ASTParser } from "./expression_type_handlers/base.js";

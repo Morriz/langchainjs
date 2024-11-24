@@ -2,8 +2,8 @@ import {
   type BaseLLMCallOptions,
   type BaseLLMParams,
   LLM,
-} from "@langchain/core/language_models/llms";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/language_models/llms";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * The WatsonxAIParams interface defines the input parameters for

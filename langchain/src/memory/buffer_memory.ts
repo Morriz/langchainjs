@@ -1,5 +1,5 @@
-import { InputValues, MemoryVariables } from "@langchain/core/memory";
-import { getBufferString } from "@langchain/core/messages";
+import { InputValues, MemoryVariables } from "@instrukt/langchain-core/memory";
+import { getBufferString } from "@instrukt/langchain-core/messages";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 /**

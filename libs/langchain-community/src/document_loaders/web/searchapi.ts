@@ -1,6 +1,6 @@
-import { Document } from "@langchain/core/documents";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 type JSONPrimitive = string | number | boolean | null;
 type JSONValue = JSONPrimitive | JSONObject | JSONArray;

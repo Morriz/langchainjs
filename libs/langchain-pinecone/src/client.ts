@@ -1,5 +1,5 @@
 import { Pinecone, PineconeConfiguration } from "@pinecone-database/pinecone";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 export function getPineconeClient(config?: PineconeConfiguration): Pinecone {
   if (

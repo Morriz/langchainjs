@@ -4,8 +4,8 @@ import {
   BedrockAgentRuntimeClientConfig,
 } from "@aws-sdk/client-bedrock-agent-runtime";
 
-import { BaseRetriever } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import { BaseRetriever } from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * @deprecated The AmazonKnowledgeBaseRetriever integration has been moved to the `@langchain/aws` package. Import from `@langchain/aws` instead.

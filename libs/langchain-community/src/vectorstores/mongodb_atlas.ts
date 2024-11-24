@@ -2,14 +2,14 @@ import type { Collection, Document as MongoDBDocument } from "mongodb";
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/utils/async_caller";
 
 /**
  * @deprecated Install and import from the "@langchain/mongodb" integration package instead.

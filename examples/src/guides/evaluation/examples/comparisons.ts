@@ -1,7 +1,7 @@
 import { loadEvaluator } from "langchain/evaluation";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { ChatOpenAI } from "@langchain/openai";
-import { ChainValues } from "@langchain/core/utils/types";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
 import { SerpAPI } from "@langchain/community/tools/serpapi";
 
 //  Step 1. Create the Evaluator

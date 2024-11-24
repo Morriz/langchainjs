@@ -1,6 +1,9 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { RunnableBranch, RunnableSequence } from "@langchain/core/runnables";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import {
+  RunnableBranch,
+  RunnableSequence,
+} from "@instrukt/langchain-core/runnables";
 import { ChatAnthropic } from "@langchain/anthropic";
 
 const promptTemplate =

@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { QA_PROMPT } from "./prompt.js";
 import { LLMChain, LLMChainInput } from "../../chains/llm_chain.js";
 

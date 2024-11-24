@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { HNSWLib } from "../hnswlib.js";
 
 test("Test HNSWLib.fromTexts + addVectors", async () => {

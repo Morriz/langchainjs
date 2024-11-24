@@ -1,20 +1,20 @@
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { Serialized } from "@langchain/core/load/serializable";
-import { mapStoredMessagesToChatMessages } from "@langchain/core/messages";
+import { BaseLanguageModel } from "@instrukt/langchain-core/language_models/base";
+import { Serialized } from "@instrukt/langchain-core/load/serializable";
+import { mapStoredMessagesToChatMessages } from "@instrukt/langchain-core/messages";
 import {
   Runnable,
   RunnableConfig,
   RunnableLambda,
   getCallbackManagerForConfig,
-} from "@langchain/core/runnables";
-import { LangChainTracer } from "@langchain/core/tracers/tracer_langchain";
-import { BaseTracer } from "@langchain/core/tracers/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/runnables";
+import { LangChainTracer } from "@instrukt/langchain-core/tracers/tracer_langchain";
+import { BaseTracer } from "@instrukt/langchain-core/tracers/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 import type {
   CallbackManager,
   CallbackManagerForChainRun,
-} from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/callbacks/manager";
 import {
   Client,
   Example,

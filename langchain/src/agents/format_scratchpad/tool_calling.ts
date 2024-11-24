@@ -1,4 +1,8 @@
-import { AIMessage, BaseMessage, ToolMessage } from "@langchain/core/messages";
+import {
+  AIMessage,
+  BaseMessage,
+  ToolMessage,
+} from "@instrukt/langchain-core/messages";
 import { ToolsAgentStep } from "../tool_calling/output_parser.js";
 
 /**

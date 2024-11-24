@@ -1,5 +1,5 @@
 import { ChatBaiduQianfan } from "@langchain/baidu-qianfan";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const chat = new ChatBaiduQianfan({
   qianfanAccessKey: process.env.QIANFAN_ACCESS_KEY,

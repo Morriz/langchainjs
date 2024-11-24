@@ -1,10 +1,10 @@
 /* eslint-disable no-process-env */
 
 import { test, expect } from "@jest/globals";
-import { LLMResult } from "@langchain/core/outputs";
-import { StringPromptValue } from "@langchain/core/prompt_values";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
+import { StringPromptValue } from "@instrukt/langchain-core/prompt_values";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import { OpenAIChat } from "../legacy.js";
 import { OpenAI } from "../llms.js";
 

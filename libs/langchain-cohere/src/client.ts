@@ -1,5 +1,5 @@
 import { CohereClient } from "cohere-ai";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 export type CohereClientOptions = {
   /**

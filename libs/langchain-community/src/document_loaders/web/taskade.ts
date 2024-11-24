@@ -1,6 +1,6 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * Interface representing the parameters for configuring the TaskadeLoader.

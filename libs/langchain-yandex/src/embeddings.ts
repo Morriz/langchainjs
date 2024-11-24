@@ -1,5 +1,8 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import {
+  Embeddings,
+  EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
 
 const apiUrl =
   "https://llm.api.cloud.yandex.net/foundationModels/v1/textEmbedding";

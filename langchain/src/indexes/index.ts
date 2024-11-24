@@ -7,7 +7,7 @@ import {
   _getSourceIdAssigner,
   _isBaseDocumentLoader,
   _HashedDocument,
-} from "@langchain/core/indexing";
+} from "@instrukt/langchain-core/indexing";
 
 export {
   type CleanupMode,

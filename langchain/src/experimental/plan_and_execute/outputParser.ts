@@ -1,4 +1,4 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
 import { Plan } from "./base.js";
 
 import { PLANNER_SYSTEM_PROMPT_MESSAGE_TEMPLATE } from "./prompt.js";

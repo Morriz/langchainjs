@@ -1,12 +1,12 @@
 import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { SemanticSimilarityExampleSelector } from "@instrukt/langchain-core/example_selectors";
 import {
   FewShotPromptTemplate,
   PromptTemplate,
   ChatPromptTemplate,
   SystemMessagePromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { SqlToolkit } from "langchain/agents/toolkits/sql";
 import { SqlDatabase } from "langchain/sql_db";

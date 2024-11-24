@@ -1,6 +1,6 @@
 /* eslint-disable no-process-env */
-import { Document } from "@langchain/core/documents";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import {
   DOCUMENTS,
   TYPE_1_FILTERING_TEST_CASES,

@@ -1,5 +1,5 @@
-import { CallbackManagerForToolRun } from "@langchain/core/callbacks/manager";
-import { Tool, type ToolParams } from "@langchain/core/tools";
+import { CallbackManagerForToolRun } from "@instrukt/langchain-core/callbacks/manager";
+import { Tool, type ToolParams } from "@instrukt/langchain-core/tools";
 import Exa, { ContentsOptions, RegularSearchOptions } from "exa-js";
 
 /**

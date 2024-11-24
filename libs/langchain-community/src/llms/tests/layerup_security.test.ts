@@ -2,7 +2,7 @@ import { test } from "@jest/globals";
 import {
   LLM,
   type BaseLLMCallOptions,
-} from "@langchain/core/language_models/llms";
+} from "@instrukt/langchain-core/language_models/llms";
 import { GuardrailResponse } from "@layerup/layerup-security/types.js";
 import {
   LayerupSecurity,

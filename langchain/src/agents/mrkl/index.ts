@@ -1,6 +1,9 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ToolInterface } from "@langchain/core/tools";
-import { PromptTemplate, renderTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ToolInterface } from "@instrukt/langchain-core/tools";
+import {
+  PromptTemplate,
+  renderTemplate,
+} from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { Optional } from "../../types/type-utils.js";
 import { Agent, AgentArgs, OutputParserArgs } from "../agent.js";

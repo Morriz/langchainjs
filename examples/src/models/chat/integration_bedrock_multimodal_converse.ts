@@ -1,7 +1,7 @@
 import * as fs from "node:fs/promises";
 
 import { ChatBedrockConverse } from "@langchain/aws";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatBedrockConverse({
   model: "anthropic.claude-3-sonnet-20240229-v1:0",

@@ -5,8 +5,8 @@ import {
   OutputValues,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
-import { getBufferString } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/memory";
+import { getBufferString } from "@instrukt/langchain-core/messages";
 import {
   BaseChatMemory,
   BaseChatMemoryInput,

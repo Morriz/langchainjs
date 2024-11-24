@@ -1,4 +1,4 @@
-import { Tool, type ToolParams } from "@langchain/core/tools";
+import { Tool, type ToolParams } from "@instrukt/langchain-core/tools";
 
 /**
  * @example

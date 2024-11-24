@@ -2,10 +2,10 @@ import { expect } from "@jest/globals";
 import {
   BaseChatModelCallOptions,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
-import { BaseMessageChunk } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { BaseMessageChunk } from "@instrukt/langchain-core/messages";
 import { z } from "zod";
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import {
   BaseChatModelsTests,
   BaseChatModelsTestsFields,

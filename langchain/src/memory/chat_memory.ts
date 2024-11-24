@@ -1,11 +1,11 @@
-import { BaseChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import {
   BaseMemory,
   InputValues,
   OutputValues,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
+} from "@instrukt/langchain-core/memory";
 import { ChatMessageHistory } from "../stores/message/in_memory.js";
 
 /**
@@ -42,7 +42,7 @@ export abstract class BaseChatMemory extends BaseMemory {
   }
 
   /**
-   * Method to add user and AI messages to the chat history in sequence.
+   * Method to add user and/or AI messages to the chat history.
    * @param inputValues The input values from the user.
    * @param outputValues The output values from the AI.
    * @returns Promise that resolves when the context has been saved.
@@ -51,13 +51,14 @@ export abstract class BaseChatMemory extends BaseMemory {
     inputValues: InputValues,
     outputValues: OutputValues
   ): Promise<void> {
-    // this is purposefully done in sequence so they're saved in order
-    await this.chatHistory.addUserMessage(
-      getInputValue(inputValues, this.inputKey)
-    );
-    await this.chatHistory.addAIChatMessage(
-      getOutputValue(outputValues, this.outputKey)
-    );
+    if (inputValues)
+      await this.chatHistory.addUserMessage(
+        getInputValue(inputValues, this.inputKey)
+      );
+    if (outputValues)
+      await this.chatHistory.addAIChatMessage(
+        getOutputValue(outputValues, this.outputKey)
+      );
   }
 
   /**

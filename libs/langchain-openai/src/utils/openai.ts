@@ -4,11 +4,11 @@ import {
   OpenAI as OpenAIClient,
 } from "openai";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
 import {
   convertToOpenAIFunction,
   convertToOpenAITool,
-} from "@langchain/core/utils/function_calling";
+} from "@instrukt/langchain-core/utils/function_calling";
 import { addLangChainErrorFields } from "./errors.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

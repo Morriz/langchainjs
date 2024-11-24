@@ -1,8 +1,11 @@
-import { Document, type DocumentInterface } from "@langchain/core/documents";
+import {
+  Document,
+  type DocumentInterface,
+} from "@instrukt/langchain-core/documents";
 import {
   BaseDocumentLoader,
   type DocumentLoader,
-} from "@langchain/core/document_loaders/base";
+} from "@instrukt/langchain-core/document_loaders/base";
 import Browserbase, { LoadOptions, ClientOptions } from "@browserbasehq/sdk";
 
 type BrowserbaseLoaderOptions = ClientOptions & LoadOptions;

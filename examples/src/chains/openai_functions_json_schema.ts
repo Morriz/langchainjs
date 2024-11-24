@@ -1,6 +1,6 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
-import { JsonOutputFunctionsParser } from "@langchain/core/output_parsers/openai_functions";
+import { JsonOutputFunctionsParser } from "@instrukt/langchain-core/output_parsers/openai_functions";
 
 const jsonSchema = {
   title: "Person",

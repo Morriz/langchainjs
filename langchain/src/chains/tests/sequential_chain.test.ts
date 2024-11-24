@@ -1,8 +1,8 @@
 import { test, expect } from "@jest/globals";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { LLMResult } from "@langchain/core/outputs";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
 import { ChatMessageHistory } from "../../stores/message/in_memory.js";
 import { LLMChain } from "../llm_chain.js";
 import { SequentialChain } from "../sequential_chain.js";

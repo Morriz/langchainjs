@@ -1,5 +1,5 @@
-import { Serializable } from "@langchain/core/load/serializable";
-import { Document } from "@langchain/core/documents";
+import { Serializable } from "@instrukt/langchain-core/load/serializable";
+import { Document } from "@instrukt/langchain-core/documents";
 
 export class Node extends Serializable {
   id: string | number;

@@ -1,14 +1,17 @@
 import type { basename as BasenameT } from "node:path";
 import type { readFile as ReadFileT } from "node:fs/promises";
-import { Document } from "@langchain/core/documents";
-import { getEnv, getEnvironmentVariable } from "@langchain/core/utils/env";
-import { StringWithAutocomplete } from "@langchain/core/utils/types";
+import { Document } from "@instrukt/langchain-core/documents";
+import {
+  getEnv,
+  getEnvironmentVariable,
+} from "@instrukt/langchain-core/utils/env";
+import { StringWithAutocomplete } from "@instrukt/langchain-core/utils/types";
 import {
   DirectoryLoader,
   UnknownHandling,
   LoadersMapping,
 } from "langchain/document_loaders/fs/directory";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 export const UNSTRUCTURED_API_FILETYPES = [
   ".txt",

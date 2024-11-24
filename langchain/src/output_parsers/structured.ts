@@ -12,7 +12,7 @@ import {
   BaseOutputParser,
   FormatInstructionsOptions,
   OutputParserException,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 
 export type JsonMarkdownStructuredOutputParserInput = {
   interpolationDepth?: number;

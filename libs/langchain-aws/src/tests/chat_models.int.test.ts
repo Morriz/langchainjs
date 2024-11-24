@@ -7,8 +7,8 @@ import {
   HumanMessage,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { tool } from "@langchain/core/tools";
+} from "@instrukt/langchain-core/messages";
+import { tool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
 import { ChatBedrockConverse } from "../chat_models.js";
 

@@ -32,7 +32,7 @@ const vectorstore = await MemoryVectorStore.fromDocuments(
 );
 
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const prompt =
   ChatPromptTemplate.fromTemplate(`Answer the following question based only on the provided context:
@@ -48,7 +48,7 @@ const documentChain = await createStuffDocumentsChain({
   prompt,
 });
 
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 console.log(
   await documentChain.invoke({
@@ -80,7 +80,7 @@ const tools = [retrieverTool, searchTool];
 
 import { pull } from "langchain/hub";
 import { createOpenAIFunctionsAgent, AgentExecutor } from "langchain/agents";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 
 // Get the prompt to use - you can modify this!
 // If you want to see the prompt in full, you can at:

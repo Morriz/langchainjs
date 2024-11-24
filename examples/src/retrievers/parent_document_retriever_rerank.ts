@@ -1,7 +1,7 @@
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { CohereRerank } from "@langchain/cohere";
 import { HNSWLib } from "@langchain/community/vectorstores/hnswlib";
-import { InMemoryStore } from "@langchain/core/stores";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
 import {
   ParentDocumentRetriever,
   type SubDocs,

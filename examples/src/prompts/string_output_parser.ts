@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const parser = new StringOutputParser();
 

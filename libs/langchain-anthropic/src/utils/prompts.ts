@@ -1,4 +1,4 @@
-import type { BasePromptValue } from "@langchain/core/prompt_values";
+import type { BasePromptValue } from "@instrukt/langchain-core/prompt_values";
 import Anthropic from "@anthropic-ai/sdk";
 
 import { _convertMessagesToAnthropicPayload } from "./message_inputs.js";

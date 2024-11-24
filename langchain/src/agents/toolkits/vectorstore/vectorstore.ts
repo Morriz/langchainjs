@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import { ToolInterface, BaseToolkit } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { VectorStoreInterface } from "@instrukt/langchain-core/vectorstores";
+import { ToolInterface, BaseToolkit } from "@instrukt/langchain-core/tools";
 import { VectorStoreQATool } from "../../../tools/vectorstore.js";
 import { ZeroShotCreatePromptArgs, ZeroShotAgent } from "../../mrkl/index.js";
 import { VECTOR_PREFIX, VECTOR_ROUTER_PREFIX } from "./prompt.js";

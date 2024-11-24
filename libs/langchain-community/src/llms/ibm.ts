@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { BaseLLM, BaseLLMParams } from "@langchain/core/language_models/llms";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  BaseLLM,
+  BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
 import { WatsonXAI } from "@ibm-cloud/watsonx-ai";
 import {
   DeploymentTextGenProperties,
@@ -14,9 +17,9 @@ import {
   Generation,
   LLMResult,
   GenerationChunk,
-} from "@langchain/core/outputs";
-import { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+} from "@instrukt/langchain-core/outputs";
+import { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 import { authenticateAndSetInstance } from "../utils/ibm.js";
 import {
   GenerationInfo,

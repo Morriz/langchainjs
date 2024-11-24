@@ -2,10 +2,10 @@ import type { z } from "zod";
 import {
   BaseLLMOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { JsonOutputKeyToolsParserParams } from "@langchain/core/output_parsers/openai_tools";
-import { ChatGeneration } from "@langchain/core/outputs";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/output_parsers";
+import { JsonOutputKeyToolsParserParams } from "@instrukt/langchain-core/output_parsers/openai_tools";
+import { ChatGeneration } from "@instrukt/langchain-core/outputs";
+import { ToolCall } from "@instrukt/langchain-core/messages/tool";
 
 interface GoogleGenerativeAIToolsOutputParserParams<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

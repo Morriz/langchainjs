@@ -1,13 +1,16 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
   type BaseRetrieverInterface,
-} from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
-import { BaseOutputParser } from "@langchain/core/output_parsers";
-import { PromptTemplate, BasePromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
+import {
+  PromptTemplate,
+  BasePromptTemplate,
+} from "@instrukt/langchain-core/prompts";
+import { CallbackManagerForRetrieverRun } from "@instrukt/langchain-core/callbacks/manager";
 import { LLMChain } from "../chains/llm_chain.js";
 import type { BaseDocumentCompressor } from "./document_compressors/index.js";
 

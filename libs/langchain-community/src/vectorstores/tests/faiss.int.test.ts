@@ -5,7 +5,7 @@ import * as os from "node:os";
 import { fileURLToPath } from "node:url";
 
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { FaissStore } from "../faiss.js";
 
 test("Test FaissStore.fromTexts", async () => {

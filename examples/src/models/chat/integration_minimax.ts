@@ -1,5 +1,5 @@
 import { ChatMinimax } from "@langchain/community/chat_models/minimax";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 // Use abab5.5
 const abab5_5 = new ChatMinimax({

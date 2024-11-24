@@ -1,11 +1,11 @@
 /* eslint-disable no-param-reassign */
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import { OpenAI as OpenAIClient } from "openai";
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@instrukt/langchain-core/tools";
 import {
   MessageContentComplex,
   MessageContentImageUrl,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 
 /**
  * An interface for the Dall-E API Wrapper.

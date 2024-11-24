@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 import { TurbopufferVectorStore } from "../turbopuffer.js";
 

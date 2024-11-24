@@ -5,8 +5,8 @@ import {
   getCacheKey,
   serializeGeneration,
   deserializeStoredGeneration,
-} from "@langchain/core/caches";
-import { Generation } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/caches";
+import { Generation } from "@instrukt/langchain-core/outputs";
 
 /**
  * Represents a specific implementation of a caching mechanism using Cloudflare KV

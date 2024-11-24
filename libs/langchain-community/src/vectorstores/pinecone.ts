@@ -11,15 +11,15 @@ import {
 import {
   MaxMarginalRelevanceSearchOptions,
   VectorStore,
-} from "@langchain/core/vectorstores";
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
+} from "@instrukt/langchain-core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { maximalMarginalRelevance } from "@langchain/core/utils/math";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { maximalMarginalRelevance } from "@instrukt/langchain-core/utils/math";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
 
 /** @deprecated Install and import from @langchain/pinecone instead. */
 // eslint-disable-next-line @typescript-eslint/ban-types, @typescript-eslint/no-explicit-any

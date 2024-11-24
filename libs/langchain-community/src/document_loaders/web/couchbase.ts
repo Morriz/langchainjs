@@ -1,10 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Cluster, QueryResult } from "couchbase";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   BaseDocumentLoader,
   DocumentLoader,
-} from "@langchain/core/document_loaders/base";
+} from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * loader for couchbase document

@@ -3,7 +3,7 @@ import {
   FunctionDeclarationsTool as GoogleGenerativeAIFunctionDeclarationsTool,
   GoogleSearchRetrievalTool,
 } from "@google/generative-ai";
-import { BindToolsInput } from "@langchain/core/language_models/chat_models";
+import { BindToolsInput } from "@instrukt/langchain-core/language_models/chat_models";
 
 export type GoogleGenerativeAIToolType =
   | BindToolsInput

@@ -1,5 +1,5 @@
 import type { OpenAI as OpenAIClient } from "openai";
-import { AsyncCaller } from "@langchain/core/utils/async_caller";
+import { AsyncCaller } from "@instrukt/langchain-core/utils/async_caller";
 
 export const promptLayerTrackRequest = async (
   callerFunc: AsyncCaller,

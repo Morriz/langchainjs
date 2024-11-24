@@ -1,5 +1,5 @@
 import type { DataSource as DataSourceT, DataSourceOptions } from "typeorm";
-import { Serializable } from "@langchain/core/load/serializable";
+import { Serializable } from "@instrukt/langchain-core/load/serializable";
 import {
   generateTableInfoFromTables,
   getTableAndColumnsName,

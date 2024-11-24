@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
-import { JsonOutputFunctionsParser } from "@langchain/core/output_parsers/openai_functions";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
+import { JsonOutputFunctionsParser } from "@instrukt/langchain-core/output_parsers/openai_functions";
 
 // Instantiate the parser
 const parser = new JsonOutputFunctionsParser();

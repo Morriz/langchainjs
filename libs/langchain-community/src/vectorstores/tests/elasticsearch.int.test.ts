@@ -2,7 +2,7 @@
 import { test, expect } from "@jest/globals";
 import { Client, ClientOptions } from "@elastic/elasticsearch";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { ElasticVectorSearch } from "../elasticsearch.js";
 
 describe("ElasticVectorSearch", () => {

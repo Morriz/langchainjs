@@ -2,10 +2,10 @@ import { ZepClient } from "@getzep/zep-cloud";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
+} from "@instrukt/langchain-core/prompts";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
 import { ChatOpenAI } from "@langchain/openai";
-import { RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnableWithMessageHistory } from "@instrukt/langchain-core/runnables";
 import { ZepCloudChatMessageHistory } from "@langchain/community/stores/message/zep_cloud";
 
 // Your Zep Session ID.

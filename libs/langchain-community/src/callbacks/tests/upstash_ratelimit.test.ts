@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { jest } from "@jest/globals";
-import { LLMResult } from "@langchain/core/outputs";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
-import { Serialized } from "@langchain/core/load/serializable";
+import { Serialized } from "@instrukt/langchain-core/load/serializable";
 import {
   UpstashRatelimitHandler,
   UpstashRatelimitError,

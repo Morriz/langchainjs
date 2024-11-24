@@ -1,9 +1,9 @@
 import type { basename as BasenameT } from "node:path";
 import type { readFile as ReadFileT, stat as StatT } from "node:fs/promises";
 import yaml from "js-yaml";
-import { Document } from "@langchain/core/documents";
-import { getEnv } from "@langchain/core/utils/env";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { getEnv } from "@instrukt/langchain-core/utils/env";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 import {
   DirectoryLoader,
   UnknownHandling,

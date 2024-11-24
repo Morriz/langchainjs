@@ -1,5 +1,5 @@
 {
-  "name": "@langchain/core",
+  "name": "@instrukt/langchain-core",
   "version": "0.3.18",
   "description": "Core LangChain.js abstractions and schemas",
   "type": "module",
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/langchain-core/",
   "scripts": {
-    "build": "yarn turbo:command build:internal --filter=@langchain/core",
+    "build": "yarn turbo:command build:internal --filter=@instrukt/langchain-core",
     "build:internal": "yarn lc_build --create-entrypoints --pre --tree-shaking",
     "clean": "rm -rf .turbo dist/",
     "lint:eslint": "NODE_OPTIONS=--max-old-space-size=4096 eslint --cache --ext .ts,.js src/",

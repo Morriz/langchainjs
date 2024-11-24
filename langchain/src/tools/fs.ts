@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { StructuredTool, ToolParams } from "@langchain/core/tools";
+import { StructuredTool, ToolParams } from "@instrukt/langchain-core/tools";
 import { BaseFileStore } from "../stores/file/base.js";
 
 /**

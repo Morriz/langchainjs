@@ -4,15 +4,15 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import {
   AIMessage,
   BaseMessage,
   FunctionMessage,
-} from "@langchain/core/messages";
-import { convertToOpenAIFunction } from "@langchain/core/utils/function_calling";
-import { AgentStep } from "@langchain/core/agents";
-import { RunnableSequence } from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/messages";
+import { convertToOpenAIFunction } from "@instrukt/langchain-core/utils/function_calling";
+import { AgentStep } from "@instrukt/langchain-core/agents";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 import { AgentExecutor } from "../executor.js";
 import { SerpAPI } from "../../util/testing/tools/serpapi.js";
 import { Calculator } from "../../util/testing/tools/calculator.js";

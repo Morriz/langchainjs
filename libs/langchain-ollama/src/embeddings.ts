@@ -1,4 +1,7 @@
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
+import {
+  Embeddings,
+  EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
 import { Ollama } from "ollama/browser";
 import type { Options as OllamaOptions } from "ollama";
 import { OllamaCamelCaseOptions } from "./types.js";

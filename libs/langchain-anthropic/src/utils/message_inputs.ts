@@ -9,8 +9,8 @@ import {
   ToolMessage,
   MessageContent,
   isAIMessage,
-} from "@langchain/core/messages";
-import { ToolCall } from "@langchain/core/messages/tool";
+} from "@instrukt/langchain-core/messages";
+import { ToolCall } from "@instrukt/langchain-core/messages/tool";
 import {
   AnthropicMessageCreateParams,
   AnthropicToolResponse,

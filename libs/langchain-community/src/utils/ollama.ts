@@ -1,6 +1,6 @@
-import { IterableReadableStream } from "@langchain/core/utils/stream";
-import type { StringWithAutocomplete } from "@langchain/core/utils/types";
-import { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import { IterableReadableStream } from "@instrukt/langchain-core/utils/stream";
+import type { StringWithAutocomplete } from "@instrukt/langchain-core/utils/types";
+import { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
 
 export interface OllamaInput {
   embeddingOnly?: boolean;

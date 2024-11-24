@@ -1,6 +1,6 @@
 import { type ClientOptions, OpenAI as OpenAIClient } from "openai";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   AIMessage,
   AIMessageChunk,
@@ -15,19 +15,19 @@ import {
   OpenAIToolCall,
   isAIMessage,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   type ChatGeneration,
   ChatGenerationChunk,
   type ChatResult,
-} from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   BaseChatModel,
   BindToolsInput,
   LangSmithParams,
   type BaseChatModelParams,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   isOpenAITool,
   type BaseFunctionCallOptions,
@@ -35,27 +35,27 @@ import {
   type FunctionDefinition,
   type StructuredOutputMethodOptions,
   type StructuredOutputMethodParams,
-} from "@langchain/core/language_models/base";
-import { NewTokenIndices } from "@langchain/core/callbacks/base";
+} from "@instrukt/langchain-core/language_models/base";
+import { NewTokenIndices } from "@instrukt/langchain-core/callbacks/base";
 import { z } from "zod";
 import {
   Runnable,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import {
   JsonOutputParser,
   StructuredOutputParser,
   type BaseLLMOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import {
   JsonOutputKeyToolsParser,
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
+} from "@instrukt/langchain-core/output_parsers/openai_tools";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ToolCallChunk } from "@langchain/core/messages/tool";
+import { ToolCallChunk } from "@instrukt/langchain-core/messages/tool";
 import { zodResponseFormat } from "openai/helpers/zod";
 import type {
   ResponseFormatText,
@@ -583,8 +583,8 @@ export interface ChatOpenAIFields
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -735,7 +735,7 @@ export interface ChatOpenAIFields
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@instrukt/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

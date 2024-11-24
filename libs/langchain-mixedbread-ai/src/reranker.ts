@@ -1,6 +1,6 @@
-import { DocumentInterface } from "@langchain/core/documents";
-import { BaseDocumentCompressor } from "@langchain/core/retrievers/document_compressors";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { DocumentInterface } from "@instrukt/langchain-core/documents";
+import { BaseDocumentCompressor } from "@instrukt/langchain-core/retrievers/document_compressors";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 import { MixedbreadAIClient, MixedbreadAI } from "@mixedbread-ai/sdk";
 

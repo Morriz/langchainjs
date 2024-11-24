@@ -1,11 +1,11 @@
 import { z } from "zod";
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
 import {
   Example,
   interpolateFString,
   FewShotPromptTemplate,
-} from "@langchain/core/prompts";
-import { InputValues } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/prompts";
+import { InputValues } from "@instrukt/langchain-core/utils/types";
 import { QueryTransformer, TraverseType } from "./parser.js";
 import {
   Comparator,

@@ -1,5 +1,5 @@
 import { AirtableLoader } from "@langchain/community/document_loaders/web/airtable";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 // Default airtable loader
 const loader = new AirtableLoader({

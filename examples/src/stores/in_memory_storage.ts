@@ -1,5 +1,9 @@
-import { InMemoryStore } from "@langchain/core/stores";
-import { AIMessage, BaseMessage, HumanMessage } from "@langchain/core/messages";
+import { InMemoryStore } from "@instrukt/langchain-core/stores";
+import {
+  AIMessage,
+  BaseMessage,
+  HumanMessage,
+} from "@instrukt/langchain-core/messages";
 
 // Instantiate the store using the `fromPath` method.
 const store = new InMemoryStore<BaseMessage>();

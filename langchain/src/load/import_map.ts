@@ -66,11 +66,7 @@ export * as runnables__remote from "../runnables/remote.js";
 export * as indexes from "../indexes/index.js";
 export * as schema__query_constructor from "../schema/query_constructor.js";
 export * as schema__prompt_template from "../schema/prompt_template.js";
-import {
-  ChatOpenAI,
-  OpenAI,
-  OpenAIEmbeddings
-} from "@langchain/openai";
+import { ChatOpenAI, OpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import {
   PromptTemplate,
   AIMessagePromptTemplate,
@@ -80,8 +76,8 @@ import {
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
   ImagePromptTemplate,
-  PipelinePromptTemplate
-} from "@langchain/core/prompts";
+  PipelinePromptTemplate,
+} from "@instrukt/langchain-core/prompts";
 import {
   AIMessage,
   AIMessageChunk,
@@ -96,11 +92,9 @@ import {
   SystemMessage,
   SystemMessageChunk,
   ToolMessage,
-  ToolMessageChunk
-} from "@langchain/core/messages";
-import {
-  StringPromptValue
-} from "@langchain/core/prompt_values";
+  ToolMessageChunk,
+} from "@instrukt/langchain-core/messages";
+import { StringPromptValue } from "@instrukt/langchain-core/prompt_values";
 import {
   RouterRunnable,
   RunnableAssign,
@@ -114,29 +108,27 @@ import {
   RunnableRetry,
   RunnableSequence,
   RunnableWithFallbacks,
-  RunnableWithMessageHistory
-} from "@langchain/core/runnables";
-import {
-  StringOutputParser
-} from "@langchain/core/output_parsers";
+  RunnableWithMessageHistory,
+} from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 import {
   ChatGenerationChunk,
-  GenerationChunk
-} from "@langchain/core/outputs";
+  GenerationChunk,
+} from "@instrukt/langchain-core/outputs";
 const chat_models__openai = {
-  ChatOpenAI
+  ChatOpenAI,
 };
 export { chat_models__openai };
 const llms__openai = {
-  OpenAI
+  OpenAI,
 };
 export { llms__openai };
 const embeddings__openai = {
-  OpenAIEmbeddings
+  OpenAIEmbeddings,
 };
 export { embeddings__openai };
 const prompts__prompt = {
-  PromptTemplate
+  PromptTemplate,
 };
 export { prompts__prompt };
 const schema__messages = {
@@ -153,7 +145,7 @@ const schema__messages = {
   SystemMessage,
   SystemMessageChunk,
   ToolMessage,
-  ToolMessageChunk
+  ToolMessageChunk,
 };
 export { schema__messages };
 const schema = {
@@ -170,7 +162,7 @@ const schema = {
   SystemMessage,
   SystemMessageChunk,
   ToolMessage,
-  ToolMessageChunk
+  ToolMessageChunk,
 };
 export { schema };
 const prompts__chat = {
@@ -179,19 +171,19 @@ const prompts__chat = {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
-  SystemMessagePromptTemplate
+  SystemMessagePromptTemplate,
 };
 export { prompts__chat };
 const prompts__image = {
-  ImagePromptTemplate
+  ImagePromptTemplate,
 };
 export { prompts__image };
 const prompts__pipeline = {
-  PipelinePromptTemplate
+  PipelinePromptTemplate,
 };
 export { prompts__pipeline };
 const prompts__base = {
-  StringPromptValue
+  StringPromptValue,
 };
 export { prompts__base };
 const schema__runnable = {
@@ -207,15 +199,15 @@ const schema__runnable = {
   RunnableRetry,
   RunnableSequence,
   RunnableWithFallbacks,
-  RunnableWithMessageHistory
+  RunnableWithMessageHistory,
 };
 export { schema__runnable };
 const schema__output_parser = {
-  StringOutputParser
+  StringOutputParser,
 };
 export { schema__output_parser };
 const schema__output = {
   ChatGenerationChunk,
-  GenerationChunk
+  GenerationChunk,
 };
 export { schema__output };

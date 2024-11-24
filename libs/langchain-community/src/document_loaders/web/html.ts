@@ -1,10 +1,10 @@
 import {
   AsyncCaller,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
-import { Document } from "@langchain/core/documents";
-import type { DocumentLoader } from "@langchain/core/document_loaders/base";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import type { DocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * Represents the parameters for configuring WebBaseLoaders. It extends the

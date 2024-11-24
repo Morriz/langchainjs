@@ -1,20 +1,20 @@
-import { type BaseMessage } from "@langchain/core/messages";
-import { type BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import { type BaseMessage } from "@instrukt/langchain-core/messages";
+import { type BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
 
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   SimpleChatModel,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 
 // Uncomment if implementing streaming
 
 // import {
 //   ChatGenerationChunk,
-// } from "@langchain/core/outputs";
+// } from "@instrukt/langchain-core/outputs";
 // import {
 //   AIMessageChunk,
-// } from "@langchain/core/messages";
+// } from "@instrukt/langchain-core/messages";
 
 /**
  * Input to chat model class.

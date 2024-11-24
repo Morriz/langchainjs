@@ -1,17 +1,17 @@
-import type { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import type { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
 import {
   SimpleChatModel,
   type BaseChatModelParams,
   LangSmithParams,
-} from "@langchain/core/language_models/chat_models";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   AIMessageChunk,
   BaseMessage,
   ChatMessage,
-} from "@langchain/core/messages";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
-import type { StringWithAutocomplete } from "@langchain/core/utils/types";
+} from "@instrukt/langchain-core/messages";
+import { ChatGenerationChunk } from "@instrukt/langchain-core/outputs";
+import type { StringWithAutocomplete } from "@instrukt/langchain-core/utils/types";
 
 import {
   createOllamaChatStream,

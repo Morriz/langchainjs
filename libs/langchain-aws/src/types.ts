@@ -4,7 +4,7 @@ import type {
 } from "@aws-sdk/client-bedrock-runtime";
 import type { AwsCredentialIdentity, Provider } from "@aws-sdk/types";
 import { ConverseCommand } from "@aws-sdk/client-bedrock-runtime";
-import { BindToolsInput } from "@langchain/core/language_models/chat_models";
+import { BindToolsInput } from "@instrukt/langchain-core/language_models/chat_models";
 
 export type CredentialType =
   | AwsCredentialIdentity

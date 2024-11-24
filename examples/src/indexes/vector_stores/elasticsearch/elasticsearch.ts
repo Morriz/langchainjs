@@ -6,7 +6,7 @@ import {
   ElasticClientArgs,
   ElasticVectorSearch,
 } from "@langchain/community/vectorstores/elasticsearch";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 // to run this first run Elastic's docker-container with `docker-compose up -d --build`
 export async function run() {

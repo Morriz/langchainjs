@@ -1,8 +1,8 @@
 import {
   BaseChatModel,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { BaseMessageChunk } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import { BaseMessageChunk } from "@instrukt/langchain-core/messages";
 
 export type RecordStringAny = Record<string, any>;
 

@@ -1,7 +1,10 @@
 import { z } from "zod";
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
-import { interpolateFString, PromptTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { BaseRetrieverInterface } from "@instrukt/langchain-core/retrievers";
+import {
+  interpolateFString,
+  PromptTemplate,
+} from "@instrukt/langchain-core/prompts";
 import { MultiRouteChain, MultiRouteChainInput } from "./multi_route.js";
 import { BaseChain } from "../../chains/base.js";
 import { LLMRouterChain } from "./llm_router.js";

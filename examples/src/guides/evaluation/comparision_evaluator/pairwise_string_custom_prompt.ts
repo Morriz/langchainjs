@@ -1,5 +1,5 @@
 import { loadEvaluator } from "langchain/evaluation";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const promptTemplate = PromptTemplate.fromTemplate(
   `Given the input context, which do you prefer: A or B?

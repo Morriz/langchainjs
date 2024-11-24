@@ -1,5 +1,5 @@
 import { defaultProvider } from "@aws-sdk/credential-provider-node";
-import type { BaseLLMParams } from "@langchain/core/language_models/llms";
+import type { BaseLLMParams } from "@instrukt/langchain-core/language_models/llms";
 import { BaseBedrockInput } from "../../utils/bedrock/index.js";
 import { Bedrock as BaseBedrock } from "./web.js";
 

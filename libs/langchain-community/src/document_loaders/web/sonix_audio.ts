@@ -1,7 +1,7 @@
 import { SonixSpeechRecognitionService } from "sonix-speech-recognition";
 import { SpeechToTextRequest } from "sonix-speech-recognition/lib/types.js";
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * A class that represents a document loader for transcribing audio files

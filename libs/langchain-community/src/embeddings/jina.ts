@@ -1,7 +1,10 @@
 import { existsSync, readFileSync } from "fs";
 import { parse } from "url";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import {
+  Embeddings,
+  EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * The default Jina API URL for embedding requests.

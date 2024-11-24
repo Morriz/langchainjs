@@ -1,1 +1,1 @@
-export * from "@langchain/core/tracers/base";
+export * from "@instrukt/langchain-core/tracers/base";

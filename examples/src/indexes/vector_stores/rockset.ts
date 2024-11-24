@@ -3,7 +3,7 @@ import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { RocksetStore } from "@langchain/community/vectorstores/rockset";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { readFileSync } from "fs";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 

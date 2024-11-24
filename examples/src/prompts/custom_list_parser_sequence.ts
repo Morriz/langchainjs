@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { CustomListOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { CustomListOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 
 // With a `CustomListOutputParser`, we can parse a list with a specific length and separator.
 const parser = new CustomListOutputParser({ length: 3, separator: "\n" });

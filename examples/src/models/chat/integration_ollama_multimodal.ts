@@ -1,5 +1,5 @@
 import { ChatOllama } from "@langchain/ollama";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 import * as fs from "node:fs/promises";
 
 const imageData = await fs.readFile("./hotdog.jpg");

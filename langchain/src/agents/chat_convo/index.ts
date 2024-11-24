@@ -1,18 +1,18 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { ToolInterface } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { ToolInterface } from "@instrukt/langchain-core/tools";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
   renderTemplate,
-} from "@langchain/core/prompts";
-import type { AgentStep } from "@langchain/core/agents";
+} from "@instrukt/langchain-core/prompts";
+import type { AgentStep } from "@instrukt/langchain-core/agents";
 import {
   type BaseMessage,
   HumanMessage,
   AIMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { LLMChain } from "../../chains/llm_chain.js";
 import { Optional } from "../../types/type-utils.js";
 import { Agent, AgentArgs, OutputParserArgs } from "../agent.js";

@@ -5,11 +5,11 @@ import {
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
   AIMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import {
   ConditionalPromptSelector,
   isChatModel,
-} from "@langchain/core/example_selectors";
+} from "@instrukt/langchain-core/example_selectors";
 
 export const DEFAULT_REFINE_PROMPT_TMPL = `The original question is as follows: {question}
 We have provided an existing answer: {existing_answer}

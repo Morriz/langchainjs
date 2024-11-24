@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 
 /**
  * @deprecated

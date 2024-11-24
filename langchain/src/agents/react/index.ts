@@ -1,11 +1,11 @@
-import type { ToolInterface } from "@langchain/core/tools";
-import { BasePromptTemplate } from "@langchain/core/prompts";
+import type { ToolInterface } from "@instrukt/langchain-core/tools";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
 import type {
   BaseLanguageModel,
   BaseLanguageModelInterface,
-} from "@langchain/core/language_models/base";
-import { RunnablePassthrough } from "@langchain/core/runnables";
-import { AgentStep } from "@langchain/core/agents";
+} from "@instrukt/langchain-core/language_models/base";
+import { RunnablePassthrough } from "@instrukt/langchain-core/runnables";
+import { AgentStep } from "@instrukt/langchain-core/agents";
 import { renderTextDescription } from "../../tools/render.js";
 import { formatLogToString } from "../format_scratchpad/log.js";
 import { ReActSingleInputOutputParser } from "./output_parser.js";
@@ -42,7 +42,7 @@ export type CreateReactAgentParams = {
  * ```typescript
  * import { AgentExecutor, createReactAgent } from "langchain/agents";
  * import { pull } from "langchain/hub";
- * import type { PromptTemplate } from "@langchain/core/prompts";
+ * import type { PromptTemplate } from "@instrukt/langchain-core/prompts";
  *
  * import { OpenAI } from "@langchain/openai";
  *

@@ -44,7 +44,7 @@ import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const SYSTEM_TEMPLATE = `Answer the user's questions based on the below context. 
 If the context doesn't contain any relevant information to the question, don't make something up and just say "I don't know":
@@ -64,7 +64,7 @@ const documentChain = await createStuffDocumentsChain({
   prompt: questionAnsweringPrompt,
 });
 
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 
 console.log(
   await documentChain.invoke({
@@ -84,11 +84,11 @@ console.log(
   })
 );
 
-import type { BaseMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
 import {
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 
 const parseRetrieverInput = (params: { messages: BaseMessage[] }) => {
   return params.messages[params.messages.length - 1].content;
@@ -132,8 +132,8 @@ console.log(
   })
 );
 
-import { RunnableBranch } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { RunnableBranch } from "@instrukt/langchain-core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const queryTransformingRetrieverChain = RunnableBranch.from([
   [

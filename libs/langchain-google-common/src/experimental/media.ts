@@ -2,8 +2,8 @@ import {
   AsyncCaller,
   AsyncCallerCallOptions,
   AsyncCallerParams,
-} from "@langchain/core/utils/async_caller";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   MediaBlob,
   BlobStore,

@@ -1,4 +1,4 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 
 interface ChatGPTMessage {

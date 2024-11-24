@@ -4,7 +4,7 @@ import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 // We can also construct an LLMChain from a ChatPromptTemplate and a chat model.
 const chat = new ChatMinimax({ temperature: 0.01 });

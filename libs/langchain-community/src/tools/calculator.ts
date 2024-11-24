@@ -1,6 +1,6 @@
 import { Parser } from "expr-eval";
 
-import { Tool } from "@langchain/core/tools";
+import { Tool } from "@instrukt/langchain-core/tools";
 
 /**
  * The Calculator class is a tool used to evaluate mathematical

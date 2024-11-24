@@ -1,5 +1,5 @@
 import { ChatMoonshot } from "@langchain/community/chat_models/moonshot";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 // Default model is moonshot-v1-8k
 const moonshotV18K = new ChatMoonshot({

@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { test, expect } from "@jest/globals";
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { DynamicStructuredTool } from "@langchain/core/tools";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { DynamicStructuredTool } from "@instrukt/langchain-core/tools";
 import { TavilySearchResults } from "../../util/testing/tools/tavily_search.js";
 import { AgentExecutor, createToolCallingAgent } from "../index.js";
 

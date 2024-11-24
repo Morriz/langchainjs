@@ -4,4 +4,4 @@ export {
   type DynamicStructuredToolInput,
   DynamicTool,
   DynamicStructuredTool,
-} from "@langchain/core/tools";
+} from "@instrukt/langchain-core/tools";

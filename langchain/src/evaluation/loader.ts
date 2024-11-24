@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import type { StructuredToolInterface } from "@langchain/core/tools";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import type { StructuredToolInterface } from "@instrukt/langchain-core/tools";
 import { ChatOpenAI } from "@langchain/openai";
-import { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
 import {
   CriteriaLike,
   CriteriaEvalChain,

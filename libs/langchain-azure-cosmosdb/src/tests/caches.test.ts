@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { jest } from "@jest/globals";
-import { FakeEmbeddings, FakeLLM } from "@langchain/core/utils/testing";
+import {
+  FakeEmbeddings,
+  FakeLLM,
+} from "@instrukt/langchain-core/utils/testing";
 import { AzureCosmosDBNoSQLSemanticCache } from "../index.js";
 
 // Create the mock Cosmos DB client

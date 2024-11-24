@@ -12,8 +12,8 @@ import {
   RetrieveResultItem,
 } from "@aws-sdk/client-kendra";
 
-import { BaseRetriever } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import { BaseRetriever } from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * @deprecated The AmazonKendraRetriever integration has been moved to the `@langchain/aws` package. Import from `@langchain/aws` instead.

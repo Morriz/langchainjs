@@ -1,5 +1,8 @@
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import {
+  BaseRetriever,
+  BaseRetrieverInput,
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 import { BM25 } from "../utils/@furkantoprak/bm25/BM25.js";
 

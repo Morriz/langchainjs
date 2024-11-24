@@ -6,9 +6,9 @@ import type {
   PuppeteerLaunchOptions,
 } from "puppeteer";
 
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
-import type { DocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
+import type { DocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 export { Page, Browser };
 

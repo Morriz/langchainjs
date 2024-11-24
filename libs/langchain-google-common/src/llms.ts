@@ -1,12 +1,15 @@
-import { CallbackManager, Callbacks } from "@langchain/core/callbacks/manager";
-import { BaseLLM, LLM } from "@langchain/core/language_models/llms";
+import {
+  CallbackManager,
+  Callbacks,
+} from "@instrukt/langchain-core/callbacks/manager";
+import { BaseLLM, LLM } from "@instrukt/langchain-core/language_models/llms";
 import {
   type BaseLanguageModelCallOptions,
   BaseLanguageModelInput,
-} from "@langchain/core/language_models/base";
-import { BaseMessage, MessageContent } from "@langchain/core/messages";
-import { GenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/language_models/base";
+import { BaseMessage, MessageContent } from "@instrukt/langchain-core/messages";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 import { AbstractGoogleLLMConnection } from "./connection.js";
 import {

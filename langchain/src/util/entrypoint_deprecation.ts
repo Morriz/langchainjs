@@ -26,7 +26,7 @@ export function logVersion010MigrationWarning({
     ``,
     `This will be mandatory after the next "langchain" minor version bump to 0.2.`,
   ].join("\n");
-  if (newPackageName === "@langchain/core") {
+  if (newPackageName === "@instrukt/langchain-core") {
     warningText = [
       `[WARNING]: Importing from "langchain/${oldEntrypointName}" is deprecated.`,
       ``,
@@ -68,7 +68,7 @@ export function logVersion020MigrationWarning({
     ``,
     `This will be mandatory after the next "langchain" minor version bump to 0.3.`,
   ].join("\n");
-  if (newPackageName === "@langchain/core") {
+  if (newPackageName === "@instrukt/langchain-core") {
     warningText = [
       `[WARNING]: Importing from "langchain/${oldEntrypointName}" is deprecated.`,
       ``,

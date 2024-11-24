@@ -3,7 +3,7 @@ import {
   type BaseChatModelParams,
   BindToolsInput,
   type BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import {
   AIMessage,
   type BaseMessage,
@@ -12,17 +12,20 @@ import {
   type UsageMetadata,
   ChatMessage,
   type AIMessageChunk,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   convertLangChainToolCallToOpenAI,
   makeInvalidToolCall,
   parseToolCall,
-} from "@langchain/core/output_parsers/openai_tools";
-import { type ChatResult, type ChatGeneration } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
-import { Runnable } from "@langchain/core/runnables";
-import { convertToOpenAITool } from "@langchain/core/utils/function_calling";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/output_parsers/openai_tools";
+import {
+  type ChatResult,
+  type ChatGeneration,
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
+import { Runnable } from "@instrukt/langchain-core/runnables";
+import { convertToOpenAITool } from "@instrukt/langchain-core/utils/function_calling";
+import { BaseLanguageModelInput } from "@instrukt/langchain-core/language_models/base";
 
 export const DEFAULT_MODEL = "meta-llama/Meta-Llama-3-70B-Instruct";
 

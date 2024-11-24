@@ -2,4 +2,4 @@ export {
   ListOutputParser,
   CommaSeparatedListOutputParser,
   CustomListOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";

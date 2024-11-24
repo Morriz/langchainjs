@@ -5,7 +5,7 @@ import {
   ChatPromptTemplate,
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const zodSchema = z.object({
   name: z.string().describe("Human name"),

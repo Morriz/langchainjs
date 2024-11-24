@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { Run } from "@langchain/core/tracers/tracer_langchain";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { Run } from "@instrukt/langchain-core/tracers/tracer_langchain";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const prompt = ChatPromptTemplate.fromMessages([
   ["ai", "You are a nice assistant."],

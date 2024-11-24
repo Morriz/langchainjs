@@ -1,5 +1,5 @@
-import { Document } from "@langchain/core/documents";
-import { BaseDocumentLoader } from "@langchain/core/document_loaders/base";
+import { Document } from "@instrukt/langchain-core/documents";
+import { BaseDocumentLoader } from "@instrukt/langchain-core/document_loaders/base";
 
 /**
  * See https://docs.sort.xyz/docs/api-keys to get your free Sort API key.

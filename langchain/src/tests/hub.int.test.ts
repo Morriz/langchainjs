@@ -1,6 +1,6 @@
 /* eslint-disable no-process-env */
 
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import * as hub from "../hub.js";
 
 test("Test LangChain Hub client pushing a new repo", async () => {

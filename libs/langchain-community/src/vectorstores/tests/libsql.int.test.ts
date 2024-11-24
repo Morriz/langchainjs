@@ -1,10 +1,10 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { expect, test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { createClient } from "@libsql/client";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import fs from "node:fs";
 import { LibSQLVectorStore, LibSQLVectorStoreArgs } from "../libsql.js";
 

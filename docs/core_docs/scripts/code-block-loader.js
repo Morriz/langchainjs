@@ -13,12 +13,12 @@ const fs = require("fs");
 const SYMBOL_EDGE_CASE_MAP = {
   InMemoryStore: {
     sources: ["langchain/storage/in_memory"],
-    originalSource: "@langchain/core/stores",
+    originalSource: "@instrukt/langchain-core/stores",
     originalSymbolName: null,
   },
   ToolMessage: {
-    sources: ["@langchain/core/messages"],
-    originalSource: "@langchain/core/messages/tool",
+    sources: ["@instrukt/langchain-core/messages"],
+    originalSource: "@instrukt/langchain-core/messages/tool",
     originalSymbolName: null,
   },
   zodToGeminiParameters: {
@@ -28,7 +28,7 @@ const SYMBOL_EDGE_CASE_MAP = {
   },
   FunctionalTranslator: {
     sources: ["langchain/retrievers/self_query/functional"],
-    originalSource: "@langchain/core/structured_query",
+    originalSource: "@instrukt/langchain-core/structured_query",
     originalSymbolName: null,
   },
   ChatMessageHistory: {
@@ -36,7 +36,7 @@ const SYMBOL_EDGE_CASE_MAP = {
       "langchain/stores/message/in_memory",
       "@langchain/community/stores/message/in_memory",
     ],
-    originalSource: "@langchain/core/chat_history",
+    originalSource: "@instrukt/langchain-core/chat_history",
     originalSymbolName: "InMemoryChatMessageHistory",
   },
   GeminiTool: {

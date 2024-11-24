@@ -1,4 +1,4 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 /**
  * The NoOpOutputParser class is a type of output parser that does not

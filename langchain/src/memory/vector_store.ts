@@ -1,12 +1,12 @@
-import type { VectorStoreRetrieverInterface } from "@langchain/core/vectorstores";
-import { Document } from "@langchain/core/documents";
+import type { VectorStoreRetrieverInterface } from "@instrukt/langchain-core/vectorstores";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   BaseMemory,
   getInputValue,
   InputValues,
   MemoryVariables,
   OutputValues,
-} from "@langchain/core/memory";
+} from "@instrukt/langchain-core/memory";
 import { formatDocumentsAsString } from "../util/document.js";
 
 type Metadata = Record<string, unknown>;

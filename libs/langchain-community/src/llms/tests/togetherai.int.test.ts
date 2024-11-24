@@ -1,4 +1,4 @@
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 import { TogetherAI } from "../togetherai.js";
 
 test.skip("TogetherAI can make a request to an LLM", async () => {

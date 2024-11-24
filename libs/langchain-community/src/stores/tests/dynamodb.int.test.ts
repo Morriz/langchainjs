@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { test, expect, beforeEach, afterEach } from "@jest/globals";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 import { DynamoDBChatMessageHistory } from "../message/dynamodb.js";
 
 describe("DynamoDB message history store", () => {

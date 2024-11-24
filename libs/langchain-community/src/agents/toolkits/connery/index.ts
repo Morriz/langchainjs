@@ -1,4 +1,4 @@
-import { Tool, ToolInterface } from "@langchain/core/tools";
+import { Tool, ToolInterface } from "@instrukt/langchain-core/tools";
 import { Toolkit } from "../base.js";
 import { ConneryService } from "../../../tools/connery.js";
 

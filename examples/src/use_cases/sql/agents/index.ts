@@ -2,11 +2,11 @@ import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
 import { createOpenAIToolsAgent, AgentExecutor } from "langchain/agents";
 import { SqlToolkit } from "langchain/agents/toolkits/sql";
-import { AIMessage } from "@langchain/core/messages";
+import { AIMessage } from "@instrukt/langchain-core/messages";
 import { SqlDatabase } from "langchain/sql_db";
 import { DataSource } from "typeorm";
 

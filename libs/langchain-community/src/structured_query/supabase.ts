@@ -12,7 +12,7 @@ import {
   Operator,
   Operators,
   StructuredQuery,
-} from "@langchain/core/structured_query";
+} from "@instrukt/langchain-core/structured_query";
 import type {
   SupabaseFilterRPCCall,
   SupabaseMetadata,

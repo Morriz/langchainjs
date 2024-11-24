@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { ChatOpenAI } from "@langchain/openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { JsonOutputToolsParser } from "@langchain/core/output_parsers/openai_tools";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { JsonOutputToolsParser } from "@instrukt/langchain-core/output_parsers/openai_tools";
 
 const EXTRACTION_TEMPLATE = `Extract and save the relevant entities mentioned \
 in the following passage together with their properties.

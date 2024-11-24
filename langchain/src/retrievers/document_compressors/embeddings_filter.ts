@@ -1,6 +1,6 @@
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import type { DocumentInterface } from "@langchain/core/documents";
-import { cosineSimilarity } from "@langchain/core/utils/math";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import type { DocumentInterface } from "@instrukt/langchain-core/documents";
+import { cosineSimilarity } from "@instrukt/langchain-core/utils/math";
 import { BaseDocumentCompressor } from "./index.js";
 
 /**

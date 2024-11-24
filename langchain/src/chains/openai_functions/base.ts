@@ -1,16 +1,19 @@
 import type { z } from "zod";
 import { zodToJsonSchema, JsonSchema7Type } from "zod-to-json-schema";
 
-import type { BaseOutputParser } from "@langchain/core/output_parsers";
-import type { BasePromptTemplate } from "@langchain/core/prompts";
-import type { Runnable, RunnableInterface } from "@langchain/core/runnables";
+import type { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
+import type { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
+import type {
+  Runnable,
+  RunnableInterface,
+} from "@instrukt/langchain-core/runnables";
 import type {
   BaseFunctionCallOptions,
   BaseLanguageModelInput,
   FunctionDefinition,
-} from "@langchain/core/language_models/base";
-import type { InputValues } from "@langchain/core/utils/types";
-import type { BaseMessage } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/base";
+import type { InputValues } from "@instrukt/langchain-core/utils/types";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
 import { JsonOutputFunctionsParser } from "../../output_parsers/openai_functions.js";
 
 /**
@@ -167,7 +170,7 @@ export type CreateStructuredOutputRunnableConfig<
  * ```typescript
  * import { createStructuredOutputRunnable } from "langchain/chains/openai_functions";
  * import { ChatOpenAI } from "@langchain/openai";
- * import { ChatPromptTemplate } from "@langchain/core/prompts";
+ * import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
  * import { JsonOutputFunctionsParser } from "langchain/output_parsers";
  *
  * const jsonSchema = {

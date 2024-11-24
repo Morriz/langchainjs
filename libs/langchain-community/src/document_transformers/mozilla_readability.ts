@@ -4,7 +4,7 @@ import type { Options } from "mozilla-readability";
 import {
   MappingDocumentTransformer,
   Document,
-} from "@langchain/core/documents";
+} from "@instrukt/langchain-core/documents";
 
 /**
  * A transformer that uses the Mozilla Readability library to extract the

@@ -2,12 +2,12 @@ import { test, expect } from "@jest/globals";
 import * as fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import {
   BytesOutputParser,
   StringOutputParser,
-} from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/output_parsers";
 import { ChatOllama } from "../chat_models.js";
 
 test("test invoke", async () => {

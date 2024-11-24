@@ -1,6 +1,6 @@
 /* eslint-disable no-process-env */
 import { test, expect } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 
 import { ClickHouseStore } from "../clickhouse.js";
 // Import OpenAIEmbeddings if you have a valid OpenAI API key

@@ -1,5 +1,5 @@
 import { jest, expect, describe } from "@jest/globals";
-import { LLM } from "@langchain/core/language_models/llms";
+import { LLM } from "@instrukt/langchain-core/language_models/llms";
 import {
   GoogleCalendarCreateTool,
   GoogleCalendarViewTool,
@@ -13,7 +13,7 @@ jest.mock("googleapis", () => ({
   },
 }));
 
-jest.mock("@langchain/core/utils/env", () => ({
+jest.mock("@instrukt/langchain-core/utils/env", () => ({
   getEnvironmentVariable: () => "key",
 }));
 

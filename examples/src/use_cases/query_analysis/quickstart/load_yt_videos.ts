@@ -1,4 +1,4 @@
-import { DocumentInterface } from "@langchain/core/documents";
+import { DocumentInterface } from "@instrukt/langchain-core/documents";
 import { YoutubeLoader } from "@langchain/community/document_loaders/web/youtube";
 import { getYear } from "date-fns";
 

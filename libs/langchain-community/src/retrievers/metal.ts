@@ -1,7 +1,10 @@
 import Metal from "@getmetal/metal-sdk";
 
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import {
+  BaseRetriever,
+  BaseRetrieverInput,
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * Interface for the fields required during the initialization of a

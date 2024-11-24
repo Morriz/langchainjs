@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { BaseLanguageModelCallOptions } from "@langchain/core/language_models/base";
+import { BaseLanguageModelCallOptions } from "@instrukt/langchain-core/language_models/base";
 import {
   AsyncCaller,
   AsyncCallerCallOptions,
-} from "@langchain/core/utils/async_caller";
-import { getRuntimeEnvironment } from "@langchain/core/utils/env";
-import { BaseRunManager } from "@langchain/core/callbacks/manager";
-import { BaseCallbackHandler } from "@langchain/core/callbacks/base";
+} from "@instrukt/langchain-core/utils/async_caller";
+import { getRuntimeEnvironment } from "@instrukt/langchain-core/utils/env";
+import { BaseRunManager } from "@instrukt/langchain-core/callbacks/manager";
+import { BaseCallbackHandler } from "@instrukt/langchain-core/callbacks/base";
 import type {
   GoogleAIBaseLLMInput,
   GoogleConnectionParams,

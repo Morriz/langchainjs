@@ -2,14 +2,14 @@ import type {
   MessageContentComplex,
   BaseMessage,
   UsageMetadata,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import {
   AIMessage,
   AIMessageChunk,
   ToolMessage,
-} from "@langchain/core/messages";
-import type { ToolCall } from "@langchain/core/messages/tool";
-import { isOpenAITool } from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/messages";
+import type { ToolCall } from "@instrukt/langchain-core/messages/tool";
+import { isOpenAITool } from "@instrukt/langchain-core/language_models/base";
 import type {
   Message as BedrockMessage,
   SystemContentBlock as BedrockSystemContentBlock,
@@ -22,9 +22,9 @@ import type {
   ContentBlockStartEvent,
 } from "@aws-sdk/client-bedrock-runtime";
 import type { DocumentType as __DocumentType } from "@smithy/types";
-import { isLangChainTool } from "@langchain/core/utils/function_calling";
+import { isLangChainTool } from "@instrukt/langchain-core/utils/function_calling";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { ChatGenerationChunk } from "@langchain/core/outputs";
+import { ChatGenerationChunk } from "@instrukt/langchain-core/outputs";
 import { ChatBedrockConverseToolType, BedrockToolChoice } from "./types.js";
 
 export function extractImageInfo(base64: string): ContentBlock.ImageMember {

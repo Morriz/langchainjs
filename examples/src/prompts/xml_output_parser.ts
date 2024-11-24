@@ -1,4 +1,4 @@
-import { XMLOutputParser } from "@langchain/core/output_parsers";
+import { XMLOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const XML_EXAMPLE = `<?xml version="1.0" encoding="UTF-8"?>
 <userProfile>

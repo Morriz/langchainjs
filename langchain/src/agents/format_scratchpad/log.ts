@@ -1,4 +1,4 @@
-import { AgentStep } from "@langchain/core/agents";
+import { AgentStep } from "@instrukt/langchain-core/agents";
 
 /**
  * Construct the scratchpad that lets the agent continue its thought process.

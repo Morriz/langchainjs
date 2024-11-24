@@ -1,6 +1,6 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ToolInterface } from "@langchain/core/tools";
-import { renderTemplate } from "@langchain/core/prompts";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ToolInterface } from "@instrukt/langchain-core/tools";
+import { renderTemplate } from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "langchain/chains";
 import {
   AgentExecutor,

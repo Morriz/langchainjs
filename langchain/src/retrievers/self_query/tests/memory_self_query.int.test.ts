@@ -1,5 +1,5 @@
 import { test } from "@jest/globals";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
 import { AttributeInfo } from "../../../chains/query_constructor/index.js";
 import { SelfQueryRetriever } from "../index.js";

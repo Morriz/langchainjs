@@ -1,6 +1,9 @@
-import { Embeddings, type EmbeddingsParams } from "@langchain/core/embeddings";
-import { chunkArray } from "@langchain/core/utils/chunk_array";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import {
+  Embeddings,
+  type EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { chunkArray } from "@instrukt/langchain-core/utils/chunk_array";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /** @deprecated Install and import from @langchain/baidu-qianfan instead. */
 export interface BaiduQianfanEmbeddingsParams extends EmbeddingsParams {

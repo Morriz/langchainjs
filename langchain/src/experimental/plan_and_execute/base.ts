@@ -1,6 +1,6 @@
-import { BaseOutputParser } from "@langchain/core/output_parsers";
-import { ChainValues } from "@langchain/core/utils/types";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+import { BaseOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
 import { BaseChain } from "../../chains/base.js";
 import { LLMChain } from "../../chains/llm_chain.js";
 

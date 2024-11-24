@@ -1,8 +1,8 @@
-import { BaseLLMOutputParser } from "@langchain/core/output_parsers";
-import type { ChatGeneration } from "@langchain/core/outputs";
+import { BaseLLMOutputParser } from "@instrukt/langchain-core/output_parsers";
+import type { ChatGeneration } from "@instrukt/langchain-core/outputs";
 
 /**
- * @deprecated Import from "@langchain/core/output_parsers/openai_tools"
+ * @deprecated Import from "@instrukt/langchain-core/output_parsers/openai_tools"
  */
 export type ParsedToolCall = {
   id?: string;
@@ -20,7 +20,7 @@ export type ParsedToolCall = {
 };
 
 /**
- * @deprecated Import from "@langchain/core/output_parsers/openai_tools"
+ * @deprecated Import from "@instrukt/langchain-core/output_parsers/openai_tools"
  */
 export type JsonOutputToolsParserParams = {
   /** Whether to return the tool call id. */
@@ -28,7 +28,7 @@ export type JsonOutputToolsParserParams = {
 };
 
 /**
- * @deprecated Import from "@langchain/core/output_parsers/openai_tools"
+ * @deprecated Import from "@instrukt/langchain-core/output_parsers/openai_tools"
  */
 export class JsonOutputToolsParser extends BaseLLMOutputParser<
   ParsedToolCall[]
@@ -104,7 +104,7 @@ export type JsonOutputKeyToolsParserParams = {
 };
 
 /**
- * @deprecated Import from "@langchain/core/output_parsers/openai_tools"
+ * @deprecated Import from "@instrukt/langchain-core/output_parsers/openai_tools"
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export class JsonOutputKeyToolsParser extends BaseLLMOutputParser<any> {

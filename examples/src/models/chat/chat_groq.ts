@@ -1,5 +1,5 @@
 import { ChatGroq } from "@langchain/groq";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 const model = new ChatGroq({
   apiKey: process.env.GROQ_API_KEY,

@@ -1,17 +1,17 @@
-import { RunnableInterface } from "@langchain/core/runnables";
+import { RunnableInterface } from "@instrukt/langchain-core/runnables";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
-import { VectorStore } from "@langchain/core/vectorstores";
+} from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
+import { VectorStore } from "@instrukt/langchain-core/vectorstores";
 import {
   BaseTranslator,
   BasicTranslator,
   FunctionalTranslator,
   StructuredQuery,
-} from "@langchain/core/structured_query";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/structured_query";
+import { CallbackManagerForRetrieverRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   loadQueryConstructorRunnable,
   QueryConstructorRunnableOptions,

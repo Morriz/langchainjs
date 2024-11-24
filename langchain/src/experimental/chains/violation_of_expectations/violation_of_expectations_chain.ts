@@ -1,13 +1,13 @@
-import type { BaseRetrieverInterface } from "@langchain/core/retrievers";
+import type { BaseRetrieverInterface } from "@instrukt/langchain-core/retrievers";
 import { ChatOpenAI } from "@langchain/openai";
 import {
   BaseMessage,
   HumanMessage,
   isBaseMessage,
-} from "@langchain/core/messages";
-import { ChainValues } from "@langchain/core/utils/types";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/messages";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { JsonOutputFunctionsParser } from "../../../output_parsers/openai_functions.js";
 import { BaseChain, ChainInputs } from "../../../chains/base.js";
 import {

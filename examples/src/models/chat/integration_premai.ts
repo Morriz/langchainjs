@@ -1,5 +1,5 @@
 import { ChatPrem } from "@langchain/community/chat_models/premai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatPrem({
   // In Node.js defaults to process.env.PREM_API_KEY

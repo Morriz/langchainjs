@@ -1,4 +1,4 @@
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   ensureAuthOptionScopes,
   GoogleAbstractedClientOps,

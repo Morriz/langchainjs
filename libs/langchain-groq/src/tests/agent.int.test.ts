@@ -1,6 +1,6 @@
 // import { AgentExecutor, createOpenAIToolsAgent } from "langchain/agents";
-// import { ChatPromptTemplate } from "@langchain/core/prompts";
-// import { DynamicStructuredTool } from "@langchain/core/tools";
+// import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+// import { DynamicStructuredTool } from "@instrukt/langchain-core/tools";
 // import { z } from "zod";
 // import { ChatGroq } from "../chat_models.js";
 

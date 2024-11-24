@@ -1,6 +1,6 @@
 import { test, expect } from "@jest/globals";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
-import { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
+import { InMemoryChatMessageHistory as ChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import { BufferMemory } from "../buffer_memory.js";
 
 test("Test buffer memory", async () => {

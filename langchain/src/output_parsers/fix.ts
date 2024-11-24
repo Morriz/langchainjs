@@ -1,11 +1,11 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { Callbacks } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { Callbacks } from "@instrukt/langchain-core/callbacks/manager";
 import {
   BaseOutputParser,
   OutputParserException,
-} from "@langchain/core/output_parsers";
-import { BasePromptTemplate } from "@langchain/core/prompts";
-import { Runnable } from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/output_parsers";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
+import { Runnable } from "@instrukt/langchain-core/runnables";
 import { LLMChain } from "../chains/llm_chain.js";
 import { NAIVE_FIX_PROMPT } from "./prompts.js";
 

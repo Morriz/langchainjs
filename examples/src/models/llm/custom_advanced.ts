@@ -1,10 +1,10 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { LLMResult } from "@langchain/core/outputs";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
 import {
   BaseLLM,
   BaseLLMCallOptions,
   BaseLLMParams,
-} from "@langchain/core/language_models/llms";
+} from "@instrukt/langchain-core/language_models/llms";
 
 export interface AdvancedCustomLLMCallOptions extends BaseLLMCallOptions {}
 

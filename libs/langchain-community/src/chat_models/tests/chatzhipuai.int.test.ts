@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import { SystemMessage, HumanMessage } from "@langchain/core/messages";
+import { SystemMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { ChatZhipuAI } from "../zhipuai.js";
 
 interface TestConfig {

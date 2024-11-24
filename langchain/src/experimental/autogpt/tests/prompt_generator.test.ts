@@ -1,7 +1,7 @@
 import { test, expect } from "@jest/globals";
 import { z } from "zod";
 
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import { getPrompt } from "../prompt_generator.js";
 import { Calculator } from "../../../util/testing/tools/calculator.js";
 import { ReadFileTool, WriteFileTool } from "../../../tools/fs.js";

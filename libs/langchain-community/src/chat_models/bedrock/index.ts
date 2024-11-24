@@ -3,7 +3,7 @@ import {
   DefaultProviderInit,
 } from "@aws-sdk/credential-provider-node";
 
-import type { BaseChatModelParams } from "@langchain/core/language_models/chat_models";
+import type { BaseChatModelParams } from "@instrukt/langchain-core/language_models/chat_models";
 
 import { BaseBedrockInput } from "../../utils/bedrock/index.js";
 import { BedrockChat as BaseBedrockChat } from "./web.js";
@@ -187,8 +187,8 @@ export interface BedrockChatFields
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(messages);
  * let full: AIMessageChunk | undefined;
@@ -235,7 +235,7 @@ export interface BedrockChatFields
  *
  * ```typescript
  * import { z } from 'zod';
- * import { AIMessage } from '@langchain/core/messages';
+ * import { AIMessage } from '@instrukt/langchain-core/messages';
  *
  * const GetWeather = {
  *   name: "GetWeather",

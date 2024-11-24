@@ -1,8 +1,8 @@
 import type { CloseVectorSaveableVectorStore } from "closevector-common";
 
-import type { EmbeddingsInterface } from "@langchain/core/embeddings";
-import { Document } from "@langchain/core/documents";
-import { SaveableVectorStore } from "@langchain/core/vectorstores";
+import type { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
+import { Document } from "@instrukt/langchain-core/documents";
+import { SaveableVectorStore } from "@instrukt/langchain-core/vectorstores";
 
 type CloseVectorCredentials = {
   key?: string;

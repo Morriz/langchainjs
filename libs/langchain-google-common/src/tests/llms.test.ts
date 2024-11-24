@@ -3,8 +3,8 @@ import {
   BaseMessage,
   HumanMessageChunk,
   MessageContentComplex,
-} from "@langchain/core/messages";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@instrukt/langchain-core/messages";
+import { ChatPromptValue } from "@instrukt/langchain-core/prompt_values";
 import { GoogleBaseLLM, GoogleBaseLLMInput } from "../llms.js";
 import {
   authOptions,

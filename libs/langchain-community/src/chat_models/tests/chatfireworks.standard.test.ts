@@ -1,7 +1,7 @@
 /* eslint-disable no-process-env */
 import { test, expect } from "@jest/globals";
 import { ChatModelUnitTests } from "@langchain/standard-tests";
-import { AIMessageChunk } from "@langchain/core/messages";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import { ChatFireworks, ChatFireworksCallOptions } from "../fireworks.js";
 
 class ChatFireworksStandardUnitTests extends ChatModelUnitTests<

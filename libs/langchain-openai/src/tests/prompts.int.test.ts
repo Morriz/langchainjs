@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { convertPromptToOpenAI } from "../utils/prompts.js";
 

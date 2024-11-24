@@ -1,6 +1,9 @@
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ChatPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import {
+  ChatPromptTemplate,
+  PromptTemplate,
+} from "@instrukt/langchain-core/prompts";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 import { ChatOpenAI } from "@langchain/openai";
 import { createSqlQueryChain } from "langchain/chains/sql_db";
 import { SqlDatabase } from "langchain/sql_db";

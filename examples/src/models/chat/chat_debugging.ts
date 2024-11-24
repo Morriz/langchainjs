@@ -1,7 +1,7 @@
-import { type LLMResult } from "@langchain/core/outputs";
+import { type LLMResult } from "@instrukt/langchain-core/outputs";
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
-import { Serialized } from "@langchain/core/load/serializable";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
+import { Serialized } from "@instrukt/langchain-core/load/serializable";
 
 // We can pass in a list of CallbackHandlers to the LLM constructor to get callbacks for various events.
 const model = new ChatOpenAI({

@@ -1,4 +1,4 @@
-import { DynamicTool, DynamicToolInput } from "@langchain/core/tools";
+import { DynamicTool, DynamicToolInput } from "@instrukt/langchain-core/tools";
 import { BaseChain } from "../chains/base.js";
 
 /**

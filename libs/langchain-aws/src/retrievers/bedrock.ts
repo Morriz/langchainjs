@@ -6,8 +6,8 @@ import {
   type RetrievalFilter,
 } from "@aws-sdk/client-bedrock-agent-runtime";
 
-import { BaseRetriever } from "@langchain/core/retrievers";
-import { Document } from "@langchain/core/documents";
+import { BaseRetriever } from "@instrukt/langchain-core/retrievers";
+import { Document } from "@instrukt/langchain-core/documents";
 
 /**
  * Interface for the arguments required to initialize an

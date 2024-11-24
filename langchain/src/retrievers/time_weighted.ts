@@ -1,7 +1,10 @@
-import { BaseRetriever, BaseRetrieverInput } from "@langchain/core/retrievers";
-import type { VectorStoreInterface } from "@langchain/core/vectorstores";
-import type { DocumentInterface } from "@langchain/core/documents";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+import {
+  BaseRetriever,
+  BaseRetrieverInput,
+} from "@instrukt/langchain-core/retrievers";
+import type { VectorStoreInterface } from "@instrukt/langchain-core/vectorstores";
+import type { DocumentInterface } from "@instrukt/langchain-core/documents";
+import { CallbackManagerForRetrieverRun } from "@instrukt/langchain-core/callbacks/manager";
 
 /**
  * Interface for the fields required to initialize a

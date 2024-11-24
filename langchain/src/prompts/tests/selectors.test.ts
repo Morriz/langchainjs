@@ -2,9 +2,9 @@ import { expect, test } from "@jest/globals";
 import {
   LengthBasedExampleSelector,
   SemanticSimilarityExampleSelector,
-} from "@langchain/core/example_selectors";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { FakeEmbeddings } from "@langchain/core/utils/testing";
+} from "@instrukt/langchain-core/example_selectors";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { FakeEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { MemoryVectorStore } from "../../vectorstores/memory.js";
 
 test("Test using LengthBasedExampleSelector", async () => {

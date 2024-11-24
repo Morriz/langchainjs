@@ -1,12 +1,12 @@
 import { Container, CosmosClient, CosmosClientOptions } from "@azure/cosmos";
 import { DefaultAzureCredential, TokenCredential } from "@azure/identity";
-import { BaseListChatMessageHistory } from "@langchain/core/chat_history";
+import { BaseListChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import {
   BaseMessage,
   mapChatMessagesToStoredMessages,
   mapStoredMessagesToChatMessages,
-} from "@langchain/core/messages";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+} from "@instrukt/langchain-core/messages";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 const USER_AGENT_SUFFIX = "langchainjs-cdbnosql-chathistory-javascript";
 const DEFAULT_DATABASE_NAME = "chatHistoryDB";

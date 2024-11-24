@@ -8,9 +8,12 @@ import {
   ToolMessage,
   UsageMetadata,
   isAIMessage,
-} from "@langchain/core/messages";
-import { ToolCall, ToolCallChunk } from "@langchain/core/messages/tool";
-import { concat } from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/messages";
+import {
+  ToolCall,
+  ToolCallChunk,
+} from "@instrukt/langchain-core/messages/tool";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function extractToolCalls(content: Record<string, any>[]) {

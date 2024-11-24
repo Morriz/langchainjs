@@ -1,14 +1,14 @@
-import type { LanguageModelLike } from "@langchain/core/language_models/base";
+import type { LanguageModelLike } from "@instrukt/langchain-core/language_models/base";
 import {
   type Runnable,
   type RunnableInterface,
   RunnableSequence,
   RunnableBranch,
-} from "@langchain/core/runnables";
-import { type BasePromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import type { DocumentInterface } from "@langchain/core/documents";
-import type { BaseMessage } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/runnables";
+import { type BasePromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
+import type { DocumentInterface } from "@instrukt/langchain-core/documents";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
 
 /**
  * Params for the createHistoryAwareRetriever method.

@@ -1,6 +1,9 @@
 import { GoogleAuth, GoogleAuthOptions } from "google-auth-library";
-import { Embeddings, EmbeddingsParams } from "@langchain/core/embeddings";
-import { AsyncCallerCallOptions } from "@langchain/core/utils/async_caller";
+import {
+  Embeddings,
+  EmbeddingsParams,
+} from "@instrukt/langchain-core/embeddings";
+import { AsyncCallerCallOptions } from "@instrukt/langchain-core/utils/async_caller";
 import {
   GoogleVertexAIBaseLLMInput,
   GoogleVertexAIBasePrediction,

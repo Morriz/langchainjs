@@ -6,7 +6,7 @@ import {
   ChatPromptTemplate,
   PromptTemplate,
   SystemMessagePromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "../../chains/index.js";
 import { StructuredOutputParser } from "../structured.js";
 

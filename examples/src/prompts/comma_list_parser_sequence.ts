@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { CommaSeparatedListOutputParser } from "@langchain/core/output_parsers";
-import { RunnableSequence } from "@langchain/core/runnables";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { CommaSeparatedListOutputParser } from "@instrukt/langchain-core/output_parsers";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
 
 export const run = async () => {
   // With a `CommaSeparatedListOutputParser`, we can parse a comma separated list.

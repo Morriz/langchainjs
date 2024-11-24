@@ -1,7 +1,10 @@
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { LLM, type BaseLLMParams } from "@langchain/core/language_models/llms";
-import { GenerationChunk } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import {
+  LLM,
+  type BaseLLMParams,
+} from "@instrukt/langchain-core/language_models/llms";
+import { GenerationChunk } from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 
 /**
  * Interface defining the parameters for configuring the Hugging Face

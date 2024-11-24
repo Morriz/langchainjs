@@ -8,10 +8,10 @@ import {
   RunnableConfig,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
-import { Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+} from "@instrukt/langchain-core/runnables";
+import { Document } from "@instrukt/langchain-core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 // Initialize the OpenAI model
 const model = new ChatOpenAI({});

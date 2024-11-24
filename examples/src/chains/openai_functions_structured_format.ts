@@ -6,8 +6,8 @@ import {
   ChatPromptTemplate,
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { JsonOutputFunctionsParser } from "@langchain/core/output_parsers/openai_functions";
+} from "@instrukt/langchain-core/prompts";
+import { JsonOutputFunctionsParser } from "@instrukt/langchain-core/output_parsers/openai_functions";
 
 const zodSchema = z.object({
   foods: z

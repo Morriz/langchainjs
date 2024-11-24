@@ -6,7 +6,7 @@ import {
   MemoryVariables,
   getInputValue,
   getOutputValue,
-} from "@langchain/core/memory";
+} from "@instrukt/langchain-core/memory";
 import {
   AIMessage,
   BaseMessage,
@@ -14,7 +14,7 @@ import {
   getBufferString,
   HumanMessage,
   SystemMessage,
-} from "@langchain/core/messages";
+} from "@instrukt/langchain-core/messages";
 import { BaseChatMemory, BaseChatMemoryInput } from "./chat_memory.js";
 
 // Extract Summary and Facts from Zep memory, if present and compose a system prompt
@@ -237,29 +237,31 @@ export class ZepCloudMemory
    * @returns Promise that resolves when the messages have been saved.
    */
   async saveContext(
-    inputValues: InputValues,
-    outputValues: OutputValues
+    inputValues: InputValues | undefined,
+    outputValues: OutputValues | undefined
   ): Promise<void> {
-    const input = getInputValue(inputValues, this.inputKey);
-    const output = getOutputValue(outputValues, this.outputKey);
+    const messages = [];
+    if (inputValues) {
+      const input = getInputValue(inputValues, this.inputKey);
+      messages.push({
+        role: this.humanPrefix,
+        roleType: "user",
+        content: `${input}`,
+      });
+    }
+    if (outputValues) {
+      const output = getInputValue(outputValues, this.outputKey);
+      messages.push({
+        role: this.humanPrefix,
+        roleType: "assistant",
+        content: `${output}`,
+      });
+    }
 
     // Add the new memory to the session using the ZepClient
     if (this.sessionId) {
       try {
-        await this.zepClient.memory.add(this.sessionId, {
-          messages: [
-            {
-              role: this.humanPrefix,
-              roleType: "user",
-              content: `${input}`,
-            },
-            {
-              role: this.aiPrefix,
-              roleType: "assistant",
-              content: `${output}`,
-            },
-          ],
-        });
+        await this.zepClient.memory.add(this.sessionId, { messages });
       } catch (error) {
         console.error("Error adding memory: ", error);
       }

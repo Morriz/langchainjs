@@ -1,5 +1,5 @@
 import { ChatAnthropicTools } from "@langchain/anthropic/experimental";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 const model = new ChatAnthropicTools({
   temperature: 0.1,

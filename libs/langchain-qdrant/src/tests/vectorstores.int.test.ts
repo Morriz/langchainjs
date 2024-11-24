@@ -3,8 +3,8 @@
 import { describe, expect, test } from "@jest/globals";
 import { QdrantClient } from "@qdrant/js-client-rest";
 import { faker } from "@faker-js/faker";
-import { Document } from "@langchain/core/documents";
-import { SyntheticEmbeddings } from "@langchain/core/utils/testing";
+import { Document } from "@instrukt/langchain-core/documents";
+import { SyntheticEmbeddings } from "@instrukt/langchain-core/utils/testing";
 import { v4 } from "uuid";
 import { QdrantVectorStore } from "../vectorstores.js";
 

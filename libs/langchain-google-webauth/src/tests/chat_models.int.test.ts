@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { StructuredTool } from "@langchain/core/tools";
+import { StructuredTool } from "@instrukt/langchain-core/tools";
 import { z } from "zod";
 import { test } from "@jest/globals";
 import {
@@ -12,9 +12,9 @@ import {
   MessageContentComplex,
   SystemMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { BaseLanguageModelInput } from "@langchain/core/language_models/base";
-import { ChatPromptValue } from "@langchain/core/prompt_values";
+} from "@instrukt/langchain-core/messages";
+import { BaseLanguageModelInput } from "@instrukt/langchain-core/language_models/base";
+import { ChatPromptValue } from "@instrukt/langchain-core/prompt_values";
 import {
   MediaManager,
   SimpleWebBlobStore,

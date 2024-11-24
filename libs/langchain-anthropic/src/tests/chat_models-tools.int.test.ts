@@ -7,12 +7,12 @@ import {
   AIMessageChunk,
   HumanMessage,
   ToolMessage,
-} from "@langchain/core/messages";
-import { StructuredTool, tool } from "@langchain/core/tools";
-import { concat } from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/messages";
+import { StructuredTool, tool } from "@instrukt/langchain-core/tools";
+import { concat } from "@instrukt/langchain-core/utils/stream";
 import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { RunnableLambda } from "@langchain/core/runnables";
+import { RunnableLambda } from "@instrukt/langchain-core/runnables";
 import { ChatAnthropic } from "../chat_models.js";
 import { AnthropicToolResponse } from "../types.js";
 

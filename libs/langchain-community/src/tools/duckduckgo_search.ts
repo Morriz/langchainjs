@@ -1,4 +1,4 @@
-import { Tool, ToolParams } from "@langchain/core/tools";
+import { Tool, ToolParams } from "@instrukt/langchain-core/tools";
 import { search, SearchOptions } from "duck-duck-scrape";
 
 export {

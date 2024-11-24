@@ -1,10 +1,10 @@
 import { test, expect } from "@jest/globals";
 
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
-import { LLMResult } from "@langchain/core/outputs";
-import { BaseLLM } from "@langchain/core/language_models/llms";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
 
-import { InMemoryChatMessageHistory as ChatMessageHistory } from "@langchain/core/chat_history";
+import { InMemoryChatMessageHistory as ChatMessageHistory } from "@instrukt/langchain-core/chat_history";
 import { EntityMemory } from "../entity_memory.js";
 
 class FakeLLM extends BaseLLM {

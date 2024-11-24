@@ -1,11 +1,11 @@
 /* eslint-disable no-process-env */
 import { expect, test } from "@jest/globals";
 import { OpenAI, OpenAIEmbeddings, ChatOpenAI } from "@langchain/openai";
-import { Tool } from "@langchain/core/tools";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { OutputParserException } from "@langchain/core/output_parsers";
-import { AIMessage } from "@langchain/core/messages";
-import { AgentStep } from "@langchain/core/agents";
+import { Tool } from "@instrukt/langchain-core/tools";
+import { RunnableSequence } from "@instrukt/langchain-core/runnables";
+import { OutputParserException } from "@instrukt/langchain-core/output_parsers";
+import { AIMessage } from "@instrukt/langchain-core/messages";
+import { AgentStep } from "@instrukt/langchain-core/agents";
 import { ChatMessageHistory } from "../../stores/message/in_memory.js";
 import { AgentExecutor, ZeroShotAgent } from "../index.js";
 import { SerpAPI } from "../../util/testing/tools/serpapi.js";

@@ -1,1 +1,1 @@
-export * from "@langchain/core/structured_query";
+export * from "@instrukt/langchain-core/structured_query";

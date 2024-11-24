@@ -4,8 +4,8 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "@langchain/core/prompts";
-import { CallbackManager } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/prompts";
+import { CallbackManager } from "@instrukt/langchain-core/callbacks/manager";
 
 export function setupChain(element: HTMLButtonElement) {
   const runChain = async () => {

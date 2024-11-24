@@ -1,17 +1,22 @@
 const fs = require("fs");
 
 const communityPackageJsonPath = "package.json";
-const currentPackageJson = JSON.parse(fs.readFileSync(communityPackageJsonPath));
+const currentPackageJson = JSON.parse(
+  fs.readFileSync(communityPackageJsonPath)
+);
 
-if (currentPackageJson.devDependencies["@langchain/core"]) {
-  delete currentPackageJson.devDependencies["@langchain/core"];
-  currentPackageJson.peerDependencies["@langchain/core"] = "latest";
+if (currentPackageJson.devDependencies["@instrukt/langchain-core"]) {
+  delete currentPackageJson.devDependencies["@instrukt/langchain-core"];
+  currentPackageJson.peerDependencies["@instrukt/langchain-core"] = "latest";
 }
 
 // Stupid hack
 currentPackageJson.resolutions = {
   ...currentPackageJson.resolutions,
-  "jackspeak": "2.1.1"
+  jackspeak: "2.1.1",
 };
 
-fs.writeFileSync(communityPackageJsonPath, JSON.stringify(currentPackageJson, null, 2));
+fs.writeFileSync(
+  communityPackageJsonPath,
+  JSON.stringify(currentPackageJson, null, 2)
+);

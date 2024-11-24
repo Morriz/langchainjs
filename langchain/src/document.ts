@@ -1,1 +1,4 @@
-export { type DocumentInput, Document } from "@langchain/core/documents";
+export {
+  type DocumentInput,
+  Document,
+} from "@instrukt/langchain-core/documents";

@@ -1,6 +1,6 @@
 import { loadQARefineChain } from "langchain/chains";
 import { OpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";

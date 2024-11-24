@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
 
 import { convertPromptToAnthropic } from "../utils/prompts.js";
 

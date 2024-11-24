@@ -1,9 +1,9 @@
 import { test, expect } from "@jest/globals";
-import { BaseRetriever } from "@langchain/core/retrievers";
-import { BaseLLM } from "@langchain/core/language_models/llms";
-import { LLMResult } from "@langchain/core/outputs";
-import { Document } from "@langchain/core/documents";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { BaseRetriever } from "@instrukt/langchain-core/retrievers";
+import { BaseLLM } from "@instrukt/langchain-core/language_models/llms";
+import { LLMResult } from "@instrukt/langchain-core/outputs";
+import { Document } from "@instrukt/langchain-core/documents";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { MultiRetrievalQAChain } from "../multi_retrieval_qa.js";
 
 class FakeRetrievers extends BaseRetriever {

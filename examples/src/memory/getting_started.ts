@@ -1,7 +1,7 @@
 /* eslint-disable import/first */
 /* eslint-disable import/no-duplicates */
 import { BufferMemory } from "langchain/memory";
-import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import { HumanMessage, AIMessage } from "@instrukt/langchain-core/messages";
 
 const memory = new BufferMemory();
 
@@ -29,7 +29,7 @@ await messageMemory.chatHistory.addMessage(new AIMessage("What's up?"));
 console.log(await messageMemory.loadMemoryVariables({}));
 
 import { OpenAI } from "@langchain/openai";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "langchain/chains";
 
 const llm = new OpenAI({ temperature: 0 });
@@ -61,7 +61,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 
 const chatModel = new ChatOpenAI({ temperature: 0 });
 const chatPrompt = ChatPromptTemplate.fromMessages([

@@ -1,11 +1,11 @@
 /* eslint-disable no-process-env */
 import { Index } from "@upstash/vector";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   SyntheticEmbeddings,
   FakeEmbeddings,
-} from "@langchain/core/utils/testing";
-import { EmbeddingsInterface } from "@langchain/core/embeddings";
+} from "@instrukt/langchain-core/utils/testing";
+import { EmbeddingsInterface } from "@instrukt/langchain-core/embeddings";
 import { UpstashVectorStore } from "../upstash.js";
 import { sleep } from "../../utils/time.js";
 

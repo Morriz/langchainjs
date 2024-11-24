@@ -1,4 +1,4 @@
-import { AsyncCallerParams } from "@langchain/core/utils/async_caller";
+import { AsyncCallerParams } from "@instrukt/langchain-core/utils/async_caller";
 
 const STATUS_NO_RETRY = [
   400,

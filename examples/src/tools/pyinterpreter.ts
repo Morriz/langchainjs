@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
 import { PythonInterpreterTool } from "@langchain/community/experimental/tools/pyinterpreter";
-import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { StringOutputParser } from "@langchain/core/output_parsers";
+import { ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+import { StringOutputParser } from "@instrukt/langchain-core/output_parsers";
 
 const prompt = ChatPromptTemplate.fromTemplate(
   `Generate python code that does {input}. Do not generate anything else.`

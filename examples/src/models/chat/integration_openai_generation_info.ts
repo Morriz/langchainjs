@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { HumanMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
 
 // See https://cookbook.openai.com/examples/using_logprobs for details
 const model = new ChatOpenAI({

@@ -1,7 +1,7 @@
 import { LLMChain } from "langchain/chains";
 import { OpenAI } from "@langchain/openai";
-import { ConsoleCallbackHandler } from "@langchain/core/tracers/console";
-import { PromptTemplate } from "@langchain/core/prompts";
+import { ConsoleCallbackHandler } from "@instrukt/langchain-core/tracers/console";
+import { PromptTemplate } from "@instrukt/langchain-core/prompts";
 
 export const run = async () => {
   const handler = new ConsoleCallbackHandler();

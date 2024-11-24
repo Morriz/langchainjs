@@ -2,33 +2,36 @@
 import {
   BaseLanguageModelInput,
   ToolDefinition,
-} from "@langchain/core/language_models/base";
+} from "@instrukt/langchain-core/language_models/base";
 import {
   BaseChatModel,
   BaseChatModelParams,
   BindToolsInput,
   type BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
-import { BaseMessage, type AIMessageChunk } from "@langchain/core/messages";
+} from "@instrukt/langchain-core/language_models/chat_models";
+import {
+  BaseMessage,
+  type AIMessageChunk,
+} from "@instrukt/langchain-core/messages";
 import {
   type RunnableBatchOptions,
   RunnableBinding,
   type RunnableConfig,
   type RunnableToolLike,
   ensureConfig,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import {
   AsyncGeneratorWithSetup,
   IterableReadableStream,
-} from "@langchain/core/utils/stream";
+} from "@instrukt/langchain-core/utils/stream";
 import {
   type LogStreamCallbackHandlerInput,
   type RunLogPatch,
   type StreamEvent,
-} from "@langchain/core/tracers/log_stream";
-import { type StructuredToolInterface } from "@langchain/core/tools";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
-import { ChatResult } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/tracers/log_stream";
+import { type StructuredToolInterface } from "@instrukt/langchain-core/tools";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
+import { ChatResult } from "@instrukt/langchain-core/outputs";
 
 // TODO: remove once `EventStreamCallbackHandlerInput` is exposed in core
 interface EventStreamCallbackHandlerInput
@@ -686,7 +689,7 @@ export async function initChatModel<
  * ```typescript
  * import { initChatModel } from "langchain/chat_models/universal";
  * import { z } from "zod";
- * import { tool } from "@langchain/core/tools";
+ * import { tool } from "@instrukt/langchain-core/tools";
  *
  * const getWeatherTool = tool(
  *   (input) => {

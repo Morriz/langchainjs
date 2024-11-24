@@ -2,4 +2,4 @@ export {
   type TranslatorOpts,
   BaseTranslator,
   BasicTranslator,
-} from "@langchain/core/structured_query";
+} from "@instrukt/langchain-core/structured_query";

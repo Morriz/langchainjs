@@ -2,7 +2,7 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import hanaClient from "hdb";
 // or import another node.js driver
 // import hanaClient from "@sap/haha-client";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   HanaDB,
   HanaDBArgs,

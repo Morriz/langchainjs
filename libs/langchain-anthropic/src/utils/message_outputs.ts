@@ -6,8 +6,8 @@ import {
   AIMessage,
   AIMessageChunk,
   UsageMetadata,
-} from "@langchain/core/messages";
-import { ChatGeneration } from "@langchain/core/outputs";
+} from "@instrukt/langchain-core/messages";
+import { ChatGeneration } from "@instrukt/langchain-core/outputs";
 import { AnthropicMessageResponse } from "../types.js";
 import { extractToolCalls } from "../output_parsers.js";
 

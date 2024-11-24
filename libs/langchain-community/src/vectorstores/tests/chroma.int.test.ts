@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, test } from "@jest/globals";
 import { ChromaClient } from "chromadb";
 import { faker } from "@faker-js/faker";
 import * as uuid from "uuid";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { Chroma } from "../chroma.js";
 

@@ -4,7 +4,7 @@ import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   PromptTemplate,
-} from "@langchain/core/prompts";
+} from "@instrukt/langchain-core/prompts";
 import { LLMChain } from "../llm_chain.js";
 import { BufferMemory } from "../../memory/buffer_memory.js";
 

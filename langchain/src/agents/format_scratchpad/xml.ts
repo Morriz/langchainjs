@@ -1,4 +1,4 @@
-import { AgentStep } from "@langchain/core/agents";
+import { AgentStep } from "@instrukt/langchain-core/agents";
 
 export function formatXml(intermediateSteps: AgentStep[]) {
   let log = "";

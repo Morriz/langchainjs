@@ -4,8 +4,8 @@ import { ChatTencentHunyuan } from "@langchain/community/chat_models/tencent_hun
 // in browser environment
 // import { ChatTencentHunyuan } from "@langchain/community/chat_models/tencent_hunyuan/web";
 
-import { HumanMessage } from "@langchain/core/messages";
-import type { LLMResult } from "@langchain/core/outputs";
+import { HumanMessage } from "@instrukt/langchain-core/messages";
+import type { LLMResult } from "@instrukt/langchain-core/outputs";
 
 const messages = [new HumanMessage("Hello")];
 

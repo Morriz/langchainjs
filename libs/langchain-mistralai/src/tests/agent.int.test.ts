@@ -1,9 +1,9 @@
 // import { test, expect } from "@jest/globals";
 // import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
 // import { Calculator } from "@langchain/community/tools/calculator";
-// import { BaseChatModel } from "@langchain/core/language_models/chat_models";
-// import { SystemMessagePromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder, ChatPromptTemplate } from "@langchain/core/prompts";
-// import { DynamicStructuredTool } from "@langchain/core/tools";
+// import { BaseChatModel } from "@instrukt/langchain-core/language_models/chat_models";
+// import { SystemMessagePromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder, ChatPromptTemplate } from "@instrukt/langchain-core/prompts";
+// import { DynamicStructuredTool } from "@instrukt/langchain-core/tools";
 // import { z } from "zod";
 // import { ChatMistralAI } from "../chat_models.js";
 // import { AgentExecutor, createOpenAIToolsAgent, createToolCallingAgent } from "langchain/agents";

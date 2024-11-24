@@ -1,17 +1,17 @@
-import type { BaseMessage } from "@langchain/core/messages";
-import { AIMessageChunk } from "@langchain/core/messages";
+import type { BaseMessage } from "@instrukt/langchain-core/messages";
+import { AIMessageChunk } from "@instrukt/langchain-core/messages";
 import type {
   BaseLanguageModelInput,
   StructuredOutputMethodOptions,
   ToolDefinition,
-} from "@langchain/core/language_models/base";
-import { CallbackManagerForLLMRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/language_models/base";
+import { CallbackManagerForLLMRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   type BaseChatModelParams,
   BaseChatModel,
   LangSmithParams,
   BaseChatModelCallOptions,
-} from "@langchain/core/language_models/chat_models";
+} from "@instrukt/langchain-core/language_models/chat_models";
 import type {
   ToolConfiguration,
   GuardrailConfiguration,
@@ -21,8 +21,11 @@ import {
   ConverseCommand,
   ConverseStreamCommand,
 } from "@aws-sdk/client-bedrock-runtime";
-import { ChatGenerationChunk, ChatResult } from "@langchain/core/outputs";
-import { getEnvironmentVariable } from "@langchain/core/utils/env";
+import {
+  ChatGenerationChunk,
+  ChatResult,
+} from "@instrukt/langchain-core/outputs";
+import { getEnvironmentVariable } from "@instrukt/langchain-core/utils/env";
 import {
   defaultProvider,
   DefaultProviderInit,
@@ -33,9 +36,9 @@ import {
   RunnableLambda,
   RunnablePassthrough,
   RunnableSequence,
-} from "@langchain/core/runnables";
+} from "@instrukt/langchain-core/runnables";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { isZodSchema } from "@langchain/core/utils/types";
+import { isZodSchema } from "@instrukt/langchain-core/utils/types";
 import { z } from "zod";
 import {
   convertToConverseTools,
@@ -367,8 +370,8 @@ export interface ChatBedrockConverseCallOptions
  * <summary><strong>Aggregate Streamed Chunks</strong></summary>
  *
  * ```typescript
- * import { AIMessageChunk } from '@langchain/core/messages';
- * import { concat } from '@langchain/core/utils/stream';
+ * import { AIMessageChunk } from '@instrukt/langchain-core/messages';
+ * import { concat } from '@instrukt/langchain-core/utils/stream';
  *
  * const stream = await llm.stream(input);
  * let full: AIMessageChunk | undefined;
@@ -514,7 +517,7 @@ export interface ChatBedrockConverseCallOptions
  * <summary><strong>Multimodal</strong></summary>
  *
  * ```typescript
- * import { HumanMessage } from '@langchain/core/messages';
+ * import { HumanMessage } from '@instrukt/langchain-core/messages';
  *
  * const imageUrl = "https://example.com/image.jpg";
  * const imageData = await fetch(imageUrl).then(res => res.arrayBuffer());

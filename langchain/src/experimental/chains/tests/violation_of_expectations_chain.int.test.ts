@@ -1,5 +1,5 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
-import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { AIMessage, HumanMessage } from "@instrukt/langchain-core/messages";
 import { MemoryVectorStore } from "../../../vectorstores/memory.js";
 import { ViolationOfExpectationsChain } from "../violation_of_expectations/violation_of_expectations_chain.js";
 

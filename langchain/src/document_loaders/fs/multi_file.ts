@@ -1,6 +1,6 @@
 import { extname, resolve } from "node:path";
 import { stat } from "node:fs/promises";
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import { BaseDocumentLoader } from "../base.js";
 import { type LoadersMapping, UnknownHandling } from "./directory.js";
 

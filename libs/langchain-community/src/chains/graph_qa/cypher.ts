@@ -1,7 +1,7 @@
-import type { BaseLanguageModelInterface } from "@langchain/core/language_models/base";
-import { ChainValues } from "@langchain/core/utils/types";
-import { BasePromptTemplate } from "@langchain/core/prompts";
-import { CallbackManagerForChainRun } from "@langchain/core/callbacks/manager";
+import type { BaseLanguageModelInterface } from "@instrukt/langchain-core/language_models/base";
+import { ChainValues } from "@instrukt/langchain-core/utils/types";
+import { BasePromptTemplate } from "@instrukt/langchain-core/prompts";
+import { CallbackManagerForChainRun } from "@instrukt/langchain-core/callbacks/manager";
 import { LLMChain, BaseChain, ChainInputs } from "langchain/chains";
 import { Neo4jGraph } from "../../graphs/neo4j_graph.js";
 import { CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT } from "./prompts.js";

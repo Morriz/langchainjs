@@ -1,9 +1,9 @@
-import { Document } from "@langchain/core/documents";
+import { Document } from "@instrukt/langchain-core/documents";
 import {
   BaseRetriever,
   type BaseRetrieverInput,
-} from "@langchain/core/retrievers";
-import { CallbackManagerForRetrieverRun } from "@langchain/core/callbacks/manager";
+} from "@instrukt/langchain-core/retrievers";
+import { CallbackManagerForRetrieverRun } from "@instrukt/langchain-core/callbacks/manager";
 import {
   VectaraStore,
   type VectaraSummary,
